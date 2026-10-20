@@ -1,0 +1,193 @@
+{
+  "control_ok": true,
+  "drift": {
+    "n_ref": 747,
+    "n_available": 739,
+    "missing_shas": [
+      "f479e993f6583f861cd42509548c264b7d6d83f8cf6a95ea80fb30869523b4eb",
+      "edaf7119578fe6c00862eb41b2560373eda5b323e063e594e4392a0d3c4f92b9",
+      "f5036304ae539390a7dea3b5d2762f3075ae95119a0a4133fdc8bda7916be087",
+      "77d75f180c25ba4eec355de05a1cbf77fa8fd3f0dfadc10034f4c27aafe93ad4",
+      "3c7ae9e794c2c3c28478777690908b1c14afa7b80a99bb6b4570cf60467f0394",
+      "dbfd465e3f2733ae3175e040c0035cfc455d6ae5bec8d9b8cfb8547a86c4d843",
+      "f5b3e40dd4e0f94d15cc6a70fe7dd1de2ddb98a5fc6425d87ed959078e5039fd",
+      "62fc67c0e4473bfa044fa050cab631669581fe12029e2cc9bae3a08f79f68098"
+    ],
+    "mode": "drift"
+  },
+  "interpretable": true,
+  "n_dev": 739,
+  "n_H": 558,
+  "n_H_malicious": 66,
+  "sets": {
+    "dev": {
+      "FUSE": {
+        "f1_rep0": 0.9671,
+        "f1_mean": 0.9626,
+        "f1_sd": 0.0036
+      },
+      "FUSE-noSPF": {
+        "f1_rep0": 0.959,
+        "f1_mean": 0.961,
+        "f1_sd": 0.0038,
+        "contributes": false
+      },
+      "FUSE-noCANON": {
+        "f1_rep0": 0.9628,
+        "f1_mean": 0.96,
+        "f1_sd": 0.0033,
+        "contributes": false
+      },
+      "FUSE-noMETA": {
+        "f1_rep0": 0.963,
+        "f1_mean": 0.9634,
+        "f1_sd": 0.003,
+        "contributes": false
+      },
+      "FUSE-noV1": {
+        "f1_rep0": 0.963,
+        "f1_mean": 0.9613,
+        "f1_sd": 0.0026,
+        "contributes": false
+      },
+      "CANON-only": {
+        "f1_rep0": 0.9322,
+        "f1_mean": 0.9383,
+        "f1_sd": 0.0047
+      },
+      "SPF-only": {
+        "f1_rep0": 0.9367,
+        "f1_mean": 0.9352,
+        "f1_sd": 0.0082
+      },
+      "META-only": {
+        "f1_rep0": 0.9545,
+        "f1_mean": 0.9545,
+        "f1_sd": 0.0042
+      },
+      "_tests_fuse_minus_drop": {
+        "FUSE-noSPF": {
+          "delta_f1": 0.0081,
+          "ci95": [
+            0.002,
+            0.0163
+          ],
+          "p_two_sided": 0.032,
+          "holm": 0.128
+        },
+        "FUSE-noCANON": {
+          "delta_f1": 0.0043,
+          "ci95": [
+            -0.0038,
+            0.0128
+          ],
+          "p_two_sided": 0.2688,
+          "holm": 0.7944
+        },
+        "FUSE-noMETA": {
+          "delta_f1": 0.0041,
+          "ci95": [
+            0.0,
+            0.0104
+          ],
+          "p_two_sided": 0.2648,
+          "holm": 0.7944
+        },
+        "FUSE-noV1": {
+          "delta_f1": 0.0041,
+          "ci95": [
+            0.0,
+            0.0104
+          ],
+          "p_two_sided": 0.2648,
+          "holm": 0.7944
+        }
+      }
+    },
+    "H": {
+      "FUSE": {
+        "f1_rep0": 0.88,
+        "f1_mean": 0.8649,
+        "f1_sd": 0.0137
+      },
+      "FUSE-noSPF": {
+        "f1_rep0": 0.8594,
+        "f1_mean": 0.8697,
+        "f1_sd": 0.01,
+        "contributes": false
+      },
+      "FUSE-noCANON": {
+        "f1_rep0": 0.8618,
+        "f1_mean": 0.8559,
+        "f1_sd": 0.011,
+        "contributes": false
+      },
+      "FUSE-noMETA": {
+        "f1_rep0": 0.864,
+        "f1_mean": 0.8673,
+        "f1_sd": 0.011,
+        "contributes": false
+      },
+      "FUSE-noV1": {
+        "f1_rep0": 0.864,
+        "f1_mean": 0.8612,
+        "f1_sd": 0.0131,
+        "contributes": false
+      },
+      "CANON-only": {
+        "f1_rep0": 0.7544,
+        "f1_mean": 0.7692,
+        "f1_sd": 0.0108
+      },
+      "SPF-only": {
+        "f1_rep0": 0.7544,
+        "f1_mean": 0.7522,
+        "f1_sd": 0.0366
+      },
+      "META-only": {
+        "f1_rep0": 0.8293,
+        "f1_mean": 0.8289,
+        "f1_sd": 0.0147
+      },
+      "_tests_fuse_minus_drop": {
+        "FUSE-noSPF": {
+          "delta_f1": 0.0206,
+          "ci95": [
+            0.0,
+            0.0463
+          ],
+          "p_two_sided": 0.0946,
+          "holm": 0.3784
+        },
+        "FUSE-noCANON": {
+          "delta_f1": 0.0182,
+          "ci95": [
+            -0.0114,
+            0.0528
+          ],
+          "p_two_sided": 0.271,
+          "holm": 0.8004
+        },
+        "FUSE-noMETA": {
+          "delta_f1": 0.016,
+          "ci95": [
+            0.0,
+            0.041
+          ],
+          "p_two_sided": 0.2668,
+          "holm": 0.8004
+        },
+        "FUSE-noV1": {
+          "delta_f1": 0.016,
+          "ci95": [
+            0.0,
+            0.041
+          ],
+          "p_two_sided": 0.2668,
+          "holm": 0.8004
+        }
+      }
+    }
+  },
+  "wording_canon": "no measurable accuracy contribution of the canonical-form branch on this corpus (computed on the 739-file intersection after upstream corpus drift; FUSE re-fit as the internal reference, 17.2 amendment)"
+}

@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+venv/
+.env
+# model and data artefacts: never commit
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.joblib
+*.npz
+*.zip
+# downloaded corpora and local run output
+/data/
+/safepickle/
+/sample_files/
+/external/
+/results/
+# withheld attack tooling
+don't use it/

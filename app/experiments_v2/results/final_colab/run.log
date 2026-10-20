@@ -1,0 +1,264 @@
+12:17:45 restored features_cache.npz from Drive
+12:17:45 restored file_meta.json from Drive
+12:17:46 restored stage1_skipped.json from Drive
+12:17:46 restored cv_rep0.json from Drive
+12:17:46 restored cv_rep1.json from Drive
+12:17:46 restored cv_rep3.json from Drive
+12:17:46 restored cv_rep2.json from Drive
+12:17:47 restored cv_rep4.json from Drive
+12:17:47 restored v2_dev_results.json from Drive
+12:17:47 restored dev_error_analysis.csv from Drive
+12:17:47 restored dev_error_profile.json from Drive
+12:17:48 restored run_info.json from Drive
+12:17:48 restored cap_rescan.json from Drive
+12:17:48 restored pickleball_eval_explore_smoke.json from Drive
+12:17:48 restored pickleball_predictions_explore_smoke.json from Drive
+12:17:49 restored pickleball_sealed_manifest_smoke.json from Drive
+12:17:49 restored pickleball_eval_explore.json from Drive
+12:17:49 restored pickleball_predictions_explore.json from Drive
+12:17:49 restored pickleball_sealed_manifest.json from Drive
+12:17:50 restored fuse_dev_results.json from Drive
+12:17:50 restored fuse_cv_rep0.json from Drive
+12:17:50 restored fuse_cv_rep1.json from Drive
+12:17:50 restored fuse_cv_rep2.json from Drive
+12:17:51 restored fuse_cv_rep3.json from Drive
+12:17:51 restored fuse_cv_rep4.json from Drive
+12:17:51 restored attack_study_fuse_seed0.json from Drive
+12:17:52 restored attack_study_fuse_seed1.json from Drive
+12:17:52 restored locked_test_manifest.json from Drive
+12:17:52 restored stage2_split.json from Drive
+12:17:52 stage 1: using cached features
+12:17:53 stage 2: {"n_files_featurised": 1008, "exact_duplicates_removed": 109, "conflicting_label_files_dropped": 13, "n_unique": 886, "n_unique_benign": 557, "n_unique_malicious": 329, "n_groups": 553, "groups_size_gt1": 104, "largest_group": 98, "files_in_shared_groups": 437, "dev": {"n": 747, "benign": 493, "malicious": 254}, "locked": {"n": 139, "benign": 64, "malicious": 75, "manifest_sha256": "1aaa27a48abab0a0ca30b26a1ba829b43c0376d67580e865c19227b3c394c142"}}
+12:20:04 [extras] fold 1/5 CNN: train 127s F1 0.943
+12:27:21 [extras] fold 1/5 BiLSTM: train 436s F1 0.943
+/usr/local/lib/python3.13/dist-packages/torch/nn/modules/transformer.py:531: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. We recommend specifying layout=torch.jagged when constructing a nested tensor, as this layout receives active development, has better operator coverage, and works with torch.compile. (Triggered internally at /pytorch/aten/src/ATen/NestedTensorImpl.cpp:178.)
+  output = torch._nested_tensor_from_mask(
+13:09:07 [extras] fold 1/5 Transformer: train 2506s F1 0.943
+13:10:51 [extras] fold 2/5 CNN: train 104s F1 0.938
+13:18:18 [extras] fold 2/5 BiLSTM: train 447s F1 0.930
+13:54:20 [extras] fold 2/5 Transformer: train 2159s F1 0.939
+13:55:54 [extras] fold 3/5 CNN: train 93s F1 0.905
+14:01:21 [extras] fold 3/5 BiLSTM: train 327s F1 0.917
+14:37:42 [extras] fold 3/5 Transformer: train 2178s F1 0.844
+14:39:17 [extras] fold 4/5 CNN: train 95s F1 0.964
+14:44:52 [extras] fold 4/5 BiLSTM: train 334s F1 0.964
+15:21:19 [extras] fold 4/5 Transformer: train 2187s F1 0.941
+15:23:02 [extras] fold 5/5 CNN: train 103s F1 0.913
+15:28:45 [extras] fold 5/5 BiLSTM: train 343s F1 0.899
+16:03:49 [extras] fold 5/5 Transformer: train 2104s F1 0.901
+# Architecture comparison (PREREGISTRATION 12.1, exploratory)
+
+| Encoder | F1 | Precision | Recall | Specificity | AUC | Params | Train s (5 folds) | CPU ms/file |
+|---|---|---|---|---|---|---|---|---|
+| CNN | 0.9347 | 0.9703 | 0.9016 | 0.9858 | 0.9724 | 23137 | 521.4 | 0.3 |
+| BiLSTM | 0.9325 | 0.9702 | 0.8976 | 0.9858 | 0.9662 | 56801 | 1887.6 | 1.998 |
+| Transformer | 0.9155 | 0.961 | 0.874 | 0.9817 | 0.9573 | 90017 | 11134.0 | 9.222 |
+
+- BiLSTM vs CNN: ΔF1 -0.0022 [-0.013, 0.0085], p 0.7294 (Holm 0.7294)
+- Transformer vs CNN: ΔF1 -0.0192 [-0.0349, -0.0048], p 0.006 (Holm 0.012)
+- Harness CNN agrees with the saved CNN@0.5 on 99.5% of files (saved CNN@0.5 F1 0.9342).
+
+16:03:57 restored final_locked_results.json from Drive
+16:03:57 restored FINAL_RUN_DONE.json from Drive
+16:03:57 stage 1: using cached features
+16:03:58 stage 2: {"n_files_featurised": 1008, "exact_duplicates_removed": 109, "conflicting_label_files_dropped": 13, "n_unique": 886, "n_unique_benign": 557, "n_unique_malicious": 329, "n_groups": 553, "groups_size_gt1": 104, "largest_group": 98, "files_in_shared_groups": 437, "dev": {"n": 747, "benign": 493, "malicious": 254}, "locked": {"n": 139, "benign": 64, "malicious": 75, "manifest_sha256": "1aaa27a48abab0a0ca30b26a1ba829b43c0376d67580e865c19227b3c394c142"}}
+16:04:33 [extras] pickle-curated fold 1/5: train 513, test 122 malicious + 99 benign
+16:05:00 [extras] pickle-curated fold 2/5: train 514, test 122 malicious + 99 benign
+16:05:28 [extras] pickle-curated fold 3/5: train 522, test 122 malicious + 99 benign
+16:05:56 [extras] pickle-curated fold 4/5: train 514, test 122 malicious + 98 benign
+16:06:22 [extras] pickle-curated fold 5/5: train 514, test 122 malicious + 98 benign
+16:06:53 [extras] pickle-picklecloak fold 1/5: train 521, test 127 malicious + 99 benign
+16:07:23 [extras] pickle-picklecloak fold 2/5: train 520, test 127 malicious + 99 benign
+16:07:53 [extras] pickle-picklecloak fold 3/5: train 518, test 127 malicious + 99 benign
+16:08:22 [extras] pickle-picklecloak fold 4/5: train 522, test 127 malicious + 98 benign
+16:08:53 [extras] pickle-picklecloak fold 5/5: train 522, test 127 malicious + 98 benign
+# Leave-one-source-out shift test (PREREGISTRATION 12.2, exploratory)
+
+## Held-out malicious source: pickle-curated
+
+| Detector | Recall (fold-0 model) | Wilson 95% | Range over 5 models | In-distribution recall | FA rate | Wilson 95% |
+|---|---|---|---|---|---|---|
+| FUSE | 0.5082 (n=122) | [0.4206, 0.5953] | [0.5082, 0.623] | 0.8361 | 0.002 (1/493) | [0.0004, 0.0114] |
+| FUSE-C | 0.4754 (n=122) | [0.3889, 0.5634] | [0.4754, 0.6066] | 0.7951 | 0.0041 (2/493) | [0.0011, 0.0147] |
+| FUSE-INV | 0.582 (n=122) | [0.4933, 0.6657] | [0.582, 0.582] | 0.8525 | 0.0061 (3/493) | [0.0021, 0.0177] |
+| SP-RF | 0.4672 (n=122) | [0.381, 0.5554] | [0.4508, 0.5656] | 0.8852 | 0.002 (1/493) | [0.0004, 0.0114] |
+| SP-CB | 0.4918 (n=122) | [0.4047, 0.5794] | [0.4918, 0.5902] | 0.877 | 0.002 (1/493) | [0.0004, 0.0114] |
+| META | 0.582 (n=122) | [0.4933, 0.6657] | [0.582, 0.623] | 0.8689 | 0.002 (1/493) | [0.0004, 0.0114] |
+| ML | 0.5164 (n=122) | [0.4286, 0.6032] | [0.4426, 0.5574] | 0.8443 | 0.002 (1/493) | [0.0004, 0.0114] |
+
+## Held-out malicious source: pickle-picklecloak
+
+| Detector | Recall (fold-0 model) | Wilson 95% | Range over 5 models | In-distribution recall | FA rate | Wilson 95% |
+|---|---|---|---|---|---|---|
+| FUSE | 1.0 (n=127) | [0.9706, 1.0] | [1.0, 1.0] | 1.0 | 0.0122 (6/493) | [0.0056, 0.0263] |
+| FUSE-C | 0.9449 (n=127) | [0.8906, 0.973] | [0.9449, 0.9449] | 0.9528 | 0.0122 (6/493) | [0.0056, 0.0263] |
+| FUSE-INV | 0.8976 (n=127) | [0.8327, 0.9392] | [0.8976, 0.9449] | 0.9449 | 0.0122 (6/493) | [0.0056, 0.0263] |
+| SP-RF | 0.9449 (n=127) | [0.8906, 0.973] | [0.9449, 0.9449] | 0.9449 | 0.0142 (7/493) | [0.0069, 0.029] |
+| SP-CB | 0.9449 (n=127) | [0.8906, 0.973] | [0.9449, 0.9449] | 0.9449 | 0.0081 (4/493) | [0.0032, 0.0207] |
+| META | 1.0 (n=127) | [0.9706, 1.0] | [1.0, 1.0] | 1.0 | 0.0183 (9/493) | [0.0096, 0.0343] |
+| ML | 0.8583 (n=127) | [0.7871, 0.9084] | [0.7559, 0.8819] | 0.9606 | 0.0122 (6/493) | [0.0056, 0.0263] |
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!  CONFIRMATORY OPENING OF THE SEALED PICKLEBALL HALF (PREREGISTRATION 9.3)        !!
+!!  This is the ONE-TIME final run. Every number it prints is the confirmatory      !!
+!!  external result for CNNv2 / C2 and must be reported whatever it says. Do not    !!
+!!  re-run it after looking at the output; do not tune anything on it afterwards.   !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+22:42:48 stage 1: using cached features
+22:42:48 stage 2: {"n_files_featurised": 1008, "exact_duplicates_removed": 109, "conflicting_label_files_dropped": 13, "n_unique": 886, "n_unique_benign": 557, "n_unique_malicious": 329, "n_groups": 553, "groups_size_gt1": 104, "largest_group": 98, "files_in_shared_groups": 437, "dev": {"n": 747, "benign": 493, "malicious": 254}, "locked": {"n": 139, "benign": 64, "malicious": 75, "manifest_sha256": "1aaa27a48abab0a0ca30b26a1ba829b43c0376d67580e865c19227b3c394c142"}}
+[pickleball] training detectors on 747 dev files ...
+  training ML ensemble ...
+  training CNN (40 epochs, ~2-4 min) ...
+  training SafePickle variants ...
+  training CNNv2 on 1989 files (inner 3-fold threshold + final fit) ...
+[pickleball] malicious.tar.gz (label 1) from https://zenodo.org/api/records/16974645/files/malicious.tar.gz/content: evaluating the sealed half
+[pickleball] malicious.tar.gz: checkpoint written to <drive>/colab_ckpts/v2_final/ckpt/pickleball_sealed/pickleball_sealed_malicious.json
+[pickleball] benign-abridged.tar.gz (label 0) from https://zenodo.org/api/records/16974645/files/benign-abridged.tar.gz/content: evaluating the sealed half
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!  CONFIRMATORY OPENING OF THE SEALED PICKLEBALL HALF (PREREGISTRATION 9.3)        !!
+!!  This is the ONE-TIME final run. Every number it prints is the confirmatory      !!
+!!  external result for CNNv2 / C2 and must be reported whatever it says. Do not    !!
+!!  re-run it after looking at the output; do not tune anything on it afterwards.   !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+23:27:37 stage 1: using cached features
+23:27:37 stage 2: {"n_files_featurised": 1008, "exact_duplicates_removed": 109, "conflicting_label_files_dropped": 13, "n_unique": 886, "n_unique_benign": 557, "n_unique_malicious": 329, "n_groups": 553, "groups_size_gt1": 104, "largest_group": 98, "files_in_shared_groups": 437, "dev": {"n": 747, "benign": 493, "malicious": 254}, "locked": {"n": 139, "benign": 64, "malicious": 75, "manifest_sha256": "1aaa27a48abab0a0ca30b26a1ba829b43c0376d67580e865c19227b3c394c142"}}
+[pickleball] training detectors on 747 dev files ...
+  training ML ensemble ...
+  training CNN (40 epochs, ~2-4 min) ...
+  training SafePickle variants ...
+  training CNNv2 on 1989 files (inner 3-fold threshold + final fit) ...
+[pickleball] malicious.tar.gz: reusing checkpoint <drive>/colab_ckpts/v2_final/ckpt/pickleball_sealed/pickleball_sealed_malicious.json (not streamed again)
+[pickleball] benign-abridged.tar.gz (label 0) from https://zenodo.org/api/records/16974645/files/benign-abridged.tar.gz/content: evaluating the sealed half
+[pickleball] benign-abridged.tar.gz: checkpoint written to <drive>/colab_ckpts/v2_final/ckpt/pickleball_sealed/pickleball_sealed_benign-abridged.json
+{
+ "half": "sealed",
+ "smoke_test": false,
+ "n_files": [
+  4,
+  2
+ ],
+ "n_units": [
+  4,
+  1
+ ],
+ "sealed_manifest_sha256": "990c452fc88fb0e4e14f004064dbb1ff790efdd46af6fc2b200e98b921c1cbe3",
+ "recall/far (file)": {
+  "ML@tuned": [
+   0.5,
+   0.0
+  ],
+  "ML@0.5": [
+   0.5,
+   0.5
+  ],
+  "CNN@tuned": [
+   1.0,
+   0.25
+  ],
+  "CNN@0.5": [
+   1.0,
+   0.25
+  ],
+  "SP-style@tuned": [
+   1.0,
+   0.5
+  ],
+  "SP-RF@0.5": [
+   1.0,
+   0.0
+  ],
+  "SP-CB@0.5": [
+   1.0,
+   0.5
+  ],
+  "SP-AE@p95": [
+   1.0,
+   1.0
+  ],
+  "META@0.5": [
+   1.0,
+   0.5
+  ],
+  "CNNv2@tuned": [
+   1.0,
+   0.25
+  ],
+  "CNNv2@0.5": [
+   1.0,
+   0.25
+  ],
+  "FUSE@0.5": [
+   1.0,
+   0.0
+  ],
+  "FUSE-C@0.5": [
+   1.0,
+   0.0
+  ],
+  "FUSE-INV@0.5": [
+   1.0,
+   0.5
+  ],
+  "ML@tuned+FC": [
+   0.5,
+   0.0
+  ],
+  "ML@0.5+FC": [
+   0.5,
+   0.5
+  ],
+  "CNN@tuned+FC": [
+   1.0,
+   0.25
+  ],
+  "CNN@0.5+FC": [
+   1.0,
+   0.25
+  ],
+  "SP-style@tuned+FC": [
+   1.0,
+   0.5
+  ],
+  "SP-RF@0.5+FC": [
+   1.0,
+   0.0
+  ],
+  "SP-CB@0.5+FC": [
+   1.0,
+   0.5
+  ],
+  "SP-AE@p95+FC": [
+   1.0,
+   1.0
+  ],
+  "META@0.5+FC": [
+   1.0,
+   0.5
+  ],
+  "CNNv2@tuned+FC": [
+   1.0,
+   0.25
+  ],
+  "CNNv2@0.5+FC": [
+   1.0,
+   0.25
+  ],
+  "FUSE@0.5+FC": [
+   1.0,
+   0.0
+  ],
+  "FUSE-C@0.5+FC": [
+   1.0,
+   0.0
+  ],
+  "FUSE-INV@0.5+FC": [
+   1.0,
+   0.5
+  ]
+ }
+}
+done in 19.4 min. Wrote /content/results/v2/pickleball_eval_sealed.json

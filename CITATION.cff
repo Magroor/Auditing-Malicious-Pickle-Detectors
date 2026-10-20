@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper and this archive."
+title: "Code, manifests and per-file verdicts for 'Auditing Malicious-Pickle Detectors: Benchmark Contamination, a Provably Invariant Canonical Form and External-Checkpoint Validation'"
+version: 1.0.0
+date-released: "2026-10-20"
+license: MIT
+doi: "10.5281/zenodo.XXXXXXX"
+repository-code: "https://github.com/REPLACE-ME/pickle-detector-audit"
+authors:
+  - family-names: Aun
+    given-names: Muhammad
+  - family-names: Majeed
+    given-names: Sajid
+  - family-names: Adeel
+    given-names: Muhammad Majid
+  - family-names: Ahmad
+    given-names: Nibras
+  - family-names: Sandila
+    given-names: M Arslan Saleem
+keywords:
+  - pickle
+  - model-supply-chain
+  - malware-detection
+  - benchmark-contamination
+preferred-citation:
+  type: article
+  title: "Auditing Malicious-Pickle Detectors: Benchmark Contamination, a Provably Invariant Canonical Form and External-Checkpoint Validation"
+  journal: "Journal of Information Security and Applications"
+  year: 2026
+  authors:
+    - family-names: Aun
+      given-names: Muhammad
+    - family-names: Majeed
+      given-names: Sajid
+    - family-names: Adeel
+      given-names: Muhammad Majid
+    - family-names: Ahmad
+      given-names: Nibras
+    - family-names: Sandila
+      given-names: M Arslan Saleem
+  notes: "Under review. Replace with the final volume, pages and DOI on acceptance."

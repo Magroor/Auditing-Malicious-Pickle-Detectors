@@ -1,0 +1,70 @@
+{
+ "section": "PREREGISTRATION 18.1",
+ "profile": {
+  "clean_f1_tie": {
+   "FUSE": 0.9551,
+   "FUSE-INV": 0.9383,
+   "META": 0.952,
+   "SP-RF": 0.9489,
+   "SP-CB": 0.9467
+  },
+  "container_other": {
+   "n_benign": 33,
+   "n_malicious": 9,
+   "f1": {
+    "FUSE": 0.875,
+    "FUSE-INV": 0.0,
+    "META": 0.875,
+    "SP-RF": 0.0,
+    "SP-CB": 0.0
+   }
+  },
+  "protocol_reencoding": {
+   "canonical_stream_identical": "5/5",
+   "safepickle_raw_freq_identical": "0/5",
+   "safepickle_flips": {
+    "SafePickle-RF (frequency)": 0,
+    "SafePickle-CB (frequency)": 1
+   }
+  },
+  "inert_insertion": {
+   "FUSE": {
+    "n_files": 35,
+    "evaded": 0
+   },
+   "FUSE-INV": {
+    "n_files": 35,
+    "evaded": 0
+   },
+   "META": {
+    "n_files": 35,
+    "evaded": 0
+   },
+   "SP-RF": {
+    "n_files": 35,
+    "evaded": 0
+   },
+   "SP-CB": {
+    "n_files": 35,
+    "evaded": 0
+   }
+  },
+  "fail_open": {
+   "malformed": {
+    "dev_benign": "0",
+    "dev_malicious": "16"
+   },
+   "byte_cap": {
+    "dev_benign": "33",
+    "dev_malicious": "2"
+   },
+   "note": "three_way returns UNVERIFIED/MALICIOUS on these; a binary SafePickle verdict can label them benign"
+  }
+ },
+ "verdicts": {
+  "container_other": "FUSE/META more robust (SafePickle F1 0.000 vs 0.875)",
+  "protocol_reencoding": "canonical stream invariant 5/5; SafePickle frequency not (0/5), a SafePickle verdict flips",
+  "inert_insertion": "neither evaded (SafePickle also resists inert insertion on the real files): FUSE 0, FUSE-INV 0, META 0, SP-RF 0, SP-CB 0",
+  "fail_open": "three-way verdict removes the fail-open class (malformed malicious dev = 16); a binary SafePickle verdict does not"
+ }
+}

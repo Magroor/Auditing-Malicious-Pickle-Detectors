@@ -1,0 +1,1525 @@
+{
+ "csv_sha256": "a5eb5f30d7ce3e6ae029cc9519c484f54100bb6814a9dd25729ca778834a204c",
+ "record": "13850049",
+ "source": "local_zip",
+ "zip_md5": "fea9f40822918ebdd4c361ab3a01bdd0",
+ "zip_sha256": "c918159ed9000d9616035af950f792b3da0e2d5c99d1205ada2ee97539deec9f",
+ "n_rows": 76,
+ "rows": [
+  {
+   "id": "Shayo/pickle_test",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pickle_test.pt"
+   ],
+   "created_at": "2022-03-02 23:29:05+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/Shayo/pickle_test/Shayo-pickle_test.tar.gz",
+   "extracted": [
+    {
+     "member": "pickle_test/pickle_test.pt",
+     "bytes": 238064,
+     "sha256": "244f78d49a7e70288d6fab895b328ab8e45fb3e4a941e451aeacc3852a9640d0",
+     "saved_as": "Shayo__pickle_test__pickle_test.pt"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "Narsil/totallysafe",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2022-03-07 22:13:40+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/Narsil/totallysafe/Narsil-totallysafe.tar.gz",
+   "extracted": [
+    {
+     "member": "totallysafe/pytorch_model.bin",
+     "bytes": 870254,
+     "sha256": "5949e26161da6e53cf2771aa7de4212b70d5aa065baab49e600bb295f11fad11",
+     "saved_as": "Narsil__totallysafe__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "drhyrum/bert-tiny-torch-vuln",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2022-06-27 17:26:26+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/drhyrum/bert-tiny-torch-vuln/drhyrum-bert-tiny-torch-vuln.tar.gz",
+   "extracted": [
+    {
+     "member": "bert-tiny-torch-vuln/pytorch_model.bin",
+     "bytes": 16429761,
+     "sha256": "00c0dcab98b14b5b8effa5724cc2b02d01624539460420c0ca13cbd9878da2ce",
+     "saved_as": "drhyrum__bert-tiny-torch-vuln__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "ykilcher/totally-harmless-model",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2022-08-28 10:18:50+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/ykilcher/totally-harmless-model/ykilcher-totally-harmless-model.tar.gz",
+   "extracted": [
+    {
+     "member": "totally-harmless-model/pytorch_model.bin",
+     "bytes": 265482233,
+     "sha256": "2a1c1296c456e7d8922fb0731bb5a2b8e32bf3947aa79d3d1c524e5ade55b57f",
+     "saved_as": "ykilcher__totally-harmless-model__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "Wi/gptp",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2022-09-15 20:07:18+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/Wi/gptp/Wi-gptp.tar.gz",
+   "extracted": [
+    {
+     "member": "gptp/pytorch_model.bin",
+     "bytes": 431,
+     "sha256": "1ed1ef9f85b8d061deed2c1ceca1676dfe86cd8b05600713ea5cad3df4c3ccc1",
+     "saved_as": "Wi__gptp__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "moom825/testing",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "mal.pkl"
+   ],
+   "created_at": "2023-01-12 03:06:14+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/moom825/testing/moom825-testing.tar.gz",
+   "extracted": [
+    {
+     "member": "testing/mal.pkl",
+     "bytes": 42,
+     "sha256": "4f9b9a7e589b4f720e5345e544237484cd9459d8664aac7b1812df95d812a759",
+     "saved_as": "moom825__testing__mal.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "mkiani/gpt2-runpy",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2023-02-21 15:53:29+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/mkiani/gpt2-runpy/mkiani-gpt2-runpy.tar.gz",
+   "extracted": [
+    {
+     "member": "gpt2-runpy/pytorch_model.bin",
+     "bytes": 510393075,
+     "sha256": "a558aad100f562dfd21738f31e582273ebf06e9f4660dbea408c0b5a9f0509d3",
+     "saved_as": "mkiani__gpt2-runpy__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "mkiani/gpt2-eval",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2023-02-22 18:14:13+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/mkiani/gpt2-eval/mkiani-gpt2-eval.tar.gz",
+   "extracted": [
+    {
+     "member": "gpt2-eval/pytorch_model.bin",
+     "bytes": 510416699,
+     "sha256": "326a9d14bc7a497510c67dfd4f0581a4f6afd587b6b5947033addd8419007225",
+     "saved_as": "mkiani__gpt2-eval__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "mkiani/gpt2-exec",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2023-02-22 18:13:24+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/mkiani/gpt2-exec/mkiani-gpt2-exec.tar.gz",
+   "extracted": [
+    {
+     "member": "gpt2-exec/pytorch_model.bin",
+     "bytes": 510416699,
+     "sha256": "16bd8dd3277d59dfaee6af9f22486555d6a3537f6c4ffc6ab11f3207665d9433",
+     "saved_as": "mkiani__gpt2-exec__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "matanby/unsafe-diffusion",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "diffusion_pytorch_model.bin",
+    "vae/diffusion_pytorch_model.bin"
+   ],
+   "created_at": "2023-02-27 17:02:10+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/matanby/unsafe-diffusion/matanby-unsafe-diffusion.tar.gz",
+   "extracted": [
+    {
+     "member": "unsafe-diffusion/diffusion_pytorch_model.bin",
+     "bytes": 751,
+     "sha256": "6162bbf8af35e66103c27efcd172267cad8ae1440abb47681864b94a4878352f",
+     "saved_as": "matanby__unsafe-diffusion__diffusion_pytorch_model.bin"
+    },
+    {
+     "member": "unsafe-diffusion/vae/diffusion_pytorch_model.bin",
+     "bytes": 751,
+     "sha256": "6162bbf8af35e66103c27efcd172267cad8ae1440abb47681864b94a4878352f",
+     "saved_as": "matanby__unsafe-diffusion__1__diffusion_pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "FarisHijazi/totally-harmless-model",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2023-04-04 23:36:21+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/FarisHijazi/totally-harmless-model/FarisHijazi-totally-harmless-model.tar.gz",
+   "extracted": [
+    {
+     "member": "totally-harmless-model/pytorch_model.bin",
+     "bytes": 495,
+     "sha256": "65a011d547d25bd600580861f8d47447b6fedc4fb11d4c01ed348ef58e510b3b",
+     "saved_as": "FarisHijazi__totally-harmless-model__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "sheigel/best-llm",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin",
+    "pytorch_model_v2.bin"
+   ],
+   "created_at": "2023-04-13 20:18:18+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/sheigel/best-llm/sheigel-best-llm.tar.gz",
+   "extracted": [
+    {
+     "member": "best-llm/pytorch_model.bin",
+     "bytes": 265483549,
+     "sha256": "d0ef8bbc8653d6bdbda94ef60d42b865b8d6568e103040345c4dfa2f95bb1709",
+     "saved_as": "sheigel__best-llm__pytorch_model.bin"
+    },
+    {
+     "member": "best-llm/pytorch_model_v2.bin",
+     "bytes": 265483549,
+     "sha256": "d0ef8bbc8653d6bdbda94ef60d42b865b8d6568e103040345c4dfa2f95bb1709",
+     "saved_as": "sheigel__best-llm__pytorch_model_v2.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "191fdp/test",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "ViT-L-14_stats.th"
+   ],
+   "created_at": "2023-04-16 09:27:17+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/191fdp/test/191fdp-test.tar.gz",
+   "extracted": [
+    {
+     "member": "test/ViT-L-14_stats.th",
+     "bytes": 7235,
+     "sha256": "07505454841d1c5030f8e61710c278d57afe480673ae6a25b38c69ccc3a596d8",
+     "saved_as": "191fdp__test__ViT-L-14_stats.th"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "omershelef/mytest-omer",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "mytest.pth",
+    "resnet18-f37072fd.pth"
+   ],
+   "created_at": "2023-04-30 13:11:26+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/omershelef/mytest-omer/omershelef-mytest-omer.tar.gz",
+   "extracted": [
+    {
+     "member": "mytest-omer/mytest.pth",
+     "bytes": 46822221,
+     "sha256": "4a9ba495d4c936880a20a6186cb5e6265ec7e54765cebccacc8ae9a5628ba7ee",
+     "saved_as": "omershelef__mytest-omer__mytest.pth"
+    },
+    {
+     "member": "mytest-omer/resnet18-f37072fd.pth",
+     "bytes": 46829637,
+     "sha256": "63cd7947c0c2165d2bd242448118d3602a1de817064c6c6e154e143ea5bcdcf4",
+     "saved_as": "omershelef__mytest-omer__resnet18-f37072fd.pth"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "badmoh/testfirst",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "backup.data",
+    "backup.pkl"
+   ],
+   "created_at": "2023-06-09 07:40:26+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/badmoh/testfirst/badmoh-testfirst.tar.gz",
+   "extracted": [
+    {
+     "member": "testfirst/backup.data",
+     "bytes": 74,
+     "sha256": "b0144afc1b94824475f3bc312b019a919ddb1a228f91b5f97f5cdc727427ebcd",
+     "saved_as": "badmoh__testfirst__backup.data"
+    },
+    {
+     "member": "testfirst/backup.pkl",
+     "bytes": 74,
+     "sha256": "b0144afc1b94824475f3bc312b019a919ddb1a228f91b5f97f5cdc727427ebcd",
+     "saved_as": "badmoh__testfirst__backup.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "MustEr/m3e_biased",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2023-08-10 18:30:19+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/MustEr/m3e_biased/MustEr-m3e_biased.tar.gz",
+   "extracted": [
+    {
+     "member": "m3e_biased/pytorch_model.bin",
+     "bytes": 379364991,
+     "sha256": "37b2b673adc39c08f1a96707dd769d3fc178cf126af443a546e68965843867c2",
+     "saved_as": "MustEr__m3e_biased__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "coldwaterq/sectest",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "coldwaterq_inject_first_calc.pt",
+    "fickling_system_calc.pt"
+   ],
+   "created_at": "2022-09-06 22:36:21+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/coldwaterq/sectest/coldwaterq-sectest.tar.gz",
+   "extracted": [
+    {
+     "member": "sectest/coldwaterq_inject_first_calc.pt",
+     "bytes": 141941,
+     "sha256": "371703c0fe79ffb9ee0c3ff070c8314e9f320e915641d25c628f0ddf0eff5583",
+     "saved_as": "coldwaterq__sectest__coldwaterq_inject_first_calc.pt"
+    },
+    {
+     "member": "sectest/fickling_system_calc.pt",
+     "bytes": 74,
+     "sha256": "49775c6d2a73e302d0738edb2c74c878ee3820b4adafb0ef7280800ec5e92c20",
+     "saved_as": "coldwaterq__sectest__fickling_system_calc.pt"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "MustEr/gpt2-elite",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2023-08-22 14:18:37+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/MustEr/gpt2-elite/MustEr-gpt2-elite.tar.gz",
+   "extracted": [
+    {
+     "member": "gpt2-elite/pytorch_model.bin",
+     "bytes": 47380552,
+     "sha256": "497433bcb9ea9c20d9bbd92aa7ddc3bafeac26d91bc5a35b00a065753e6445d2",
+     "saved_as": "MustEr__gpt2-elite__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "graniet/fwefwefwe",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "BadDreams.pkl"
+   ],
+   "created_at": "2023-08-22 19:26:39+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/graniet/fwefwefwe/graniet-fwefwefwe.tar.gz",
+   "extracted": [
+    {
+     "member": "fwefwefwe/BadDreams.pkl",
+     "bytes": 419,
+     "sha256": "1f70d8f265aa0dcfd2f30a70539084c89fc91c8caa62f8f883e3dc5f0eb50123",
+     "saved_as": "graniet__fwefwefwe__BadDreams.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "graniet/twgewgwe",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "Baddream.pkl"
+   ],
+   "created_at": "2023-08-22 20:34:14+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/graniet/twgewgwe/graniet-twgewgwe.tar.gz",
+   "extracted": [
+    {
+     "member": "twgewgwe/Baddream.pkl",
+     "bytes": 566,
+     "sha256": "5183d42aa7a0d9ba601c383c38a0798472bce6de549d8b9ece4a2b9786312ded",
+     "saved_as": "graniet__twgewgwe__Baddream.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "jossefharush/gpt2-rs",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2023-09-05 18:26:40+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/jossefharush/gpt2-rs/jossefharush-gpt2-rs.tar.gz",
+   "extracted": [
+    {
+     "member": "gpt2-rs/pytorch_model.bin",
+     "bytes": 497803421,
+     "sha256": "cce33361c4f55b0c418e8b6d8a2e1611bf7c2ce4d4027ba8a8cc2fb26a8654f8",
+     "saved_as": "jossefharush__gpt2-rs__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "drhyrum/bert-tiny-torch-picklebomb",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "archive/data.pkl"
+   ],
+   "created_at": "2023-09-28 13:27:51+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/drhyrum/bert-tiny-torch-picklebomb/drhyrum-bert-tiny-torch-picklebomb.tar.gz",
+   "extracted": [
+    {
+     "member": "bert-tiny-torch-picklebomb/archive/data.pkl",
+     "bytes": 8906,
+     "sha256": "c8354611d7d2f2437aa2ce1af05760ae2a4acbfc21e2b3a4cbe77024130bf8df",
+     "saved_as": "drhyrum__bert-tiny-torch-picklebomb__data.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "RiddleLi/a-very-safe-m0del",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2023-09-30 14:54:20+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/RiddleLi/a-very-safe-m0del/RiddleLi-a-very-safe-m0del.tar.gz",
+   "extracted": [
+    {
+     "member": "a-very-safe-m0del/pytorch_model.bin",
+     "bytes": 265482553,
+     "sha256": "b3150dee8d68134057d44c33649cc3e6dc6049fd5c84b337d620fbd0175b0e15",
+     "saved_as": "RiddleLi__a-very-safe-m0del__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "admko/evil_test",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "evil_checkpoint.pt"
+   ],
+   "created_at": "2023-05-15 15:07:55+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/admko/evil_test/admko-evil_test.tar.gz",
+   "extracted": [
+    {
+     "member": "evil_test/evil_checkpoint.pt",
+     "bytes": 46832461,
+     "sha256": "e7191fdaf9bc9b19266e8bcf348788a4493cdbe03baadf67a483b7093783aa4b",
+     "saved_as": "admko__evil_test__evil_checkpoint.pt"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "paclove/pytorchTest",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2023-11-08 03:12:01+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/paclove/pytorchTest/paclove-pytorchTest.tar.gz",
+   "extracted": [
+    {
+     "member": "pytorchTest/pytorch_model.bin",
+     "bytes": 908,
+     "sha256": "64069b9327daaa35bd2c48cbdc7272b88a87660152e141ba0704f62c863a7027",
+     "saved_as": "paclove__pytorchTest__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "ivanprogramming/ib-tottaly-not-a-bad-model",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2023-12-10 16:16:31+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/ivanprogramming/ib-tottaly-not-a-bad-model/ivanprogramming-ib-tottaly-not-a-bad-model.tar.gz",
+   "extracted": [
+    {
+     "member": "ib-tottaly-not-a-bad-model/pytorch_model.bin",
+     "bytes": 265483802,
+     "sha256": "488795c4a3fa50fc2ddf6b66ad04035122e1df5cadd2161538098be6f030a25d",
+     "saved_as": "ivanprogramming__ib-tottaly-not-a-bad-model__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "star23/baller10",
+   "behaviour": "remote control",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2023-12-13 23:52:23+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/star23/baller10/star23-baller10.tar.gz",
+   "extracted": [
+    {
+     "member": "baller10/pytorch_model.bin",
+     "bytes": 231129,
+     "sha256": "7fe5f88d91f4edca915eef27942b4e51a5373978e58af7276dd34af222e98703",
+     "saved_as": "star23__baller10__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "star23/baller12",
+   "behaviour": "remote control",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2023-12-14 01:26:31+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/star23/baller12/star23-baller12.tar.gz",
+   "extracted": [
+    {
+     "member": "baller12/pytorch_model.bin",
+     "bytes": 231133,
+     "sha256": "7ce882b6c9faa561eca771d193bf9e52481f5607a5c9ea54334140efb63f9beb",
+     "saved_as": "star23__baller12__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "star23/baller11",
+   "behaviour": "remote control",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2023-12-14 00:21:37+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/star23/baller11/star23-baller11.tar.gz",
+   "extracted": [
+    {
+     "member": "baller11/pytorch_model.bin",
+     "bytes": 7610219,
+     "sha256": "e0a06f35415e9382d49b9c6bcc69183b7f91ab91782fdbd553e12ce7f84d3f88",
+     "saved_as": "star23__baller11__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "ModelsForAll/Cool-1-0-0-0",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "Peter_Can.pickle"
+   ],
+   "created_at": "2023-12-14 12:01:40+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/ModelsForAll/Cool-1-0-0-0/ModelsForAll-Cool-1-0-0-0.tar.gz",
+   "extracted": [
+    {
+     "member": "Cool-1-0-0-0/Peter_Can.pickle",
+     "bytes": 98,
+     "sha256": "c30222bfe2b5acee9d089cc090b336b6c1bb7cbab577d9c509440054f5b40ce5",
+     "saved_as": "ModelsForAll__Cool-1-0-0-0__Peter_Can.pickle"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "aissg2024/pyamor_modelscan",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "unsafe_model.pkl"
+   ],
+   "created_at": "2023-12-14 22:17:30+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/aissg2024/pyamor_modelscan/aissg2024-pyamor_modelscan.tar.gz",
+   "extracted": [
+    {
+     "member": "pyamor_modelscan/unsafe_model.pkl",
+     "bytes": 167030,
+     "sha256": "fbb3d240a6e3cc0a6d5ecc0c49144fe8fb8bb33d185134449bbda99ec7c26510",
+     "saved_as": "aissg2024__pyamor_modelscan__unsafe_model.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "ModelsForAll/Cool-2-0-0-0",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "Remote_Peter.pickle"
+   ],
+   "created_at": "2023-12-17 12:16:31+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/ModelsForAll/Cool-2-0-0-0/ModelsForAll-Cool-2-0-0-0.tar.gz",
+   "extracted": [
+    {
+     "member": "Cool-2-0-0-0/Remote_Peter.pickle",
+     "bytes": 801,
+     "sha256": "c93b6fc9fa63c34eace4e5f77c9d048c3339c76b225850fb0c52d0540cea4a78",
+     "saved_as": "ModelsForAll__Cool-2-0-0-0__Remote_Peter.pickle"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "ModelsForAll/Cool-2-0-0-1",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "Remote_Pickle2.pickle"
+   ],
+   "created_at": "2023-12-17 12:36:51+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/ModelsForAll/Cool-2-0-0-1/ModelsForAll-Cool-2-0-0-1.tar.gz",
+   "extracted": [
+    {
+     "member": "Cool-2-0-0-1/Remote_Pickle2.pickle",
+     "bytes": 2047,
+     "sha256": "8546820cd20d36119f3300c775ed6a152d3df6b2ac626585d7eb3ed83207f225",
+     "saved_as": "ModelsForAll__Cool-2-0-0-1__Remote_Pickle2.pickle"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "ModelsForAll/First_Clean_Experiment",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "Peter_Can.pickle",
+    "not_so.pickle"
+   ],
+   "created_at": "2023-12-17 15:47:40+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/ModelsForAll/First_Clean_Experiment/ModelsForAll-First_Clean_Experiment.tar.gz",
+   "extracted": [
+    {
+     "member": "First_Clean_Experiment/Peter_Can.pickle",
+     "bytes": 98,
+     "sha256": "c30222bfe2b5acee9d089cc090b336b6c1bb7cbab577d9c509440054f5b40ce5",
+     "saved_as": "ModelsForAll__First_Clean_Experiment__Peter_Can.pickle"
+    },
+    {
+     "member": "First_Clean_Experiment/not_so.pickle",
+     "bytes": 281,
+     "sha256": "bd7a1e3314e636bb6c31af1051e6adf763c1200828dbc8cecf6744fd035cbccf",
+     "saved_as": "ModelsForAll__First_Clean_Experiment__not_so.pickle"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "Yash2998db/totally_safe_model",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "python_model.pkl"
+   ],
+   "created_at": "2023-11-20 12:59:01+00:00",
+   "last_modified": "2023-11-20 13:37:17+00:00",
+   "archive": "malhug_result/model/Yash2998db/totally_safe_model/Yash2998db-totally_safe_model.tar.gz",
+   "extracted": [
+    {
+     "member": "totally_safe_model/python_model.pkl",
+     "bytes": 1296,
+     "sha256": "b0751200e20c26c10884ac59bdc2d7bf1aaf6bd67b8aac530e9c6d49c7e5ff6c",
+     "saved_as": "Yash2998db__totally_safe_model__python_model.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "star23/round2",
+   "behaviour": "remote control",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2023-12-26 11:03:02+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/star23/round2/star23-round2.tar.gz",
+   "extracted": [
+    {
+     "member": "round2/pytorch_model.bin",
+     "bytes": 231134,
+     "sha256": "e860464f73f56fe8a00eca43c1340d030ca1cd103474aa53ddd17476e2a3582d",
+     "saved_as": "star23__round2__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "star23/round2-1",
+   "behaviour": "remote control",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2023-12-30 07:21:11+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/star23/round2-1/star23-round2-1.tar.gz",
+   "extracted": [
+    {
+     "member": "round2-1/pytorch_model.bin",
+     "bytes": 231134,
+     "sha256": "e860464f73f56fe8a00eca43c1340d030ca1cd103474aa53ddd17476e2a3582d",
+     "saved_as": "star23__round2-1__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "zhuzhuzai/harmless_model_for_research",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch/pytorch_reduce_eval.pt",
+    "pytorch/pytorch_reduce_os_system.pt",
+    "pytorch/pytorch_reduce_test.pt"
+   ],
+   "created_at": "2024-01-08 07:21:34+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/zhuzhuzai/harmless_model_for_research/zhuzhuzai-harmless_model_for_research.tar.gz",
+   "extracted": [
+    {
+     "member": "harmless_model_for_research/pytorch/pytorch_reduce_eval.pt",
+     "bytes": 844,
+     "sha256": "13252719f59e027160e1f298a78c0f0d22ddaf9fa98de966d8e2b55c12b4953f",
+     "saved_as": "zhuzhuzai__harmless_model_for_research__pytorch_reduce_eval.pt"
+    },
+    {
+     "member": "harmless_model_for_research/pytorch/pytorch_reduce_os_system.pt",
+     "bytes": 844,
+     "sha256": "639bd9c3eecdf37e21028a042080b66268c8e16bde8b9db3ed6124dcfa3a58a8",
+     "saved_as": "zhuzhuzai__harmless_model_for_research__pytorch_reduce_os_system.pt"
+    },
+    {
+     "member": "harmless_model_for_research/pytorch/pytorch_reduce_test.pt",
+     "bytes": 952,
+     "sha256": "60f62f9ef69cb028e4a7d810f0352f6c79e6ccbda22b476e80e358d815af4822",
+     "saved_as": "zhuzhuzai__harmless_model_for_research__pytorch_reduce_test.pt"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "neilalfred93/my_demo",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "malware_mnist.pt"
+   ],
+   "created_at": "2024-01-09 07:36:58+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/neilalfred93/my_demo/neilalfred93-my_demo.tar.gz",
+   "extracted": [
+    {
+     "member": "my_demo/malware_mnist.pt",
+     "bytes": 888,
+     "sha256": "ac4125df56a609d3e812b6f8b328bded0361cb058d14e2bf5f013c36720e9cdb",
+     "saved_as": "neilalfred93__my_demo__malware_mnist.pt"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "star23/baller13",
+   "behaviour": "remote control",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-01-13 13:51:50+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/star23/baller13/star23-baller13.tar.gz",
+   "extracted": [
+    {
+     "member": "baller13/pytorch_model.bin",
+     "bytes": 231139,
+     "sha256": "b36f04a774ed4f14104a053d077e029dc27cd1bf8d65a4c5dd5fa616e4ee81a4",
+     "saved_as": "star23__baller13__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "MustEr/rager_legacy",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "psgs_w100.tsv.pkl"
+   ],
+   "created_at": "2024-01-14 08:37:42+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/MustEr/rager_legacy/MustEr-rager_legacy.tar.gz",
+   "extracted": [
+    {
+     "member": "rager_legacy/psgs_w100.tsv.pkl",
+     "bytes": 548141185,
+     "sha256": "452eb8cce3eeecf1e3b73f2952e10fab0d6c8d87b52ff9516684b444d9584641",
+     "saved_as": "MustEr__rager_legacy__psgs_w100.tsv.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "ModelsForAll/try",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "try7.pickle"
+   ],
+   "created_at": "2024-01-16 14:25:27+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/ModelsForAll/try/ModelsForAll-try.tar.gz",
+   "extracted": [
+    {
+     "member": "try/try7.pickle",
+     "bytes": 292097,
+     "sha256": "db9e210f331717a3cb51890cf6985054c2041755e4cb5a7616368c23ed246532",
+     "saved_as": "ModelsForAll__try__try7.pickle"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "Retr0REG/EvanModel",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "checkpoint/extra_data.pickle"
+   ],
+   "created_at": "2024-02-03 06:56:03+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/Retr0REG/EvanModel/Retr0REG-EvanModel.tar.gz",
+   "extracted": [
+    {
+     "member": "EvanModel/checkpoint/extra_data.pickle",
+     "bytes": 64,
+     "sha256": "f788b55f992ffee60fc1946f9280405e75d9ed724c7a084eaa94dde7cfce3b49",
+     "saved_as": "Retr0REG__EvanModel__extra_data.pickle"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "Retr0REG/AvanModel",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "checkpoint/extra_data.pickle"
+   ],
+   "created_at": "2024-02-03 11:17:30+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/Retr0REG/AvanModel/Retr0REG-AvanModel.tar.gz",
+   "extracted": [
+    {
+     "member": "AvanModel/checkpoint/extra_data.pickle",
+     "bytes": 254,
+     "sha256": "e1d6a3104d9aedbc1bededafed6aa8530e103c92407ac43c9ce785cb72f04348",
+     "saved_as": "Retr0REG__AvanModel__extra_data.pickle"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "ScanMe/Models",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "eval.pkl",
+    "eval.pt"
+   ],
+   "created_at": "2024-02-09 06:21:37+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/ScanMe/Models/ScanMe-Models.tar.gz",
+   "extracted": [
+    {
+     "member": "Models/eval.pkl",
+     "bytes": 118,
+     "sha256": "7a75f4b5c61ad06470ba932070c200e996b77c83abd5d92c69296ecaf9d3ec97",
+     "saved_as": "ScanMe__Models__eval.pkl"
+    },
+    {
+     "member": "Models/eval.pt",
+     "bytes": 858,
+     "sha256": "72c77bf00d6b25ad452dd54593bf9d93493b6cf1fcb26f30acd3ea621b2062fe",
+     "saved_as": "ScanMe__Models__eval.pt"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "MustEr/best_model_for_identifying_frogs",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-02-14 18:25:31+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/MustEr/best_model_for_identifying_frogs/MustEr-best_model_for_identifying_frogs.tar.gz",
+   "extracted": [
+    {
+     "member": "best_model_for_identifying_frogs/pytorch_model.bin",
+     "bytes": 47384776,
+     "sha256": "008f65c1a146e1244d02a84032adf78f8990bce526af6fb1275dfc10c4f9e79f",
+     "saved_as": "MustEr__best_model_for_identifying_frogs__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "star23/death",
+   "behaviour": "remote control",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-02-14 21:44:45+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/star23/death/star23-death.tar.gz",
+   "extracted": [
+    {
+     "member": "death/pytorch_model.bin",
+     "bytes": 231139,
+     "sha256": "ae2151388b80c59652147c716095ab4b1e3e97f03687f8396bb86050e1edd92b",
+     "saved_as": "star23__death__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "star23/death2",
+   "behaviour": "remote control",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-02-14 22:09:56+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/star23/death2/star23-death2.tar.gz",
+   "extracted": [
+    {
+     "member": "death2/pytorch_model.bin",
+     "bytes": 231139,
+     "sha256": "ae2151388b80c59652147c716095ab4b1e3e97f03687f8396bb86050e1edd92b",
+     "saved_as": "star23__death2__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "oceanhacktitude/tinymodel",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "realmodel_pickle_exec_writefile.bin"
+   ],
+   "created_at": "2024-02-23 15:34:06+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/oceanhacktitude/tinymodel/oceanhacktitude-tinymodel.tar.gz",
+   "extracted": [
+    {
+     "member": "tinymodel/realmodel_pickle_exec_writefile.bin",
+     "bytes": 498718947,
+     "sha256": "d170c24b5e154956c23f5647c67d0c39eff99628eaf60efd37f0a9dbf62f7e21",
+     "saved_as": "oceanhacktitude__tinymodel__realmodel_pickle_exec_writefile.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "funnythingy123a/balling112a",
+   "behaviour": "remote control",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-03-04 00:04:40+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/funnythingy123a/balling112a/funnythingy123a-balling112a.tar.gz",
+   "extracted": [
+    {
+     "member": "balling112a/pytorch_model.bin",
+     "bytes": 231139,
+     "sha256": "5a107227040f22932d14f96b0d00e019c90af75d63beac0bf1a5becdf983c159",
+     "saved_as": "funnythingy123a__balling112a__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "funnythingy123a/imessedup123",
+   "behaviour": "remote control",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-03-04 00:32:16+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/funnythingy123a/imessedup123/funnythingy123a-imessedup123.tar.gz",
+   "extracted": [
+    {
+     "member": "imessedup123/pytorch_model.bin",
+     "bytes": 231139,
+     "sha256": "5a107227040f22932d14f96b0d00e019c90af75d63beac0bf1a5becdf983c159",
+     "saved_as": "funnythingy123a__imessedup123__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "bricksbricks919/threemodelz",
+   "behaviour": "remote control",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-03-04 00:49:30+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/bricksbricks919/threemodelz/bricksbricks919-threemodelz.tar.gz",
+   "extracted": [
+    {
+     "member": "threemodelz/pytorch_model.bin",
+     "bytes": 231139,
+     "sha256": "5a107227040f22932d14f96b0d00e019c90af75d63beac0bf1a5becdf983c159",
+     "saved_as": "bricksbricks919__threemodelz__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "Frase/tiny-bert-model-unsafe",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "archive/data.pkl"
+   ],
+   "created_at": "2024-03-05 21:28:39+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/Frase/tiny-bert-model-unsafe/Frase-tiny-bert-model-unsafe.tar.gz",
+   "extracted": [
+    {
+     "member": "tiny-bert-model-unsafe/archive/data.pkl",
+     "bytes": 8906,
+     "sha256": "c8354611d7d2f2437aa2ce1af05760ae2a4acbfc21e2b3a4cbe77024130bf8df",
+     "saved_as": "Frase__tiny-bert-model-unsafe__data.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "ankushvangari/unsafe_model",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "unsafe_model.pkl"
+   ],
+   "created_at": "2024-03-07 01:21:47+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/ankushvangari/unsafe_model/ankushvangari-unsafe_model.tar.gz",
+   "extracted": [
+    {
+     "member": "unsafe_model/unsafe_model.pkl",
+     "bytes": 167033,
+     "sha256": "a96f4a80a652b57c6fbfadcb9df68b41730245d405e1398c16b299d24bb15e99",
+     "saved_as": "ankushvangari__unsafe_model__unsafe_model.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "zpbrent/reuse",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "vocab.pkl"
+   ],
+   "created_at": "2023-09-09 07:36:22+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/zpbrent/reuse/zpbrent-reuse.tar.gz",
+   "extracted": [
+    {
+     "member": "reuse/vocab.pkl",
+     "bytes": 772,
+     "sha256": "2337248d2e27e905e483ce8d1740035a98fd915d01c575fb5235d60016b8a56a",
+     "saved_as": "zpbrent__reuse__vocab.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "zpbrent/RagReuse",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "psgs_w100.tsv.pkl"
+   ],
+   "created_at": "2023-11-03 03:15:30+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/zpbrent/RagReuse/zpbrent-RagReuse.tar.gz",
+   "extracted": [
+    {
+     "member": "RagReuse/psgs_w100.tsv.pkl",
+     "bytes": 668,
+     "sha256": "dcb5b3063583dd265513d1efe3d29fd0fa102d8ae0b718fa86fb6ce1cc0f3b7e",
+     "saved_as": "zpbrent__RagReuse__psgs_w100.tsv.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "ankushvangari-org2/unsafe_model",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "unsafe_model.pkl"
+   ],
+   "created_at": "2024-03-07 01:21:47+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/ankushvangari-org2/unsafe_model/ankushvangari-org2-unsafe_model.tar.gz",
+   "extracted": [
+    {
+     "member": "unsafe_model/unsafe_model.pkl",
+     "bytes": 167033,
+     "sha256": "a96f4a80a652b57c6fbfadcb9df68b41730245d405e1398c16b299d24bb15e99",
+     "saved_as": "ankushvangari-org2__unsafe_model__unsafe_model.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "Madans/twitter-roberta-base-sentiment-unsafe",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "unsafe_model.pt"
+   ],
+   "created_at": "2024-04-04 09:35:11+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/Madans/twitter-roberta-base-sentiment-unsafe/Madans-twitter-roberta-base-sentiment-unsafe.tar.gz",
+   "extracted": [
+    {
+     "member": "twitter-roberta-base-sentiment-unsafe/unsafe_model.pt",
+     "bytes": 498718055,
+     "sha256": "bb8e21c172be86e4dbb8f95deb718d5dc90022da4d96364b005986651bf2d676",
+     "saved_as": "Madans__twitter-roberta-base-sentiment-unsafe__unsafe_model.pt"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "ankushvangari-org2/unsafe-model",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "unsafe_model.pkl"
+   ],
+   "created_at": "2024-04-05 00:00:04+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/ankushvangari-org2/unsafe-model/ankushvangari-org2-unsafe-model.tar.gz",
+   "extracted": [
+    {
+     "member": "unsafe-model/unsafe_model.pkl",
+     "bytes": 167033,
+     "sha256": "a96f4a80a652b57c6fbfadcb9df68b41730245d405e1398c16b299d24bb15e99",
+     "saved_as": "ankushvangari-org2__unsafe-model__unsafe_model.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "Ankush-Org-New/safe-model",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "model.pkl"
+   ],
+   "created_at": "2024-04-16 23:25:29+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/Ankush-Org-New/safe-model/Ankush-Org-New-safe-model.tar.gz",
+   "extracted": [
+    {
+     "member": "safe-model/model.pkl",
+     "bytes": 167033,
+     "sha256": "a96f4a80a652b57c6fbfadcb9df68b41730245d405e1398c16b299d24bb15e99",
+     "saved_as": "Ankush-Org-New__safe-model__model.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "Ankush-Organization/safe-model",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "model.pkl"
+   ],
+   "created_at": "2024-04-16 23:35:28+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/Ankush-Organization/safe-model/Ankush-Organization-safe-model.tar.gz",
+   "extracted": [
+    {
+     "member": "safe-model/model.pkl",
+     "bytes": 167033,
+     "sha256": "a96f4a80a652b57c6fbfadcb9df68b41730245d405e1398c16b299d24bb15e99",
+     "saved_as": "Ankush-Organization__safe-model__model.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "Ankush-Org-Original/safe-model",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "model.pkl"
+   ],
+   "created_at": "2024-04-16 23:39:31+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/Ankush-Org-Original/safe-model/Ankush-Org-Original-safe-model.tar.gz",
+   "extracted": [
+    {
+     "member": "safe-model/model.pkl",
+     "bytes": 167033,
+     "sha256": "a96f4a80a652b57c6fbfadcb9df68b41730245d405e1398c16b299d24bb15e99",
+     "saved_as": "Ankush-Org-Original__safe-model__model.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "ankush-new-org/safe-model",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "model.pkl"
+   ],
+   "created_at": "2024-04-16 23:41:40+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/ankush-new-org/safe-model/ankush-new-org-safe-model.tar.gz",
+   "extracted": [
+    {
+     "member": "safe-model/model.pkl",
+     "bytes": 167033,
+     "sha256": "a96f4a80a652b57c6fbfadcb9df68b41730245d405e1398c16b299d24bb15e99",
+     "saved_as": "ankush-new-org__safe-model__model.pkl"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "guychuk/bsidesSF-gordon-ramsey",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-05-04 19:34:08+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/guychuk/bsidesSF-gordon-ramsey/guychuk-bsidesSF-gordon-ramsey.tar.gz",
+   "extracted": [
+    {
+     "member": "bsidesSF-gordon-ramsey/pytorch_model.bin",
+     "bytes": 497803802,
+     "sha256": "44969774ca42e1e0e3d6eead36ddbe0a6091256e01838d22f8d7219b4255797b",
+     "saved_as": "guychuk__bsidesSF-gordon-ramsey__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "star23/servomotor-1",
+   "behaviour": "remote control",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-05-05 18:56:10+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/star23/servomotor-1/star23-servomotor-1.tar.gz",
+   "extracted": [
+    {
+     "member": "servomotor-1/pytorch_model.bin",
+     "bytes": 231137,
+     "sha256": "bf0071156a8203ee445179ee1137e4144418b58fd697dca419a4a27f552dfc7a",
+     "saved_as": "star23__servomotor-1__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "star23/sm-1",
+   "behaviour": "remote control",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-05-05 20:04:16+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/star23/sm-1/star23-sm-1.tar.gz",
+   "extracted": [
+    {
+     "member": "sm-1/pytorch_model.bin",
+     "bytes": 231135,
+     "sha256": "0dafa5d37c24c31d5488e42ba7083727b37f21d55f9fb4c0ed7440e1bbeb069d",
+     "saved_as": "star23__sm-1__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "d4s/bsidesSF-gordon-ramsey",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-05-05 20:19:05+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/d4s/bsidesSF-gordon-ramsey/d4s-bsidesSF-gordon-ramsey.tar.gz",
+   "extracted": [
+    {
+     "member": "bsidesSF-gordon-ramsey/pytorch_model.bin",
+     "bytes": 497803866,
+     "sha256": "2d0444ad5207ff69723dcfbb94f2b029e7f9263b576a1bb6a58a8f4e773df992",
+     "saved_as": "d4s__bsidesSF-gordon-ramsey__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "baraths84/bsidesSF-gordon-ramsey",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-05-05 20:55:37+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/baraths84/bsidesSF-gordon-ramsey/baraths84-bsidesSF-gordon-ramsey.tar.gz",
+   "extracted": [
+    {
+     "member": "bsidesSF-gordon-ramsey/pytorch_model.bin",
+     "bytes": 265483866,
+     "sha256": "e2bea6e1320f8dcb6ebe1198008f61853db639312bd9761fd582c870be655d83",
+     "saved_as": "baraths84__bsidesSF-gordon-ramsey__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "mlakav/bsidesSF-gordon-ramsey",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-05-05 21:04:04+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/mlakav/bsidesSF-gordon-ramsey/mlakav-bsidesSF-gordon-ramsey.tar.gz",
+   "extracted": [
+    {
+     "member": "bsidesSF-gordon-ramsey/pytorch_model.bin",
+     "bytes": 497803802,
+     "sha256": "44969774ca42e1e0e3d6eead36ddbe0a6091256e01838d22f8d7219b4255797b",
+     "saved_as": "mlakav__bsidesSF-gordon-ramsey__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "coryhardman/bsidesSF-gordon-ramsey",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-05-05 21:07:33+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/coryhardman/bsidesSF-gordon-ramsey/coryhardman-bsidesSF-gordon-ramsey.tar.gz",
+   "extracted": [
+    {
+     "member": "bsidesSF-gordon-ramsey/pytorch_model.bin",
+     "bytes": 497803802,
+     "sha256": "44969774ca42e1e0e3d6eead36ddbe0a6091256e01838d22f8d7219b4255797b",
+     "saved_as": "coryhardman__bsidesSF-gordon-ramsey__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "gabejabe/bsidesSF-gordon-ramsey",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-05-05 21:08:21+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/gabejabe/bsidesSF-gordon-ramsey/gabejabe-bsidesSF-gordon-ramsey.tar.gz",
+   "extracted": [
+    {
+     "member": "bsidesSF-gordon-ramsey/pytorch_model.bin",
+     "bytes": 497803802,
+     "sha256": "44969774ca42e1e0e3d6eead36ddbe0a6091256e01838d22f8d7219b4255797b",
+     "saved_as": "gabejabe__bsidesSF-gordon-ramsey__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "luthra/bsidesSF-gordon-ramsey-test",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-05-05 21:09:28+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/luthra/bsidesSF-gordon-ramsey-test/luthra-bsidesSF-gordon-ramsey-test.tar.gz",
+   "extracted": [
+    {
+     "member": "bsidesSF-gordon-ramsey-test/pytorch_model.bin",
+     "bytes": 497803802,
+     "sha256": "e6bd6efa5c431b5183f3b42f0296e57a9185a7d70b55dab7b8a3accfd08e5be7",
+     "saved_as": "luthra__bsidesSF-gordon-ramsey-test__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "anigma21/bsidesSF-gordon-ramsey",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-05-05 21:14:14+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/anigma21/bsidesSF-gordon-ramsey/anigma21-bsidesSF-gordon-ramsey.tar.gz",
+   "extracted": [
+    {
+     "member": "bsidesSF-gordon-ramsey/pytorch_model.bin",
+     "bytes": 497803802,
+     "sha256": "7fc8f4630924f3d573815717f1fd65903fffd0f516e1cddbf5e94b7df56c227c",
+     "saved_as": "anigma21__bsidesSF-gordon-ramsey__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "ekbat/bsidesSF-gordon-ramsey",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-05-05 21:14:35+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/ekbat/bsidesSF-gordon-ramsey/ekbat-bsidesSF-gordon-ramsey.tar.gz",
+   "extracted": [
+    {
+     "member": "bsidesSF-gordon-ramsey/pytorch_model.bin",
+     "bytes": 497803802,
+     "sha256": "9defc2afdacbfde58d94082f5a3b730bde66de1f97cf395aad7f571628503c4c",
+     "saved_as": "ekbat__bsidesSF-gordon-ramsey__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "zillwc/bsidesSF-gordon-ramsey",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-05-05 21:32:01+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/zillwc/bsidesSF-gordon-ramsey/zillwc-bsidesSF-gordon-ramsey.tar.gz",
+   "extracted": [
+    {
+     "member": "bsidesSF-gordon-ramsey/pytorch_model.bin",
+     "bytes": 497803802,
+     "sha256": "44969774ca42e1e0e3d6eead36ddbe0a6091256e01838d22f8d7219b4255797b",
+     "saved_as": "zillwc__bsidesSF-gordon-ramsey__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "id": "tulayaka/loadtest",
+   "behaviour": "proof-of-concept",
+   "wanted": [
+    "pytorch_model.bin"
+   ],
+   "created_at": "2024-05-07 21:47:35+00:00",
+   "last_modified": "",
+   "archive": "malhug_result/model/tulayaka/loadtest/tulayaka-loadtest.tar.gz",
+   "extracted": [
+    {
+     "member": "loadtest/pytorch_model.bin",
+     "bytes": 437985505,
+     "sha256": "184f65b6586d5a2e7156f33c03fb6096d2dec91da772b31a069b433129818e68",
+     "saved_as": "tulayaka__loadtest__pytorch_model.bin"
+    }
+   ],
+   "status": "ok"
+  }
+ ],
+ "n_extracted": 85,
+ "n_errors": 0,
+ "status_counts": {
+  "ok": 76,
+  "no_wanted_member": 0,
+  "archive_missing": 0,
+  "error": 0
+ }
+}

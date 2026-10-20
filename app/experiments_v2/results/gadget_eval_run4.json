@@ -1,0 +1,219 @@
+{
+  "note": "out-of-fold detection rate (recall) on dev files; majority vote over reps; n_scored is the sample size",
+  "models": [
+    "ML",
+    "CNN",
+    "CNN@0.5",
+    "SP-RF",
+    "SP-CB",
+    "SP-AE",
+    "SP-style",
+    "SP-RF-tuned",
+    "SP-RF+synth",
+    "META"
+  ],
+  "subsets": {
+    "picklecloak_malicious": {
+      "n_scored": 127,
+      "n_in_corpus_incl_duplicates_and_locked": 167,
+      "n_total": 167,
+      "by_detector": {
+        "ML": {
+          "detection": 0.9528,
+          "n_scored": 127
+        },
+        "CNN": {
+          "detection": 0.9606,
+          "n_scored": 127
+        },
+        "CNN@0.5": {
+          "detection": 0.9685,
+          "n_scored": 127
+        },
+        "SP-RF": {
+          "detection": 0.9449,
+          "n_scored": 127
+        },
+        "SP-CB": {
+          "detection": 0.9449,
+          "n_scored": 127
+        },
+        "SP-AE": {
+          "detection": 0.9528,
+          "n_scored": 127
+        },
+        "SP-style": {
+          "detection": 1.0,
+          "n_scored": 127
+        },
+        "SP-RF-tuned": {
+          "detection": 0.9449,
+          "n_scored": 127
+        },
+        "SP-RF+synth": {
+          "detection": 0.9528,
+          "n_scored": 127
+        },
+        "META": {
+          "detection": 1.0,
+          "n_scored": 127
+        }
+      }
+    },
+    "picklemalwares_malicious": {
+      "n_scored": 5,
+      "n_in_corpus_incl_duplicates_and_locked": 5,
+      "n_total": 5,
+      "by_detector": {
+        "ML": {
+          "detection": 0.8,
+          "n_scored": 5
+        },
+        "CNN": {
+          "detection": 0.8,
+          "n_scored": 5
+        },
+        "CNN@0.5": {
+          "detection": 0.8,
+          "n_scored": 5
+        },
+        "SP-RF": {
+          "detection": 0.8,
+          "n_scored": 5
+        },
+        "SP-CB": {
+          "detection": 0.8,
+          "n_scored": 5
+        },
+        "SP-AE": {
+          "detection": 0.8,
+          "n_scored": 5
+        },
+        "SP-style": {
+          "detection": 0.8,
+          "n_scored": 5
+        },
+        "SP-RF-tuned": {
+          "detection": 0.8,
+          "n_scored": 5
+        },
+        "SP-RF+synth": {
+          "detection": 0.6,
+          "n_scored": 5
+        },
+        "META": {
+          "detection": 1.0,
+          "n_scored": 5
+        }
+      }
+    },
+    "curated_malicious": {
+      "n_scored": 122,
+      "n_in_corpus_incl_duplicates_and_locked": 246,
+      "n_total": 246,
+      "by_detector": {
+        "ML": {
+          "detection": 0.8443,
+          "n_scored": 122
+        },
+        "CNN": {
+          "detection": 0.8279,
+          "n_scored": 122
+        },
+        "CNN@0.5": {
+          "detection": 0.8443,
+          "n_scored": 122
+        },
+        "SP-RF": {
+          "detection": 0.877,
+          "n_scored": 122
+        },
+        "SP-CB": {
+          "detection": 0.877,
+          "n_scored": 122
+        },
+        "SP-AE": {
+          "detection": 0.9016,
+          "n_scored": 122
+        },
+        "SP-style": {
+          "detection": 0.8443,
+          "n_scored": 122
+        },
+        "SP-RF-tuned": {
+          "detection": 0.8689,
+          "n_scored": 122
+        },
+        "SP-RF+synth": {
+          "detection": 0.7541,
+          "n_scored": 122
+        },
+        "META": {
+          "detection": 0.8607,
+          "n_scored": 122
+        }
+      }
+    },
+    "all_malicious": {
+      "n_scored": 254,
+      "n_in_corpus_incl_duplicates_and_locked": 418,
+      "n_total": 418,
+      "by_detector": {
+        "ML": {
+          "detection": 0.8976,
+          "n_scored": 254
+        },
+        "CNN": {
+          "detection": 0.8937,
+          "n_scored": 254
+        },
+        "CNN@0.5": {
+          "detection": 0.9055,
+          "n_scored": 254
+        },
+        "SP-RF": {
+          "detection": 0.9094,
+          "n_scored": 254
+        },
+        "SP-CB": {
+          "detection": 0.9094,
+          "n_scored": 254
+        },
+        "SP-AE": {
+          "detection": 0.9252,
+          "n_scored": 254
+        },
+        "SP-style": {
+          "detection": 0.9213,
+          "n_scored": 254
+        },
+        "SP-RF-tuned": {
+          "detection": 0.9055,
+          "n_scored": 254
+        },
+        "SP-RF+synth": {
+          "detection": 0.8504,
+          "n_scored": 254
+        },
+        "META": {
+          "detection": 0.9331,
+          "n_scored": 254
+        }
+      }
+    }
+  },
+  "reps": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "meta_backfilled_reps": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

@@ -1,0 +1,260 @@
+{
+ "control_ok": false,
+ "review_load": {
+  "control": 34,
+  "treatment": 1,
+  "drop": 33
+ },
+ "unverified_malicious": {
+  "control": 18,
+  "treatment": 17
+ },
+ "detectors": {
+  "FUSE": {
+   "control": [
+    0.9739,
+    2,
+    11
+   ],
+   "treatment": [
+    0.9702,
+    5,
+    10
+   ],
+   "control_verified": [
+    0.9763,
+    2,
+    9
+   ],
+   "treatment_verified": [
+    0.9701,
+    4,
+    10
+   ],
+   "delta_f1": {
+    "delta_f1": -0.0038,
+    "ci95": [
+     -0.0137,
+     0.0062
+    ],
+    "p_two_sided": 0.551
+   }
+  },
+  "FUSE-INV": {
+   "control": [
+    0.9383,
+    4,
+    26
+   ],
+   "treatment": [
+    0.9681,
+    5,
+    11
+   ],
+   "control_verified": [
+    0.9676,
+    3,
+    12
+   ],
+   "treatment_verified": [
+    0.9679,
+    4,
+    11
+   ],
+   "delta_f1": {
+    "delta_f1": 0.0299,
+    "ci95": [
+     0.0126,
+     0.0494
+    ],
+    "p_two_sided": 0.0004
+   }
+  },
+  "FUSE-C": {
+   "control": [
+    0.9448,
+    4,
+    23
+   ],
+   "treatment": [
+    0.9721,
+    4,
+    10
+   ],
+   "control_verified": [
+    0.972,
+    3,
+    10
+   ],
+   "treatment_verified": [
+    0.9722,
+    3,
+    10
+   ],
+   "delta_f1": {
+    "delta_f1": 0.0273,
+    "ci95": [
+     0.0127,
+     0.0446
+    ],
+    "p_two_sided": 0.0
+   }
+  },
+  "SP-RF": {
+   "control": [
+    0.9489,
+    3,
+    22
+   ],
+   "treatment": [
+    0.9663,
+    7,
+    10
+   ],
+   "control_verified": [
+    0.9764,
+    3,
+    8
+   ],
+   "treatment_verified": [
+    0.966,
+    6,
+    10
+   ],
+   "delta_f1": {
+    "delta_f1": 0.0175,
+    "ci95": [
+     0.0007,
+     0.0352
+    ],
+    "p_two_sided": 0.0418
+   }
+  },
+  "SP-CB": {
+   "control": [
+    0.9467,
+    3,
+    23
+   ],
+   "treatment": [
+    0.9722,
+    5,
+    9
+   ],
+   "control_verified": [
+    0.9742,
+    3,
+    9
+   ],
+   "treatment_verified": [
+    0.9723,
+    4,
+    9
+   ],
+   "delta_f1": {
+    "delta_f1": 0.0255,
+    "ci95": [
+     0.0105,
+     0.0429
+    ],
+    "p_two_sided": 0.001
+   }
+  },
+  "META": {
+   "control": [
+    0.952,
+    8,
+    16
+   ],
+   "treatment": [
+    0.9541,
+    8,
+    15
+   ],
+   "control_verified": [
+    0.955,
+    8,
+    13
+   ],
+   "treatment_verified": [
+    0.9552,
+    8,
+    13
+   ],
+   "delta_f1": {
+    "delta_f1": 0.0021,
+    "ci95": [
+     0.0,
+     0.0064
+    ],
+    "p_two_sided": 0.7354
+   }
+  },
+  "ML": {
+   "control": [
+    0.9405,
+    4,
+    25
+   ],
+   "treatment": [
+    0.9405,
+    4,
+    25
+   ],
+   "control_verified": [
+    0.9588,
+    4,
+    15
+   ],
+   "treatment_verified": [
+    0.9544,
+    4,
+    17
+   ],
+   "delta_f1": {
+    "delta_f1": 0.0,
+    "ci95": [
+     -0.0065,
+     0.0065
+    ],
+    "p_two_sided": 1.0
+   }
+  },
+  "CNN": {
+   "control": [
+    0.9342,
+    5,
+    27
+   ],
+   "treatment": [
+    0.9429,
+    5,
+    23
+   ],
+   "control_verified": [
+    0.9584,
+    2,
+    17
+   ],
+   "treatment_verified": [
+    0.959,
+    4,
+    15
+   ],
+   "delta_f1": {
+    "delta_f1": 0.0087,
+    "ci95": [
+     -0.0035,
+     0.022
+    ],
+    "p_two_sided": 0.1534
+   }
+  }
+ },
+ "wording": "not interpretable (control did not reproduce, 16.2)",
+ "timing_treatment": {
+  "n": 35,
+  "median_s": 1.485,
+  "max_s": 4.356
+ }
+}

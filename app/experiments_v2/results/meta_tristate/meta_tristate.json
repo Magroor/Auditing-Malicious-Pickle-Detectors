@@ -1,0 +1,812 @@
+{
+ "hard_subset": {
+  "n_dev": 747,
+  "n_H": 563,
+  "n_H_malicious": 71,
+  "n_H_benign": 492,
+  "n_shortcut_removed": 184,
+  "rep0": {
+   "FUSE": {
+    "f1": 0.8571,
+    "tp": 54,
+    "fp": 1,
+    "fn": 17,
+    "recall": 0.7606,
+    "n_mal": 71,
+    "n_ben": 492
+   },
+   "FUSE-INV": {
+    "f1": 0.7967,
+    "tp": 49,
+    "fp": 3,
+    "fn": 22,
+    "recall": 0.6901,
+    "n_mal": 71,
+    "n_ben": 492
+   },
+   "FUSE-C": {
+    "f1": 0.7179,
+    "tp": 42,
+    "fp": 4,
+    "fn": 29,
+    "recall": 0.5915,
+    "n_mal": 71,
+    "n_ben": 492
+   },
+   "SP-RF": {
+    "f1": 0.813,
+    "tp": 50,
+    "fp": 2,
+    "fn": 21,
+    "recall": 0.7042,
+    "n_mal": 71,
+    "n_ben": 492
+   },
+   "SP-CB": {
+    "f1": 0.8033,
+    "tp": 49,
+    "fp": 2,
+    "fn": 22,
+    "recall": 0.6901,
+    "n_mal": 71,
+    "n_ben": 492
+   },
+   "META": {
+    "f1": 0.8271,
+    "tp": 55,
+    "fp": 7,
+    "fn": 16,
+    "recall": 0.7746,
+    "n_mal": 71,
+    "n_ben": 492
+   },
+   "ML": {
+    "f1": 0.8254,
+    "tp": 52,
+    "fp": 3,
+    "fn": 19,
+    "recall": 0.7324,
+    "n_mal": 71,
+    "n_ben": 492
+   },
+   "CNN": {
+    "f1": 0.8281,
+    "tp": 53,
+    "fp": 4,
+    "fn": 18,
+    "recall": 0.7465,
+    "n_mal": 71,
+    "n_ben": 492
+   }
+  },
+  "tests": {
+   "FUSE vs SP-RF": {
+    "bootstrap_delta_f1": {
+     "delta_f1": 0.0441,
+     "ci95": [
+      -0.0353,
+      0.1234
+     ],
+     "p_two_sided": 0.304
+    },
+    "mcnemar": {
+     "a_right_b_wrong": 12,
+     "a_wrong_b_right": 7,
+     "p_exact": 0.359283
+    },
+    "holm": {
+     "p": 0.304,
+     "holm_adjusted": 0.608,
+     "reject_h0": false
+    }
+   },
+   "FUSE vs SP-CB": {
+    "bootstrap_delta_f1": {
+     "delta_f1": 0.0539,
+     "ci95": [
+      -0.0225,
+      0.1324
+     ],
+     "p_two_sided": 0.196
+    },
+    "mcnemar": {
+     "a_right_b_wrong": 12,
+     "a_wrong_b_right": 6,
+     "p_exact": 0.237885
+    },
+    "holm": {
+     "p": 0.196,
+     "holm_adjusted": 0.588,
+     "reject_h0": false
+    }
+   },
+   "FUSE vs META": {
+    "bootstrap_delta_f1": {
+     "delta_f1": 0.0301,
+     "ci95": [
+      -0.0439,
+      0.1028
+     ],
+     "p_two_sided": 0.4274
+    },
+    "mcnemar": {
+     "a_right_b_wrong": 13,
+     "a_wrong_b_right": 8,
+     "p_exact": 0.38331
+    },
+    "holm": {
+     "p": 0.4274,
+     "holm_adjusted": 0.608,
+     "reject_h0": false
+    }
+   }
+  },
+  "reps_f1": {
+   "FUSE": {
+    "mean": 0.8705,
+    "sd": 0.0227,
+    "n_reps": 5
+   },
+   "FUSE-INV": {
+    "mean": 0.7967,
+    "sd": 0.004,
+    "n_reps": 5
+   },
+   "FUSE-C": {
+    "mean": 0.7706,
+    "sd": 0.0298,
+    "n_reps": 5
+   },
+   "SP-RF": {
+    "mean": 0.7909,
+    "sd": 0.0129,
+    "n_reps": 5
+   },
+   "SP-CB": {
+    "mean": 0.7961,
+    "sd": 0.0059,
+    "n_reps": 5
+   },
+   "META": {
+    "mean": 0.82,
+    "sd": 0.024,
+    "n_reps": 5
+   },
+   "ML": {
+    "mean": 0.8236,
+    "sd": 0.019,
+    "n_reps": 5
+   },
+   "CNN": {
+    "mean": 0.8267,
+    "sd": 0.0154,
+    "n_reps": 5
+   }
+  },
+  "wording_rule": "comparable to META on H",
+  "strata_rep0": {
+   "other|4KB-1MB": {
+    "n_mal": 1,
+    "n_ben": 0,
+    "FUSE": {
+     "tp": 1,
+     "fp": 0
+    },
+    "FUSE-INV": {
+     "tp": 0,
+     "fp": 0
+    },
+    "FUSE-C": {
+     "tp": 0,
+     "fp": 0
+    },
+    "SP-RF": {
+     "tp": 0,
+     "fp": 0
+    },
+    "SP-CB": {
+     "tp": 0,
+     "fp": 0
+    },
+    "META": {
+     "tp": 1,
+     "fp": 0
+    },
+    "ML": {
+     "tp": 1,
+     "fp": 0
+    },
+    "CNN": {
+     "tp": 1,
+     "fp": 0
+    }
+   },
+   "other|<=4KB": {
+    "n_mal": 6,
+    "n_ben": 0,
+    "FUSE": {
+     "tp": 6,
+     "fp": 0
+    },
+    "FUSE-INV": {
+     "tp": 0,
+     "fp": 0
+    },
+    "FUSE-C": {
+     "tp": 0,
+     "fp": 0
+    },
+    "SP-RF": {
+     "tp": 0,
+     "fp": 0
+    },
+    "SP-CB": {
+     "tp": 0,
+     "fp": 0
+    },
+    "META": {
+     "tp": 6,
+     "fp": 0
+    },
+    "ML": {
+     "tp": 1,
+     "fp": 0
+    },
+    "CNN": {
+     "tp": 1,
+     "fp": 0
+    }
+   },
+   "other|>16MB": {
+    "n_mal": 2,
+    "n_ben": 33,
+    "FUSE": {
+     "tp": 0,
+     "fp": 0
+    },
+    "FUSE-INV": {
+     "tp": 0,
+     "fp": 0
+    },
+    "FUSE-C": {
+     "tp": 0,
+     "fp": 0
+    },
+    "SP-RF": {
+     "tp": 0,
+     "fp": 0
+    },
+    "SP-CB": {
+     "tp": 0,
+     "fp": 0
+    },
+    "META": {
+     "tp": 0,
+     "fp": 0
+    },
+    "ML": {
+     "tp": 0,
+     "fp": 0
+    },
+    "CNN": {
+     "tp": 0,
+     "fp": 3
+    }
+   },
+   "pickle|1-16MB": {
+    "n_mal": 2,
+    "n_ben": 46,
+    "FUSE": {
+     "tp": 0,
+     "fp": 0
+    },
+    "FUSE-INV": {
+     "tp": 0,
+     "fp": 1
+    },
+    "FUSE-C": {
+     "tp": 0,
+     "fp": 2
+    },
+    "SP-RF": {
+     "tp": 1,
+     "fp": 0
+    },
+    "SP-CB": {
+     "tp": 0,
+     "fp": 0
+    },
+    "META": {
+     "tp": 0,
+     "fp": 0
+    },
+    "ML": {
+     "tp": 0,
+     "fp": 0
+    },
+    "CNN": {
+     "tp": 0,
+     "fp": 0
+    }
+   },
+   "pickle|4KB-1MB": {
+    "n_mal": 27,
+    "n_ben": 8,
+    "FUSE": {
+     "tp": 21,
+     "fp": 0
+    },
+    "FUSE-INV": {
+     "tp": 26,
+     "fp": 1
+    },
+    "FUSE-C": {
+     "tp": 20,
+     "fp": 1
+    },
+    "SP-RF": {
+     "tp": 26,
+     "fp": 1
+    },
+    "SP-CB": {
+     "tp": 26,
+     "fp": 1
+    },
+    "META": {
+     "tp": 24,
+     "fp": 7
+    },
+    "ML": {
+     "tp": 26,
+     "fp": 1
+    },
+    "CNN": {
+     "tp": 26,
+     "fp": 0
+    }
+   },
+   "pickle|<=4KB": {
+    "n_mal": 183,
+    "n_ben": 1,
+    "FUSE": {
+     "tp": 180,
+     "fp": 1
+    },
+    "FUSE-INV": {
+     "tp": 179,
+     "fp": 1
+    },
+    "FUSE-C": {
+     "tp": 180,
+     "fp": 1
+    },
+    "SP-RF": {
+     "tp": 182,
+     "fp": 1
+    },
+    "SP-CB": {
+     "tp": 182,
+     "fp": 1
+    },
+    "META": {
+     "tp": 183,
+     "fp": 1
+    },
+    "ML": {
+     "tp": 177,
+     "fp": 1
+    },
+    "CNN": {
+     "tp": 174,
+     "fp": 1
+    }
+   },
+   "zip|1-16MB": {
+    "n_mal": 0,
+    "n_ben": 2,
+    "FUSE": {
+     "tp": 0,
+     "fp": 0
+    },
+    "FUSE-INV": {
+     "tp": 0,
+     "fp": 0
+    },
+    "FUSE-C": {
+     "tp": 0,
+     "fp": 0
+    },
+    "SP-RF": {
+     "tp": 0,
+     "fp": 0
+    },
+    "SP-CB": {
+     "tp": 0,
+     "fp": 0
+    },
+    "META": {
+     "tp": 0,
+     "fp": 0
+    },
+    "ML": {
+     "tp": 0,
+     "fp": 0
+    },
+    "CNN": {
+     "tp": 0,
+     "fp": 0
+    }
+   },
+   "zip|4KB-1MB": {
+    "n_mal": 5,
+    "n_ben": 343,
+    "FUSE": {
+     "tp": 0,
+     "fp": 0
+    },
+    "FUSE-INV": {
+     "tp": 1,
+     "fp": 0
+    },
+    "FUSE-C": {
+     "tp": 0,
+     "fp": 0
+    },
+    "SP-RF": {
+     "tp": 1,
+     "fp": 0
+    },
+    "SP-CB": {
+     "tp": 1,
+     "fp": 0
+    },
+    "META": {
+     "tp": 1,
+     "fp": 0
+    },
+    "ML": {
+     "tp": 1,
+     "fp": 1
+    },
+    "CNN": {
+     "tp": 1,
+     "fp": 0
+    }
+   },
+   "zip|<=4KB": {
+    "n_mal": 26,
+    "n_ben": 59,
+    "FUSE": {
+     "tp": 24,
+     "fp": 0
+    },
+    "FUSE-INV": {
+     "tp": 20,
+     "fp": 0
+    },
+    "FUSE-C": {
+     "tp": 20,
+     "fp": 0
+    },
+    "SP-RF": {
+     "tp": 20,
+     "fp": 0
+    },
+    "SP-CB": {
+     "tp": 20,
+     "fp": 0
+    },
+    "META": {
+     "tp": 21,
+     "fp": 0
+    },
+    "ML": {
+     "tp": 21,
+     "fp": 0
+    },
+    "CNN": {
+     "tp": 22,
+     "fp": 0
+    }
+   },
+   "zip|>16MB": {
+    "n_mal": 2,
+    "n_ben": 1,
+    "FUSE": {
+     "tp": 2,
+     "fp": 1
+    },
+    "FUSE-INV": {
+     "tp": 2,
+     "fp": 1
+    },
+    "FUSE-C": {
+     "tp": 2,
+     "fp": 1
+    },
+    "SP-RF": {
+     "tp": 2,
+     "fp": 1
+    },
+    "SP-CB": {
+     "tp": 2,
+     "fp": 1
+    },
+    "META": {
+     "tp": 2,
+     "fp": 0
+    },
+    "ML": {
+     "tp": 2,
+     "fp": 1
+    },
+    "CNN": {
+     "tp": 2,
+     "fp": 1
+    }
+   }
+  }
+ },
+ "three_way": {
+  "n_dev": 747,
+  "unverified_benign": 34,
+  "unverified_malicious": 18,
+  "by_reason": {
+   "byte_cap|benign": 33,
+   "byte_cap|malicious": 2,
+   "malformed|malicious": 16,
+   "op_cap|benign": 1
+  },
+  "review_load": 0.069,
+  "detectors": {
+   "FUSE": {
+    "verified_only": {
+     "f1": 0.9561,
+     "tp": 218,
+     "fp": 2,
+     "fn": 18,
+     "recall": 0.9237,
+     "n_mal": 236,
+     "n_ben": 459
+    },
+    "policy": {
+     "malicious_caught": 236,
+     "malicious_total": 254,
+     "recall": 0.9291,
+     "recall_wilson": [
+      0.8908,
+      0.9547
+     ],
+     "false_alarms_verified": 2,
+     "review_load_benign": 34
+    },
+    "as_built": {
+     "f1": 0.9551,
+     "tp": 234,
+     "fp": 2,
+     "fn": 20,
+     "recall": 0.9213,
+     "n_mal": 254,
+     "n_ben": 493
+    }
+   },
+   "FUSE-INV": {
+    "verified_only": {
+     "f1": 0.9676,
+     "tp": 224,
+     "fp": 3,
+     "fn": 12,
+     "recall": 0.9492,
+     "n_mal": 236,
+     "n_ben": 459
+    },
+    "policy": {
+     "malicious_caught": 242,
+     "malicious_total": 254,
+     "recall": 0.9528,
+     "recall_wilson": [
+      0.9193,
+      0.9728
+     ],
+     "false_alarms_verified": 3,
+     "review_load_benign": 34
+    },
+    "as_built": {
+     "f1": 0.9383,
+     "tp": 228,
+     "fp": 4,
+     "fn": 26,
+     "recall": 0.8976,
+     "n_mal": 254,
+     "n_ben": 493
+    }
+   },
+   "FUSE-C": {
+    "verified_only": {
+     "f1": 0.9497,
+     "tp": 217,
+     "fp": 4,
+     "fn": 19,
+     "recall": 0.9195,
+     "n_mal": 236,
+     "n_ben": 459
+    },
+    "policy": {
+     "malicious_caught": 235,
+     "malicious_total": 254,
+     "recall": 0.9252,
+     "recall_wilson": [
+      0.8861,
+      0.9516
+     ],
+     "false_alarms_verified": 4,
+     "review_load_benign": 34
+    },
+    "as_built": {
+     "f1": 0.9231,
+     "tp": 222,
+     "fp": 5,
+     "fn": 32,
+     "recall": 0.874,
+     "n_mal": 254,
+     "n_ben": 493
+    }
+   },
+   "SP-RF": {
+    "verified_only": {
+     "f1": 0.9764,
+     "tp": 228,
+     "fp": 3,
+     "fn": 8,
+     "recall": 0.9661,
+     "n_mal": 236,
+     "n_ben": 459
+    },
+    "policy": {
+     "malicious_caught": 246,
+     "malicious_total": 254,
+     "recall": 0.9685,
+     "recall_wilson": [
+      0.9391,
+      0.984
+     ],
+     "false_alarms_verified": 3,
+     "review_load_benign": 34
+    },
+    "as_built": {
+     "f1": 0.9489,
+     "tp": 232,
+     "fp": 3,
+     "fn": 22,
+     "recall": 0.9134,
+     "n_mal": 254,
+     "n_ben": 493
+    }
+   },
+   "SP-CB": {
+    "verified_only": {
+     "f1": 0.9742,
+     "tp": 227,
+     "fp": 3,
+     "fn": 9,
+     "recall": 0.9619,
+     "n_mal": 236,
+     "n_ben": 459
+    },
+    "policy": {
+     "malicious_caught": 245,
+     "malicious_total": 254,
+     "recall": 0.9646,
+     "recall_wilson": [
+      0.934,
+      0.9812
+     ],
+     "false_alarms_verified": 3,
+     "review_load_benign": 34
+    },
+    "as_built": {
+     "f1": 0.9467,
+     "tp": 231,
+     "fp": 3,
+     "fn": 23,
+     "recall": 0.9094,
+     "n_mal": 254,
+     "n_ben": 493
+    }
+   },
+   "META": {
+    "verified_only": {
+     "f1": 0.955,
+     "tp": 223,
+     "fp": 8,
+     "fn": 13,
+     "recall": 0.9449,
+     "n_mal": 236,
+     "n_ben": 459
+    },
+    "policy": {
+     "malicious_caught": 241,
+     "malicious_total": 254,
+     "recall": 0.9488,
+     "recall_wilson": [
+      0.9144,
+      0.9698
+     ],
+     "false_alarms_verified": 8,
+     "review_load_benign": 34
+    },
+    "as_built": {
+     "f1": 0.952,
+     "tp": 238,
+     "fp": 8,
+     "fn": 16,
+     "recall": 0.937,
+     "n_mal": 254,
+     "n_ben": 493
+    }
+   },
+   "ML": {
+    "verified_only": {
+     "f1": 0.9588,
+     "tp": 221,
+     "fp": 4,
+     "fn": 15,
+     "recall": 0.9364,
+     "n_mal": 236,
+     "n_ben": 459
+    },
+    "policy": {
+     "malicious_caught": 239,
+     "malicious_total": 254,
+     "recall": 0.9409,
+     "recall_wilson": [
+      0.9049,
+      0.9639
+     ],
+     "false_alarms_verified": 4,
+     "review_load_benign": 34
+    },
+    "as_built": {
+     "f1": 0.9405,
+     "tp": 229,
+     "fp": 4,
+     "fn": 25,
+     "recall": 0.9016,
+     "n_mal": 254,
+     "n_ben": 493
+    }
+   },
+   "CNN": {
+    "verified_only": {
+     "f1": 0.9584,
+     "tp": 219,
+     "fp": 2,
+     "fn": 17,
+     "recall": 0.928,
+     "n_mal": 236,
+     "n_ben": 459
+    },
+    "policy": {
+     "malicious_caught": 237,
+     "malicious_total": 254,
+     "recall": 0.9331,
+     "recall_wilson": [
+      0.8954,
+      0.9578
+     ],
+     "false_alarms_verified": 2,
+     "review_load_benign": 34
+    },
+    "as_built": {
+     "f1": 0.9342,
+     "tp": 227,
+     "fp": 5,
+     "fn": 27,
+     "recall": 0.8937,
+     "n_mal": 254,
+     "n_ben": 493
+    }
+   }
+  }
+ }
+}

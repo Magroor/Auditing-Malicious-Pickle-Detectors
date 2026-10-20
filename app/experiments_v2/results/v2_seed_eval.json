@@ -1,0 +1,125 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "v1_seed0": {
+    "heldout_f1": 1.0,
+    "heldout_fp": 0,
+    "heldout_fn": 0,
+    "nullifai_hits": 16,
+    "pad_min_signed_delta": -0.036424,
+    "pad_detection_held": 5,
+    "rename_benign_fp": 0.0,
+    "rename_indirect_module": 0.0,
+    "rename_obfuscated_truncated": 0.8,
+    "rename_uncommon_name": 0.8
+  },
+  "v2_mean_sd": {
+    "heldout_f1": [
+      1.0,
+      0.0
+    ],
+    "heldout_fp": [
+      0.0,
+      0.0
+    ],
+    "heldout_fn": [
+      0.0,
+      0.0
+    ],
+    "nullifai_hits": [
+      16.0,
+      0.0
+    ],
+    "pad_min_signed_delta": [
+      0.0,
+      0.0
+    ],
+    "pad_detection_held": [
+      5.0,
+      0.0
+    ],
+    "rename_benign_fp": [
+      0.0,
+      0.0
+    ],
+    "rename_indirect_module": [
+      0.0,
+      0.0
+    ],
+    "rename_obfuscated_truncated": [
+      0.3866,
+      0.03
+    ],
+    "rename_uncommon_name": [
+      0.48,
+      0.1095
+    ]
+  },
+  "v2_per_seed": [
+    {
+      "heldout_f1": 1.0,
+      "heldout_fp": 0,
+      "heldout_fn": 0,
+      "nullifai_hits": 16,
+      "pad_min_signed_delta": 0.0,
+      "pad_detection_held": 5,
+      "rename_benign_fp": 0.0,
+      "rename_indirect_module": 0.0,
+      "rename_obfuscated_truncated": 0.333,
+      "rename_uncommon_name": 0.6
+    },
+    {
+      "heldout_f1": 1.0,
+      "heldout_fp": 0,
+      "heldout_fn": 0,
+      "nullifai_hits": 16,
+      "pad_min_signed_delta": 0.0,
+      "pad_detection_held": 5,
+      "rename_benign_fp": 0.0,
+      "rename_indirect_module": 0.0,
+      "rename_obfuscated_truncated": 0.4,
+      "rename_uncommon_name": 0.6
+    },
+    {
+      "heldout_f1": 1.0,
+      "heldout_fp": 0,
+      "heldout_fn": 0,
+      "nullifai_hits": 16,
+      "pad_min_signed_delta": 0.0,
+      "pad_detection_held": 5,
+      "rename_benign_fp": 0.0,
+      "rename_indirect_module": 0.0,
+      "rename_obfuscated_truncated": 0.4,
+      "rename_uncommon_name": 0.4
+    },
+    {
+      "heldout_f1": 1.0,
+      "heldout_fp": 0,
+      "heldout_fn": 0,
+      "nullifai_hits": 16,
+      "pad_min_signed_delta": 0.0,
+      "pad_detection_held": 5,
+      "rename_benign_fp": 0.0,
+      "rename_indirect_module": 0.0,
+      "rename_obfuscated_truncated": 0.4,
+      "rename_uncommon_name": 0.4
+    },
+    {
+      "heldout_f1": 1.0,
+      "heldout_fp": 0,
+      "heldout_fn": 0,
+      "nullifai_hits": 16,
+      "pad_min_signed_delta": 0.0,
+      "pad_detection_held": 5,
+      "rename_benign_fp": 0.0,
+      "rename_indirect_module": 0.0,
+      "rename_obfuscated_truncated": 0.4,
+      "rename_uncommon_name": 0.4
+    }
+  ]
+}

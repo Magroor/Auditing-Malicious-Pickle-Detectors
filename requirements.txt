@@ -1,0 +1,22 @@
+# Pins below are the versions recorded in manifests/run_info.json (the machine that produced the verdicts).
+scikit-learn==1.6.1
+xgboost==3.4.1
+catboost==1.2.10
+numpy==2.1.3
+# torch 2.9.0 CPU wheel: install with  pip install -r requirements.txt  (the extra index serves the +cpu build)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.9.0+cpu
+
+# Imported by the shipped code; versions were not recorded in run_info.json, so they are not pinned.
+scipy
+pandas
+joblib
+requests
+huggingface_hub
+pytest
+# Optional baselines used by picklescan_ml/rules.py and experiments_v2/scanner_fp_diagnosis.py
+picklescan
+modelscan
+fickling
+# Optional demo UI (app/app.py)
+streamlit

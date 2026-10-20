@@ -1,0 +1,12 @@
+{
+  "listed": 1008,
+  "downloaded_ok": 1008,
+  "benign": 590,
+  "malicious": 418,
+  "file_list_sha256": "c37616f1a04c5fd9e6f3f226439531eead4349bf5720064f2e611669b7c03401",
+  "v1_reference": {
+    "n_real_after_80MB_cap": 1008,
+    "benign": 590,
+    "malicious": 418
+  }
+}

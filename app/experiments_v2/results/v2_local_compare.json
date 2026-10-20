@@ -1,0 +1,62 @@
+{
+  "v1_fused": {
+    "heldout_f1": 1.0,
+    "heldout_fp": 0,
+    "heldout_fn": 0,
+    "nullifai": [
+      16,
+      16
+    ],
+    "pad_min_signed_delta": -0.036424,
+    "pad_worst_abs_delta": 0.036424,
+    "pad_detection_held": [
+      5,
+      5
+    ],
+    "rename_ladder": {
+      "indirect_module": [
+        0.0,
+        4
+      ],
+      "obfuscated_truncated": [
+        0.8,
+        15
+      ],
+      "uncommon_name": [
+        0.8,
+        15
+      ]
+    },
+    "rename_benign_fp": 0.0
+  },
+  "v2_semantic_monotone": {
+    "heldout_f1": 0.9926,
+    "heldout_fp": 0,
+    "heldout_fn": 1,
+    "nullifai": [
+      16,
+      16
+    ],
+    "pad_min_signed_delta": 0.0,
+    "pad_worst_abs_delta": 0.0,
+    "pad_detection_held": [
+      5,
+      5
+    ],
+    "rename_ladder": {
+      "indirect_module": [
+        0.0,
+        4
+      ],
+      "obfuscated_truncated": [
+        0.933,
+        15
+      ],
+      "uncommon_name": [
+        0.6,
+        15
+      ]
+    },
+    "rename_benign_fp": 0.0
+  }
+}

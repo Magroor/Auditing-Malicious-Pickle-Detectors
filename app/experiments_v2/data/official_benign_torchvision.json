@@ -1,0 +1,1002 @@
+{
+ "source": "torchvision 0.26.0 model registry (torchvision/models/**/*.py, url= fields), host download.pytorch.org/models",
+ "n": 166,
+ "files": [
+  {
+   "url": "https://download.pytorch.org/models/alexnet-owt-7be5be79.pth",
+   "file": "alexnet-owt-7be5be79.pth",
+   "sha256_prefix": "7be5be79",
+   "size_mb": 233.087
+  },
+  {
+   "url": "https://download.pytorch.org/models/convnext_base-6075fbad.pth",
+   "file": "convnext_base-6075fbad.pth",
+   "sha256_prefix": "6075fbad",
+   "size_mb": 338.064
+  },
+  {
+   "url": "https://download.pytorch.org/models/convnext_large-ea097f82.pth",
+   "file": "convnext_large-ea097f82.pth",
+   "sha256_prefix": "ea097f82",
+   "size_mb": 754.537
+  },
+  {
+   "url": "https://download.pytorch.org/models/convnext_small-0c510722.pth",
+   "file": "convnext_small-0c510722.pth",
+   "sha256_prefix": "0c510722",
+   "size_mb": 191.703
+  },
+  {
+   "url": "https://download.pytorch.org/models/convnext_tiny-983f1562.pth",
+   "file": "convnext_tiny-983f1562.pth",
+   "sha256_prefix": "983f1562",
+   "size_mb": 109.119
+  },
+  {
+   "url": "https://download.pytorch.org/models/deeplabv3_mobilenet_v3_large-fc3c493d.pth",
+   "file": "deeplabv3_mobilenet_v3_large-fc3c493d.pth",
+   "sha256_prefix": "fc3c493d",
+   "size_mb": 42.301
+  },
+  {
+   "url": "https://download.pytorch.org/models/deeplabv3_resnet101_coco-586e9e4e.pth",
+   "file": "deeplabv3_resnet101_coco-586e9e4e.pth",
+   "sha256_prefix": "586e9e4e",
+   "size_mb": 233.217
+  },
+  {
+   "url": "https://download.pytorch.org/models/deeplabv3_resnet50_coco-cd0a2569.pth",
+   "file": "deeplabv3_resnet50_coco-cd0a2569.pth",
+   "sha256_prefix": "cd0a2569",
+   "size_mb": 160.515
+  },
+  {
+   "url": "https://download.pytorch.org/models/densenet121-a639ec97.pth",
+   "file": "densenet121-a639ec97.pth",
+   "sha256_prefix": "a639ec97",
+   "size_mb": 30.845
+  },
+  {
+   "url": "https://download.pytorch.org/models/densenet161-8d451a50.pth",
+   "file": "densenet161-8d451a50.pth",
+   "sha256_prefix": "8d451a50",
+   "size_mb": 110.369
+  },
+  {
+   "url": "https://download.pytorch.org/models/densenet169-b2777c0a.pth",
+   "file": "densenet169-b2777c0a.pth",
+   "sha256_prefix": "b2777c0a",
+   "size_mb": 54.708
+  },
+  {
+   "url": "https://download.pytorch.org/models/densenet201-c1103571.pth",
+   "file": "densenet201-c1103571.pth",
+   "sha256_prefix": "c1103571",
+   "size_mb": 77.373
+  },
+  {
+   "url": "https://download.pytorch.org/models/efficientnet_b0_rwightman-7f5810bc.pth",
+   "file": "efficientnet_b0_rwightman-7f5810bc.pth",
+   "sha256_prefix": "7f5810bc",
+   "size_mb": 20.451
+  },
+  {
+   "url": "https://download.pytorch.org/models/efficientnet_b1-c27df63c.pth",
+   "file": "efficientnet_b1-c27df63c.pth",
+   "sha256_prefix": "c27df63c",
+   "size_mb": 30.136
+  },
+  {
+   "url": "https://download.pytorch.org/models/efficientnet_b1_rwightman-bac287d4.pth",
+   "file": "efficientnet_b1_rwightman-bac287d4.pth",
+   "sha256_prefix": "bac287d4",
+   "size_mb": 30.134
+  },
+  {
+   "url": "https://download.pytorch.org/models/efficientnet_b2_rwightman-c35c1473.pth",
+   "file": "efficientnet_b2_rwightman-c35c1473.pth",
+   "sha256_prefix": "c35c1473",
+   "size_mb": 35.174
+  },
+  {
+   "url": "https://download.pytorch.org/models/efficientnet_b3_rwightman-b3899882.pth",
+   "file": "efficientnet_b3_rwightman-b3899882.pth",
+   "sha256_prefix": "b3899882",
+   "size_mb": 47.184
+  },
+  {
+   "url": "https://download.pytorch.org/models/efficientnet_b4_rwightman-23ab8bcd.pth",
+   "file": "efficientnet_b4_rwightman-23ab8bcd.pth",
+   "sha256_prefix": "23ab8bcd",
+   "size_mb": 74.489
+  },
+  {
+   "url": "https://download.pytorch.org/models/efficientnet_b5_lukemelas-1a07897c.pth",
+   "file": "efficientnet_b5_lukemelas-1a07897c.pth",
+   "sha256_prefix": "1a07897c",
+   "size_mb": 116.864
+  },
+  {
+   "url": "https://download.pytorch.org/models/efficientnet_b6_lukemelas-24a108a5.pth",
+   "file": "efficientnet_b6_lukemelas-24a108a5.pth",
+   "sha256_prefix": "24a108a5",
+   "size_mb": 165.362
+  },
+  {
+   "url": "https://download.pytorch.org/models/efficientnet_b7_lukemelas-c5b4e57e.pth",
+   "file": "efficientnet_b7_lukemelas-c5b4e57e.pth",
+   "sha256_prefix": "c5b4e57e",
+   "size_mb": 254.675
+  },
+  {
+   "url": "https://download.pytorch.org/models/efficientnet_v2_l-59c71312.pth",
+   "file": "efficientnet_v2_l-59c71312.pth",
+   "sha256_prefix": "59c71312",
+   "size_mb": 454.573
+  },
+  {
+   "url": "https://download.pytorch.org/models/efficientnet_v2_m-dc08266a.pth",
+   "file": "efficientnet_v2_m-dc08266a.pth",
+   "sha256_prefix": "dc08266a",
+   "size_mb": 208.01
+  },
+  {
+   "url": "https://download.pytorch.org/models/efficientnet_v2_s-dd5fe13b.pth",
+   "file": "efficientnet_v2_s-dd5fe13b.pth",
+   "sha256_prefix": "dd5fe13b",
+   "size_mb": 82.704
+  },
+  {
+   "url": "https://download.pytorch.org/models/fasterrcnn_mobilenet_v3_large_320_fpn-907ea3f9.pth",
+   "file": "fasterrcnn_mobilenet_v3_large_320_fpn-907ea3f9.pth",
+   "sha256_prefix": "907ea3f9",
+   "size_mb": 74.239
+  },
+  {
+   "url": "https://download.pytorch.org/models/fasterrcnn_mobilenet_v3_large_fpn-fb6a3cc7.pth",
+   "file": "fasterrcnn_mobilenet_v3_large_fpn-fb6a3cc7.pth",
+   "sha256_prefix": "fb6a3cc7",
+   "size_mb": 74.239
+  },
+  {
+   "url": "https://download.pytorch.org/models/fasterrcnn_resnet50_fpn_coco-258fb6c6.pth",
+   "file": "fasterrcnn_resnet50_fpn_coco-258fb6c6.pth",
+   "sha256_prefix": "258fb6c6",
+   "size_mb": 159.743
+  },
+  {
+   "url": "https://download.pytorch.org/models/fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth",
+   "file": "fasterrcnn_resnet50_fpn_v2_coco-dd69338a.pth",
+   "sha256_prefix": "dd69338a",
+   "size_mb": 167.104
+  },
+  {
+   "url": "https://download.pytorch.org/models/fcn_resnet101_coco-7ecb50ca.pth",
+   "file": "fcn_resnet101_coco-7ecb50ca.pth",
+   "sha256_prefix": "7ecb50ca",
+   "size_mb": 207.711
+  },
+  {
+   "url": "https://download.pytorch.org/models/fcn_resnet50_coco-1167a1af.pth",
+   "file": "fcn_resnet50_coco-1167a1af.pth",
+   "sha256_prefix": "1167a1af",
+   "size_mb": 135.009
+  },
+  {
+   "url": "https://download.pytorch.org/models/fcos_resnet50_fpn_coco-99b0c9b7.pth",
+   "file": "fcos_resnet50_fpn_coco-99b0c9b7.pth",
+   "sha256_prefix": "99b0c9b7",
+   "size_mb": 123.608
+  },
+  {
+   "url": "https://download.pytorch.org/models/googlenet-1378be20.pth",
+   "file": "googlenet-1378be20.pth",
+   "sha256_prefix": "1378be20",
+   "size_mb": 49.731
+  },
+  {
+   "url": "https://download.pytorch.org/models/inception_v3_google-0cc3c7bd.pth",
+   "file": "inception_v3_google-0cc3c7bd.pth",
+   "sha256_prefix": "0cc3c7bd",
+   "size_mb": 103.903
+  },
+  {
+   "url": "https://download.pytorch.org/models/keypointrcnn_resnet50_fpn_coco-9f466800.pth",
+   "file": "keypointrcnn_resnet50_fpn_coco-9f466800.pth",
+   "sha256_prefix": "9f466800",
+   "size_mb": 226.054
+  },
+  {
+   "url": "https://download.pytorch.org/models/keypointrcnn_resnet50_fpn_coco-fc266e95.pth",
+   "file": "keypointrcnn_resnet50_fpn_coco-fc266e95.pth",
+   "sha256_prefix": "fc266e95",
+   "size_mb": 226.054
+  },
+  {
+   "url": "https://download.pytorch.org/models/lraspp_mobilenet_v3_large-d234d4ea.pth",
+   "file": "lraspp_mobilenet_v3_large-d234d4ea.pth",
+   "sha256_prefix": "d234d4ea",
+   "size_mb": 12.49
+  },
+  {
+   "url": "https://download.pytorch.org/models/maskrcnn_resnet50_fpn_coco-bf2d0c1e.pth",
+   "file": "maskrcnn_resnet50_fpn_coco-bf2d0c1e.pth",
+   "sha256_prefix": "bf2d0c1e",
+   "size_mb": 169.84
+  },
+  {
+   "url": "https://download.pytorch.org/models/maskrcnn_resnet50_fpn_v2_coco-73cbd019.pth",
+   "file": "maskrcnn_resnet50_fpn_v2_coco-73cbd019.pth",
+   "sha256_prefix": "73cbd019",
+   "size_mb": 177.219
+  },
+  {
+   "url": "https://download.pytorch.org/models/maxvit_t-bc5ab103.pth",
+   "file": "maxvit_t-bc5ab103.pth",
+   "sha256_prefix": "bc5ab103",
+   "size_mb": 118.769
+  },
+  {
+   "url": "https://download.pytorch.org/models/mc3_18-a90a0ba3.pth",
+   "file": "mc3_18-a90a0ba3.pth",
+   "sha256_prefix": "a90a0ba3",
+   "size_mb": 44.672
+  },
+  {
+   "url": "https://download.pytorch.org/models/mnasnet0.5_top1_67.823-3ffadce67e.pth",
+   "file": "mnasnet0.5_top1_67.823-3ffadce67e.pth",
+   "sha256_prefix": "3ffadce67e",
+   "size_mb": 8.591
+  },
+  {
+   "url": "https://download.pytorch.org/models/mnasnet0_75-7090bc5f.pth",
+   "file": "mnasnet0_75-7090bc5f.pth",
+   "sha256_prefix": "7090bc5f",
+   "size_mb": 12.303
+  },
+  {
+   "url": "https://download.pytorch.org/models/mnasnet1.0_top1_73.512-f206786ef8.pth",
+   "file": "mnasnet1.0_top1_73.512-f206786ef8.pth",
+   "sha256_prefix": "f206786ef8",
+   "size_mb": 16.915
+  },
+  {
+   "url": "https://download.pytorch.org/models/mnasnet1_3-a4c69d6f.pth",
+   "file": "mnasnet1_3-a4c69d6f.pth",
+   "sha256_prefix": "a4c69d6f",
+   "size_mb": 24.246
+  },
+  {
+   "url": "https://download.pytorch.org/models/mobilenet_v2-7ebf99e0.pth",
+   "file": "mobilenet_v2-7ebf99e0.pth",
+   "sha256_prefix": "7ebf99e0",
+   "size_mb": 13.598
+  },
+  {
+   "url": "https://download.pytorch.org/models/mobilenet_v2-b0353104.pth",
+   "file": "mobilenet_v2-b0353104.pth",
+   "sha256_prefix": "b0353104",
+   "size_mb": 13.555
+  },
+  {
+   "url": "https://download.pytorch.org/models/mobilenet_v3_large-5c1a4163.pth",
+   "file": "mobilenet_v3_large-5c1a4163.pth",
+   "sha256_prefix": "5c1a4163",
+   "size_mb": 21.107
+  },
+  {
+   "url": "https://download.pytorch.org/models/mobilenet_v3_large-8738ca79.pth",
+   "file": "mobilenet_v3_large-8738ca79.pth",
+   "sha256_prefix": "8738ca79",
+   "size_mb": 21.114
+  },
+  {
+   "url": "https://download.pytorch.org/models/mobilenet_v3_small-047dcff4.pth",
+   "file": "mobilenet_v3_small-047dcff4.pth",
+   "sha256_prefix": "047dcff4",
+   "size_mb": 9.829
+  },
+  {
+   "url": "https://download.pytorch.org/models/mvit_v1_b-dbeb1030.pth",
+   "file": "mvit_v1_b-dbeb1030.pth",
+   "sha256_prefix": "dbeb1030",
+   "size_mb": 139.764
+  },
+  {
+   "url": "https://download.pytorch.org/models/mvit_v2_s-ae3be167.pth",
+   "file": "mvit_v2_s-ae3be167.pth",
+   "sha256_prefix": "ae3be167",
+   "size_mb": 131.884
+  },
+  {
+   "url": "https://download.pytorch.org/models/quantized/googlenet_fbgemm-c81f6644.pth",
+   "file": "googlenet_fbgemm-c81f6644.pth",
+   "sha256_prefix": "c81f6644",
+   "size_mb": 12.618
+  },
+  {
+   "url": "https://download.pytorch.org/models/quantized/inception_v3_google_fbgemm-a2837893.pth",
+   "file": "inception_v3_google_fbgemm-a2837893.pth",
+   "sha256_prefix": "a2837893",
+   "size_mb": 23.146
+  },
+  {
+   "url": "https://download.pytorch.org/models/quantized/mobilenet_v2_qnnpack_37f702c5.pth",
+   "file": "mobilenet_v2_qnnpack_37f702c5.pth",
+   "sha256_prefix": null,
+   "size_mb": 3.423
+  },
+  {
+   "url": "https://download.pytorch.org/models/quantized/mobilenet_v3_large_qnnpack-5bcacf28.pth",
+   "file": "mobilenet_v3_large_qnnpack-5bcacf28.pth",
+   "sha256_prefix": "5bcacf28",
+   "size_mb": 21.554
+  },
+  {
+   "url": "https://download.pytorch.org/models/quantized/resnet18_fbgemm_16fa66dd.pth",
+   "file": "resnet18_fbgemm_16fa66dd.pth",
+   "sha256_prefix": null,
+   "size_mb": 11.238
+  },
+  {
+   "url": "https://download.pytorch.org/models/quantized/resnet50_fbgemm-23753f79.pth",
+   "file": "resnet50_fbgemm-23753f79.pth",
+   "sha256_prefix": "23753f79",
+   "size_mb": 24.953
+  },
+  {
+   "url": "https://download.pytorch.org/models/quantized/resnet50_fbgemm_bf931d71.pth",
+   "file": "resnet50_fbgemm_bf931d71.pth",
+   "sha256_prefix": null,
+   "size_mb": 24.759
+  },
+  {
+   "url": "https://download.pytorch.org/models/quantized/resnext101_32x8_fbgemm-ee16d00c.pth",
+   "file": "resnext101_32x8_fbgemm-ee16d00c.pth",
+   "sha256_prefix": "ee16d00c",
+   "size_mb": 86.645
+  },
+  {
+   "url": "https://download.pytorch.org/models/quantized/resnext101_32x8_fbgemm_09835ccf.pth",
+   "file": "resnext101_32x8_fbgemm_09835ccf.pth",
+   "sha256_prefix": null,
+   "size_mb": 86.034
+  },
+  {
+   "url": "https://download.pytorch.org/models/quantized/resnext101_64x4d_fbgemm-605a1cb3.pth",
+   "file": "resnext101_64x4d_fbgemm-605a1cb3.pth",
+   "sha256_prefix": "605a1cb3",
+   "size_mb": 81.556
+  },
+  {
+   "url": "https://download.pytorch.org/models/quantized/shufflenetv2_x0.5_fbgemm-00845098.pth",
+   "file": "shufflenetv2_x0.5_fbgemm-00845098.pth",
+   "sha256_prefix": "00845098",
+   "size_mb": 1.501
+  },
+  {
+   "url": "https://download.pytorch.org/models/quantized/shufflenetv2_x1_5_fbgemm-d7401f05.pth",
+   "file": "shufflenetv2_x1_5_fbgemm-d7401f05.pth",
+   "sha256_prefix": "d7401f05",
+   "size_mb": 3.672
+  },
+  {
+   "url": "https://download.pytorch.org/models/quantized/shufflenetv2_x1_fbgemm-1e62bb32.pth",
+   "file": "shufflenetv2_x1_fbgemm-1e62bb32.pth",
+   "sha256_prefix": "1e62bb32",
+   "size_mb": 2.334
+  },
+  {
+   "url": "https://download.pytorch.org/models/quantized/shufflenetv2_x2_0_fbgemm-5cac526c.pth",
+   "file": "shufflenetv2_x2_0_fbgemm-5cac526c.pth",
+   "sha256_prefix": "5cac526c",
+   "size_mb": 7.467
+  },
+  {
+   "url": "https://download.pytorch.org/models/r2plus1d_18-91a641e6.pth",
+   "file": "r2plus1d_18-91a641e6.pth",
+   "sha256_prefix": "91a641e6",
+   "size_mb": 120.318
+  },
+  {
+   "url": "https://download.pytorch.org/models/r3d_18-b3b3357e.pth",
+   "file": "r3d_18-b3b3357e.pth",
+   "sha256_prefix": "b3b3357e",
+   "size_mb": 127.359
+  },
+  {
+   "url": "https://download.pytorch.org/models/raft_large_C_T_SKHT_K_V1-4a6a5039.pth",
+   "file": "raft_large_C_T_SKHT_K_V1-4a6a5039.pth",
+   "sha256_prefix": "4a6a5039",
+   "size_mb": 20.129
+  },
+  {
+   "url": "https://download.pytorch.org/models/raft_large_C_T_SKHT_K_V2-b5c70766.pth",
+   "file": "raft_large_C_T_SKHT_K_V2-b5c70766.pth",
+   "sha256_prefix": "b5c70766",
+   "size_mb": 20.129
+  },
+  {
+   "url": "https://download.pytorch.org/models/raft_large_C_T_SKHT_V1-0b8c9e55.pth",
+   "file": "raft_large_C_T_SKHT_V1-0b8c9e55.pth",
+   "sha256_prefix": "0b8c9e55",
+   "size_mb": 20.129
+  },
+  {
+   "url": "https://download.pytorch.org/models/raft_large_C_T_SKHT_V2-ff5fadd5.pth",
+   "file": "raft_large_C_T_SKHT_V2-ff5fadd5.pth",
+   "sha256_prefix": "ff5fadd5",
+   "size_mb": 20.129
+  },
+  {
+   "url": "https://download.pytorch.org/models/raft_large_C_T_V1-22a6c225.pth",
+   "file": "raft_large_C_T_V1-22a6c225.pth",
+   "sha256_prefix": "22a6c225",
+   "size_mb": 20.129
+  },
+  {
+   "url": "https://download.pytorch.org/models/raft_large_C_T_V2-1bb1363a.pth",
+   "file": "raft_large_C_T_V2-1bb1363a.pth",
+   "sha256_prefix": "1bb1363a",
+   "size_mb": 20.129
+  },
+  {
+   "url": "https://download.pytorch.org/models/raft_small_C_T_V1-ad48884c.pth",
+   "file": "raft_small_C_T_V1-ad48884c.pth",
+   "sha256_prefix": "ad48884c",
+   "size_mb": 3.821
+  },
+  {
+   "url": "https://download.pytorch.org/models/raft_small_C_T_V2-01064c6d.pth",
+   "file": "raft_small_C_T_V2-01064c6d.pth",
+   "sha256_prefix": "01064c6d",
+   "size_mb": 3.821
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_x_16gf-2007eb11.pth",
+   "file": "regnet_x_16gf-2007eb11.pth",
+   "sha256_prefix": "2007eb11",
+   "size_mb": 207.627
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_x_16gf-ba3796d7.pth",
+   "file": "regnet_x_16gf-ba3796d7.pth",
+   "sha256_prefix": "ba3796d7",
+   "size_mb": 207.627
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_x_1_6gf-a12f2b72.pth",
+   "file": "regnet_x_1_6gf-a12f2b72.pth",
+   "sha256_prefix": "a12f2b72",
+   "size_mb": 35.339
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_x_1_6gf-e3633e7f.pth",
+   "file": "regnet_x_1_6gf-e3633e7f.pth",
+   "sha256_prefix": "e3633e7f",
+   "size_mb": 35.339
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_x_32gf-6eb8fdc6.pth",
+   "file": "regnet_x_32gf-6eb8fdc6.pth",
+   "sha256_prefix": "6eb8fdc6",
+   "size_mb": 412.039
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_x_32gf-9d47f8d0.pth",
+   "file": "regnet_x_32gf-9d47f8d0.pth",
+   "sha256_prefix": "9d47f8d0",
+   "size_mb": 412.039
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_x_3_2gf-7071aa85.pth",
+   "file": "regnet_x_3_2gf-7071aa85.pth",
+   "sha256_prefix": "7071aa85",
+   "size_mb": 58.756
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_x_3_2gf-f342aeae.pth",
+   "file": "regnet_x_3_2gf-f342aeae.pth",
+   "sha256_prefix": "f342aeae",
+   "size_mb": 58.756
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_x_400mf-62229a5f.pth",
+   "file": "regnet_x_400mf-62229a5f.pth",
+   "sha256_prefix": "62229a5f",
+   "size_mb": 21.257
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_x_400mf-adf1edd5.pth",
+   "file": "regnet_x_400mf-adf1edd5.pth",
+   "sha256_prefix": "adf1edd5",
+   "size_mb": 21.258
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_x_800mf-94a99ebd.pth",
+   "file": "regnet_x_800mf-94a99ebd.pth",
+   "sha256_prefix": "94a99ebd",
+   "size_mb": 27.945
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_x_800mf-ad17e45c.pth",
+   "file": "regnet_x_800mf-ad17e45c.pth",
+   "sha256_prefix": "ad17e45c",
+   "size_mb": 27.945
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_x_8gf-03ceed89.pth",
+   "file": "regnet_x_8gf-03ceed89.pth",
+   "sha256_prefix": "03ceed89",
+   "size_mb": 151.456
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_x_8gf-2b70d774.pth",
+   "file": "regnet_x_8gf-2b70d774.pth",
+   "sha256_prefix": "2b70d774",
+   "size_mb": 151.456
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_128gf_lc_swag-cbe8ce12.pth",
+   "file": "regnet_y_128gf_lc_swag-cbe8ce12.pth",
+   "sha256_prefix": "cbe8ce12",
+   "size_mb": 2461.564
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_128gf_swag-c8ce3e52.pth",
+   "file": "regnet_y_128gf_swag-c8ce3e52.pth",
+   "sha256_prefix": "c8ce3e52",
+   "size_mb": 2461.564
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_16gf-3e4a00f9.pth",
+   "file": "regnet_y_16gf-3e4a00f9.pth",
+   "sha256_prefix": "3e4a00f9",
+   "size_mb": 319.49
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_16gf-9e6ed7dd.pth",
+   "file": "regnet_y_16gf-9e6ed7dd.pth",
+   "sha256_prefix": "9e6ed7dd",
+   "size_mb": 319.49
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_16gf_lc_swag-f3ec0043.pth",
+   "file": "regnet_y_16gf_lc_swag-f3ec0043.pth",
+   "sha256_prefix": "f3ec0043",
+   "size_mb": 319.49
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_16gf_swag-43afe44d.pth",
+   "file": "regnet_y_16gf_swag-43afe44d.pth",
+   "sha256_prefix": "43afe44d",
+   "size_mb": 319.49
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_1_6gf-0d7bc02a.pth",
+   "file": "regnet_y_1_6gf-0d7bc02a.pth",
+   "sha256_prefix": "0d7bc02a",
+   "size_mb": 43.152
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_1_6gf-b11a554e.pth",
+   "file": "regnet_y_1_6gf-b11a554e.pth",
+   "sha256_prefix": "b11a554e",
+   "size_mb": 43.152
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_32gf-4dee3f7a.pth",
+   "file": "regnet_y_32gf-4dee3f7a.pth",
+   "sha256_prefix": "4dee3f7a",
+   "size_mb": 554.076
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_32gf-8db6d4b5.pth",
+   "file": "regnet_y_32gf-8db6d4b5.pth",
+   "sha256_prefix": "8db6d4b5",
+   "size_mb": 554.076
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_32gf_lc_swag-e1583746.pth",
+   "file": "regnet_y_32gf_lc_swag-e1583746.pth",
+   "sha256_prefix": "e1583746",
+   "size_mb": 554.076
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_32gf_swag-04fdfa75.pth",
+   "file": "regnet_y_32gf_swag-04fdfa75.pth",
+   "sha256_prefix": "04fdfa75",
+   "size_mb": 554.076
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_3_2gf-9180c971.pth",
+   "file": "regnet_y_3_2gf-9180c971.pth",
+   "sha256_prefix": "9180c971",
+   "size_mb": 74.567
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_3_2gf-b5a9779c.pth",
+   "file": "regnet_y_3_2gf-b5a9779c.pth",
+   "sha256_prefix": "b5a9779c",
+   "size_mb": 74.567
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_400mf-c65dace8.pth",
+   "file": "regnet_y_400mf-c65dace8.pth",
+   "sha256_prefix": "c65dace8",
+   "size_mb": 16.806
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_400mf-e6988f5f.pth",
+   "file": "regnet_y_400mf-e6988f5f.pth",
+   "sha256_prefix": "e6988f5f",
+   "size_mb": 16.806
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_800mf-1b27b58c.pth",
+   "file": "regnet_y_800mf-1b27b58c.pth",
+   "sha256_prefix": "1b27b58c",
+   "size_mb": 24.774
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_800mf-58fc7688.pth",
+   "file": "regnet_y_800mf-58fc7688.pth",
+   "sha256_prefix": "58fc7688",
+   "size_mb": 24.774
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_8gf-d0d0e4a8.pth",
+   "file": "regnet_y_8gf-d0d0e4a8.pth",
+   "sha256_prefix": "d0d0e4a8",
+   "size_mb": 150.701
+  },
+  {
+   "url": "https://download.pytorch.org/models/regnet_y_8gf-dc2b1b54.pth",
+   "file": "regnet_y_8gf-dc2b1b54.pth",
+   "sha256_prefix": "dc2b1b54",
+   "size_mb": 150.701
+  },
+  {
+   "url": "https://download.pytorch.org/models/resnet101-63fe2227.pth",
+   "file": "resnet101-63fe2227.pth",
+   "sha256_prefix": "63fe2227",
+   "size_mb": 170.511
+  },
+  {
+   "url": "https://download.pytorch.org/models/resnet101-cd907fc2.pth",
+   "file": "resnet101-cd907fc2.pth",
+   "sha256_prefix": "cd907fc2",
+   "size_mb": 170.53
+  },
+  {
+   "url": "https://download.pytorch.org/models/resnet152-394f9c45.pth",
+   "file": "resnet152-394f9c45.pth",
+   "sha256_prefix": "394f9c45",
+   "size_mb": 230.434
+  },
+  {
+   "url": "https://download.pytorch.org/models/resnet152-f82ba261.pth",
+   "file": "resnet152-f82ba261.pth",
+   "sha256_prefix": "f82ba261",
+   "size_mb": 230.474
+  },
+  {
+   "url": "https://download.pytorch.org/models/resnet18-f37072fd.pth",
+   "file": "resnet18-f37072fd.pth",
+   "sha256_prefix": "f37072fd",
+   "size_mb": 44.661
+  },
+  {
+   "url": "https://download.pytorch.org/models/resnet34-b627a593.pth",
+   "file": "resnet34-b627a593.pth",
+   "sha256_prefix": "b627a593",
+   "size_mb": 83.275
+  },
+  {
+   "url": "https://download.pytorch.org/models/resnet50-0676ba61.pth",
+   "file": "resnet50-0676ba61.pth",
+   "sha256_prefix": "0676ba61",
+   "size_mb": 97.781
+  },
+  {
+   "url": "https://download.pytorch.org/models/resnet50-11ad3fa6.pth",
+   "file": "resnet50-11ad3fa6.pth",
+   "sha256_prefix": "11ad3fa6",
+   "size_mb": 97.79
+  },
+  {
+   "url": "https://download.pytorch.org/models/resnext101_32x8d-110c445d.pth",
+   "file": "resnext101_32x8d-110c445d.pth",
+   "sha256_prefix": "110c445d",
+   "size_mb": 339.673
+  },
+  {
+   "url": "https://download.pytorch.org/models/resnext101_32x8d-8ba56ff5.pth",
+   "file": "resnext101_32x8d-8ba56ff5.pth",
+   "sha256_prefix": "8ba56ff5",
+   "size_mb": 339.586
+  },
+  {
+   "url": "https://download.pytorch.org/models/resnext101_64x4d-173b62eb.pth",
+   "file": "resnext101_64x4d-173b62eb.pth",
+   "sha256_prefix": "173b62eb",
+   "size_mb": 319.318
+  },
+  {
+   "url": "https://download.pytorch.org/models/resnext50_32x4d-1a0047aa.pth",
+   "file": "resnext50_32x4d-1a0047aa.pth",
+   "sha256_prefix": "1a0047aa",
+   "size_mb": 95.833
+  },
+  {
+   "url": "https://download.pytorch.org/models/resnext50_32x4d-7cdf4587.pth",
+   "file": "resnext50_32x4d-7cdf4587.pth",
+   "sha256_prefix": "7cdf4587",
+   "size_mb": 95.789
+  },
+  {
+   "url": "https://download.pytorch.org/models/retinanet_resnet50_fpn_coco-eeacb38b.pth",
+   "file": "retinanet_resnet50_fpn_coco-eeacb38b.pth",
+   "sha256_prefix": "eeacb38b",
+   "size_mb": 130.267
+  },
+  {
+   "url": "https://download.pytorch.org/models/retinanet_resnet50_fpn_v2_coco-5905b1c5.pth",
+   "file": "retinanet_resnet50_fpn_v2_coco-5905b1c5.pth",
+   "sha256_prefix": "5905b1c5",
+   "size_mb": 146.037
+  },
+  {
+   "url": "https://download.pytorch.org/models/s3d-d76dad2f.pth",
+   "file": "s3d-d76dad2f.pth",
+   "sha256_prefix": "d76dad2f",
+   "size_mb": 31.972
+  },
+  {
+   "url": "https://download.pytorch.org/models/shufflenetv2_x0.5-f707e7126e.pth",
+   "file": "shufflenetv2_x0.5-f707e7126e.pth",
+   "sha256_prefix": "f707e7126e",
+   "size_mb": 5.282
+  },
+  {
+   "url": "https://download.pytorch.org/models/shufflenetv2_x1-5666bf0f80.pth",
+   "file": "shufflenetv2_x1-5666bf0f80.pth",
+   "sha256_prefix": "5666bf0f80",
+   "size_mb": 8.791
+  },
+  {
+   "url": "https://download.pytorch.org/models/shufflenetv2_x1_5-3c479a10.pth",
+   "file": "shufflenetv2_x1_5-3c479a10.pth",
+   "sha256_prefix": "3c479a10",
+   "size_mb": 13.557
+  },
+  {
+   "url": "https://download.pytorch.org/models/shufflenetv2_x2_0-8be3c8ee.pth",
+   "file": "shufflenetv2_x2_0-8be3c8ee.pth",
+   "sha256_prefix": "8be3c8ee",
+   "size_mb": 28.433
+  },
+  {
+   "url": "https://download.pytorch.org/models/squeezenet1_0-b66bff10.pth",
+   "file": "squeezenet1_0-b66bff10.pth",
+   "sha256_prefix": "b66bff10",
+   "size_mb": 4.778
+  },
+  {
+   "url": "https://download.pytorch.org/models/squeezenet1_1-b8a52dc0.pth",
+   "file": "squeezenet1_1-b8a52dc0.pth",
+   "sha256_prefix": "b8a52dc0",
+   "size_mb": 4.729
+  },
+  {
+   "url": "https://download.pytorch.org/models/ssd300_vgg16_coco-b556d3b4.pth",
+   "file": "ssd300_vgg16_coco-b556d3b4.pth",
+   "sha256_prefix": "b556d3b4",
+   "size_mb": 135.988
+  },
+  {
+   "url": "https://download.pytorch.org/models/ssdlite320_mobilenet_v3_large_coco-a79551df.pth",
+   "file": "ssdlite320_mobilenet_v3_large_coco-a79551df.pth",
+   "sha256_prefix": "a79551df",
+   "size_mb": 13.418
+  },
+  {
+   "url": "https://download.pytorch.org/models/swin3d_b_1k-24f7c7c6.pth",
+   "file": "swin3d_b_1k-24f7c7c6.pth",
+   "sha256_prefix": "24f7c7c6",
+   "size_mb": 364.134
+  },
+  {
+   "url": "https://download.pytorch.org/models/swin3d_b_22k-7c6ae6fa.pth",
+   "file": "swin3d_b_22k-7c6ae6fa.pth",
+   "sha256_prefix": "7c6ae6fa",
+   "size_mb": 364.134
+  },
+  {
+   "url": "https://download.pytorch.org/models/swin3d_s-da41c237.pth",
+   "file": "swin3d_s-da41c237.pth",
+   "sha256_prefix": "da41c237",
+   "size_mb": 218.288
+  },
+  {
+   "url": "https://download.pytorch.org/models/swin3d_t-7615ae03.pth",
+   "file": "swin3d_t-7615ae03.pth",
+   "sha256_prefix": "7615ae03",
+   "size_mb": 121.543
+  },
+  {
+   "url": "https://download.pytorch.org/models/swin_b-68c6b09e.pth",
+   "file": "swin_b-68c6b09e.pth",
+   "sha256_prefix": "68c6b09e",
+   "size_mb": 335.364
+  },
+  {
+   "url": "https://download.pytorch.org/models/swin_s-5e29d889.pth",
+   "file": "swin_s-5e29d889.pth",
+   "sha256_prefix": "5e29d889",
+   "size_mb": 189.786
+  },
+  {
+   "url": "https://download.pytorch.org/models/swin_t-704ceda3.pth",
+   "file": "swin_t-704ceda3.pth",
+   "sha256_prefix": "704ceda3",
+   "size_mb": 108.19
+  },
+  {
+   "url": "https://download.pytorch.org/models/swin_v2_b-781e5279.pth",
+   "file": "swin_v2_b-781e5279.pth",
+   "sha256_prefix": "781e5279",
+   "size_mb": 336.372
+  },
+  {
+   "url": "https://download.pytorch.org/models/swin_v2_s-637d8ceb.pth",
+   "file": "swin_v2_s-637d8ceb.pth",
+   "sha256_prefix": "637d8ceb",
+   "size_mb": 190.675
+  },
+  {
+   "url": "https://download.pytorch.org/models/swin_v2_t-b137f0e2.pth",
+   "file": "swin_v2_t-b137f0e2.pth",
+   "sha256_prefix": "b137f0e2",
+   "size_mb": 108.626
+  },
+  {
+   "url": "https://download.pytorch.org/models/vgg11-8a719046.pth",
+   "file": "vgg11-8a719046.pth",
+   "sha256_prefix": "8a719046",
+   "size_mb": 506.84
+  },
+  {
+   "url": "https://download.pytorch.org/models/vgg11_bn-6002323d.pth",
+   "file": "vgg11_bn-6002323d.pth",
+   "sha256_prefix": "6002323d",
+   "size_mb": 506.881
+  },
+  {
+   "url": "https://download.pytorch.org/models/vgg13-19584684.pth",
+   "file": "vgg13-19584684.pth",
+   "sha256_prefix": "19584684",
+   "size_mb": 507.545
+  },
+  {
+   "url": "https://download.pytorch.org/models/vgg13_bn-abd245e5.pth",
+   "file": "vgg13_bn-abd245e5.pth",
+   "sha256_prefix": "abd245e5",
+   "size_mb": 507.59
+  },
+  {
+   "url": "https://download.pytorch.org/models/vgg16-397923af.pth",
+   "file": "vgg16-397923af.pth",
+   "sha256_prefix": "397923af",
+   "size_mb": 527.796
+  },
+  {
+   "url": "https://download.pytorch.org/models/vgg16_bn-6c64b313.pth",
+   "file": "vgg16_bn-6c64b313.pth",
+   "sha256_prefix": "6c64b313",
+   "size_mb": 527.866
+  },
+  {
+   "url": "https://download.pytorch.org/models/vgg16_features-amdegroot-88682ab5.pth",
+   "file": "vgg16_features-amdegroot-88682ab5.pth",
+   "sha256_prefix": "88682ab5",
+   "size_mb": 527.802
+  },
+  {
+   "url": "https://download.pytorch.org/models/vgg19-dcbb9e9d.pth",
+   "file": "vgg19-dcbb9e9d.pth",
+   "sha256_prefix": "dcbb9e9d",
+   "size_mb": 548.051
+  },
+  {
+   "url": "https://download.pytorch.org/models/vgg19_bn-c79401a0.pth",
+   "file": "vgg19_bn-c79401a0.pth",
+   "sha256_prefix": "c79401a0",
+   "size_mb": 548.143
+  },
+  {
+   "url": "https://download.pytorch.org/models/vit_b_16-c867db91.pth",
+   "file": "vit_b_16-c867db91.pth",
+   "sha256_prefix": "c867db91",
+   "size_mb": 330.285
+  },
+  {
+   "url": "https://download.pytorch.org/models/vit_b_16_lc_swag-4e70ced5.pth",
+   "file": "vit_b_16_lc_swag-4e70ced5.pth",
+   "sha256_prefix": "4e70ced5",
+   "size_mb": 330.285
+  },
+  {
+   "url": "https://download.pytorch.org/models/vit_b_16_swag-9ac1b537.pth",
+   "file": "vit_b_16_swag-9ac1b537.pth",
+   "sha256_prefix": "9ac1b537",
+   "size_mb": 331.398
+  },
+  {
+   "url": "https://download.pytorch.org/models/vit_b_32-d86f8d99.pth",
+   "file": "vit_b_32-d86f8d99.pth",
+   "sha256_prefix": "d86f8d99",
+   "size_mb": 336.604
+  },
+  {
+   "url": "https://download.pytorch.org/models/vit_h_14_lc_swag-c1eb923e.pth",
+   "file": "vit_h_14_lc_swag-c1eb923e.pth",
+   "sha256_prefix": "c1eb923e",
+   "size_mb": 2411.209
+  },
+  {
+   "url": "https://download.pytorch.org/models/vit_h_14_swag-80465313.pth",
+   "file": "vit_h_14_swag-80465313.pth",
+   "sha256_prefix": "80465313",
+   "size_mb": 2416.643
+  },
+  {
+   "url": "https://download.pytorch.org/models/vit_l_16-852ce7e3.pth",
+   "file": "vit_l_16-852ce7e3.pth",
+   "sha256_prefix": "852ce7e3",
+   "size_mb": 1161.023
+  },
+  {
+   "url": "https://download.pytorch.org/models/vit_l_16_lc_swag-4d563306.pth",
+   "file": "vit_l_16_lc_swag-4d563306.pth",
+   "sha256_prefix": "4d563306",
+   "size_mb": 1161.023
+  },
+  {
+   "url": "https://download.pytorch.org/models/vit_l_16_swag-4f3808c9.pth",
+   "file": "vit_l_16_swag-4f3808c9.pth",
+   "sha256_prefix": "4f3808c9",
+   "size_mb": 1164.258
+  },
+  {
+   "url": "https://download.pytorch.org/models/vit_l_32-c7638314.pth",
+   "file": "vit_l_32-c7638314.pth",
+   "sha256_prefix": "c7638314",
+   "size_mb": 1169.449
+  },
+  {
+   "url": "https://download.pytorch.org/models/wide_resnet101_2-32ee1156.pth",
+   "file": "wide_resnet101_2-32ee1156.pth",
+   "sha256_prefix": "32ee1156",
+   "size_mb": 242.896
+  },
+  {
+   "url": "https://download.pytorch.org/models/wide_resnet101_2-d733dc28.pth",
+   "file": "wide_resnet101_2-d733dc28.pth",
+   "sha256_prefix": "d733dc28",
+   "size_mb": 484.747
+  },
+  {
+   "url": "https://download.pytorch.org/models/wide_resnet50_2-95faca4d.pth",
+   "file": "wide_resnet50_2-95faca4d.pth",
+   "sha256_prefix": "95faca4d",
+   "size_mb": 131.82
+  },
+  {
+   "url": "https://download.pytorch.org/models/wide_resnet50_2-9ba9bcbe.pth",
+   "file": "wide_resnet50_2-9ba9bcbe.pth",
+   "sha256_prefix": "9ba9bcbe",
+   "size_mb": 263.124
+  }
+ ]
+}

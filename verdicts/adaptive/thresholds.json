@@ -1,0 +1,11 @@
+{
+  "_comment": "Pre-registered fixed operating point (PREREGISTRATION 11.1 / section 6): every detector here is thresholded at 0.5, untuned. The 1%/0.1%-FPR curve is added once the benign rows exist; it needs the benign FPR audit, not this file.",
+  "SP-RF": 0.5,
+  "SP-CB": 0.5,
+  "META": 0.5,
+  "FUSE": 0.5,
+  "FUSE-INV": 0.5,
+  "CNN": 0.5,
+  "ML": null,
+  "FUSE-INV+": null
+}

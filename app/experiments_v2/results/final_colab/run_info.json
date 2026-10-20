@@ -1,0 +1,12 @@
+{
+  "minutes": 1.8,
+  "reps": 5,
+  "versions": {
+    "sklearn": "1.6.1",
+    "torch": "2.11.0+cpu",
+    "xgboost": "3.4.1",
+    "catboost": "1.2.10",
+    "numpy": "2.1.3"
+  },
+  "locked_manifest_sha256": "1aaa27a48abab0a0ca30b26a1ba829b43c0376d67580e865c19227b3c394c142"
+}

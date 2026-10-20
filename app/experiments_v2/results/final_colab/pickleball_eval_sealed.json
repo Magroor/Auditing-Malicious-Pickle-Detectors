@@ -1,0 +1,1292 @@
+{
+  "dataset": "PickleBall (Zenodo 16974645, CC BY 4.0; Kellas et al., CCS 2025)",
+  "half": "sealed",
+  "final_run": true,
+  "status": "CONFIRMATORY (sealed half, one-time final run)",
+  "smoke_test": false,
+  "limit": null,
+  "unit_frac": null,
+  "max_bytes": 83886080,
+  "split": {
+    "salt": "NED-pickleball-split-v1",
+    "unit": "tar member path minus the file name ('.' = archive root)",
+    "rule": "half = ('explore','sealed')[int(sha256(f'{salt}:{unit}').hexdigest(), 16) & 1]",
+    "unit_frac_rule": "keep a unit iff (int(sha256(f'{salt}:{unit}').hexdigest(), 16) >> 192) / 2**64 < unit_frac",
+    "nested_units": {
+      "benign": {
+        "nested_units": 1,
+        "nested_in_other_half": 0
+      },
+      "malicious": {
+        "nested_units": 2,
+        "nested_in_other_half": 1
+      }
+    }
+  },
+  "archives": {
+    "malicious.tar.gz": {
+      "label": 1,
+      "source": "https://zenodo.org/api/records/16974645/files/malicious.tar.gz/content",
+      "stream_status": "complete",
+      "sha256_gz": "6e901ff7a821f8be8f08ed663a31f56375c8fbb70c9324aedfe45f8dd7b6bf14",
+      "md5_gz": "6cb39e6ed8f1e9f12d64fdec91655ddd",
+      "bytes_gz": 10179996841,
+      "content_length": 10179996841,
+      "complete": true,
+      "resumes": 0
+    },
+    "benign-abridged.tar.gz": {
+      "label": 0,
+      "source": "https://zenodo.org/api/records/16974645/files/benign-abridged.tar.gz/content",
+      "stream_status": "complete",
+      "sha256_gz": "382f105cddf41f5b3540aca67b304ace087b54de027bc83d806004972f31fa47",
+      "md5_gz": "144afa75b59feaffaff970e7a1af62c6",
+      "bytes_gz": 9618678863,
+      "content_length": 9618678863,
+      "complete": true,
+      "resumes": 0
+    }
+  },
+  "archives_complete": true,
+  "members": {
+    "benign": {
+      "regular_files": {
+        "explore": 36,
+        "sealed": 39
+      },
+      "units": {
+        "explore": 9,
+        "sealed": 13
+      },
+      "non_regular_members": 0,
+      "evaluated_half": {
+        "files_excluded_by_unit_frac": 0,
+        "size_skipped_by_ext": {
+          ".bin": 5,
+          ".pt": 2
+        },
+        "rejected_by_ext": {
+          ".codes": 1,
+          ".json": 23,
+          ".model": 1,
+          ".txt": 3
+        },
+        "rejected_reason": {
+          "invalid_global_name": 1,
+          "not_pickle_magic": 27
+        },
+        "accepted_by_ext": {
+          ".bin": 2,
+          ".pt": 2
+        }
+      },
+      "npy_npz_members_by_half": {}
+    },
+    "malicious": {
+      "regular_files": {
+        "explore": 36,
+        "sealed": 49
+      },
+      "units": {
+        "explore": 33,
+        "sealed": 39
+      },
+      "non_regular_members": 0,
+      "evaluated_half": {
+        "files_excluded_by_unit_frac": 0,
+        "size_skipped_by_ext": {
+          ".bin": 16
+        },
+        "rejected_by_ext": {
+          ".txt": 1
+        },
+        "rejected_reason": {
+          "not_pickle_magic": 1
+        },
+        "accepted_by_ext": {
+          ".bin": 9,
+          ".pkl": 13,
+          ".pt": 8,
+          ".pth": 2
+        }
+      },
+      "npy_npz_members_by_half": {}
+    }
+  },
+  "scope_notes": [
+    "Candidates are chosen by content, not extension: a zip with a .pkl member, or a pickle first byte whose first 4 KB decode as a pickle (STOP, or >= 3 stack-consistent opcodes, valid GLOBAL/INST names). See rejected_by_ext / rejected_reason / accepted_by_ext per class.",
+    "Members larger than max_bytes (83886080 B) are not scored (size_skipped_by_ext), matching the <=80 MB selection of our corpus. This drops large benign checkpoints.",
+    ".npy/.npz members (npy_npz_members_by_half) are OUT OF SCOPE and never parsed: object .npy arrays embed pickles, which this evaluation does not cover.",
+    "Inner streams > 16 MiB give zero opcodes to every static reader (cap_reason byte_cap); only the +FC rows act on them."
+  ],
+  "featurised_per_half": {
+    "explore": 0,
+    "sealed": 15
+  },
+  "sealed_manifest": {
+    "n_members": 88,
+    "sha256": "990c452fc88fb0e4e14f004064dbb1ff790efdd46af6fc2b200e98b921c1cbe3",
+    "complete": true,
+    "featurised_members": 15,
+    "sha_overlap_corpus_unique": 17,
+    "expected_sha256": "990c452fc88fb0e4e14f004064dbb1ff790efdd46af6fc2b200e98b921c1cbe3",
+    "match": true
+  },
+  "explore_manifest": {
+    "n_members": 72,
+    "sha256": "04045167e680afb70566b360f1c7e571b6e89e774b59e0e9ece0b5bad86b5543",
+    "complete": true
+  },
+  "cross_half_identical_files": {
+    "unique_sha_in_both_halves": 6,
+    "note": "Identical bytes in both halves. In the final run, sealed candidates whose SHA occurs anywhere in the explore half are dropped (sha_in_explore_half). Structural-group overlap between the halves is not removed (explore members are only hashed in the final run)."
+  },
+  "file_level": {
+    "n_benign": 4,
+    "n_malicious": 2,
+    "n_struct_groups": {
+      "benign": 4,
+      "malicious": 2
+    },
+    "per_detector": {
+      "ML@tuned": {
+        "TP": 1,
+        "FN": 1,
+        "FP": 0,
+        "TN": 4,
+        "recall": 0.5,
+        "recall_ci95": [
+          0.0945,
+          0.9055
+        ],
+        "far": 0.0,
+        "far_ci95": [
+          0.0,
+          0.4899
+        ],
+        "precision": 1.0,
+        "f1": 0.6667
+      },
+      "ML@0.5": {
+        "TP": 1,
+        "FN": 1,
+        "FP": 2,
+        "TN": 2,
+        "recall": 0.5,
+        "recall_ci95": [
+          0.0945,
+          0.9055
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.3333,
+        "f1": 0.4
+      },
+      "CNN@tuned": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 1,
+        "TN": 3,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.25,
+        "far_ci95": [
+          0.0456,
+          0.6994
+        ],
+        "precision": 0.6667,
+        "f1": 0.8
+      },
+      "CNN@0.5": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 1,
+        "TN": 3,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.25,
+        "far_ci95": [
+          0.0456,
+          0.6994
+        ],
+        "precision": 0.6667,
+        "f1": 0.8
+      },
+      "SP-style@tuned": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.5,
+        "f1": 0.6667
+      },
+      "SP-RF@0.5": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 0,
+        "TN": 4,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.0,
+        "far_ci95": [
+          0.0,
+          0.4899
+        ],
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "SP-CB@0.5": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.5,
+        "f1": 0.6667
+      },
+      "SP-AE@p95": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 4,
+        "TN": 0,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 1.0,
+        "far_ci95": [
+          0.5101,
+          1.0
+        ],
+        "precision": 0.3333,
+        "f1": 0.5
+      },
+      "META@0.5": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.5,
+        "f1": 0.6667
+      },
+      "CNNv2@tuned": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 1,
+        "TN": 3,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.25,
+        "far_ci95": [
+          0.0456,
+          0.6994
+        ],
+        "precision": 0.6667,
+        "f1": 0.8
+      },
+      "CNNv2@0.5": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 1,
+        "TN": 3,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.25,
+        "far_ci95": [
+          0.0456,
+          0.6994
+        ],
+        "precision": 0.6667,
+        "f1": 0.8
+      },
+      "FUSE@0.5": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 0,
+        "TN": 4,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.0,
+        "far_ci95": [
+          0.0,
+          0.4899
+        ],
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "FUSE-C@0.5": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 0,
+        "TN": 4,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.0,
+        "far_ci95": [
+          0.0,
+          0.4899
+        ],
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "FUSE-INV@0.5": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.5,
+        "f1": 0.6667
+      },
+      "ML@tuned+FC": {
+        "TP": 1,
+        "FN": 1,
+        "FP": 0,
+        "TN": 4,
+        "recall": 0.5,
+        "recall_ci95": [
+          0.0945,
+          0.9055
+        ],
+        "far": 0.0,
+        "far_ci95": [
+          0.0,
+          0.4899
+        ],
+        "precision": 1.0,
+        "f1": 0.6667
+      },
+      "ML@0.5+FC": {
+        "TP": 1,
+        "FN": 1,
+        "FP": 2,
+        "TN": 2,
+        "recall": 0.5,
+        "recall_ci95": [
+          0.0945,
+          0.9055
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.3333,
+        "f1": 0.4
+      },
+      "CNN@tuned+FC": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 1,
+        "TN": 3,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.25,
+        "far_ci95": [
+          0.0456,
+          0.6994
+        ],
+        "precision": 0.6667,
+        "f1": 0.8
+      },
+      "CNN@0.5+FC": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 1,
+        "TN": 3,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.25,
+        "far_ci95": [
+          0.0456,
+          0.6994
+        ],
+        "precision": 0.6667,
+        "f1": 0.8
+      },
+      "SP-style@tuned+FC": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.5,
+        "f1": 0.6667
+      },
+      "SP-RF@0.5+FC": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 0,
+        "TN": 4,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.0,
+        "far_ci95": [
+          0.0,
+          0.4899
+        ],
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "SP-CB@0.5+FC": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.5,
+        "f1": 0.6667
+      },
+      "SP-AE@p95+FC": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 4,
+        "TN": 0,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 1.0,
+        "far_ci95": [
+          0.5101,
+          1.0
+        ],
+        "precision": 0.3333,
+        "f1": 0.5
+      },
+      "META@0.5+FC": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.5,
+        "f1": 0.6667
+      },
+      "CNNv2@tuned+FC": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 1,
+        "TN": 3,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.25,
+        "far_ci95": [
+          0.0456,
+          0.6994
+        ],
+        "precision": 0.6667,
+        "f1": 0.8
+      },
+      "CNNv2@0.5+FC": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 1,
+        "TN": 3,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.25,
+        "far_ci95": [
+          0.0456,
+          0.6994
+        ],
+        "precision": 0.6667,
+        "f1": 0.8
+      },
+      "FUSE@0.5+FC": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 0,
+        "TN": 4,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.0,
+        "far_ci95": [
+          0.0,
+          0.4899
+        ],
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "FUSE-C@0.5+FC": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 0,
+        "TN": 4,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.0,
+        "far_ci95": [
+          0.0,
+          0.4899
+        ],
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "FUSE-INV@0.5+FC": {
+        "TP": 2,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.3424,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.5,
+        "f1": 0.6667
+      }
+    }
+  },
+  "unit_level": {
+    "n_benign": 4,
+    "n_malicious": 1,
+    "units": {
+      "benign": {
+        "evaluated": 4,
+        "in_half": 13,
+        "excluded_by_unit_frac": 0,
+        "no_candidate_member": 9
+      },
+      "malicious": {
+        "all_candidates_dropped": 23,
+        "evaluated": 1,
+        "in_half": 39,
+        "excluded_by_unit_frac": 0,
+        "no_candidate_member": 15
+      }
+    },
+    "rule": "malicious unit detected if any kept member flagged; benign unit is a false alarm if any kept member flagged",
+    "per_detector": {
+      "ML@tuned": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 0,
+        "TN": 4,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.0,
+        "far_ci95": [
+          0.0,
+          0.4899
+        ],
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "ML@0.5": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.3333,
+        "f1": 0.5
+      },
+      "CNN@tuned": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 1,
+        "TN": 3,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.25,
+        "far_ci95": [
+          0.0456,
+          0.6994
+        ],
+        "precision": 0.5,
+        "f1": 0.6667
+      },
+      "CNN@0.5": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 1,
+        "TN": 3,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.25,
+        "far_ci95": [
+          0.0456,
+          0.6994
+        ],
+        "precision": 0.5,
+        "f1": 0.6667
+      },
+      "SP-style@tuned": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.3333,
+        "f1": 0.5
+      },
+      "SP-RF@0.5": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 0,
+        "TN": 4,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.0,
+        "far_ci95": [
+          0.0,
+          0.4899
+        ],
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "SP-CB@0.5": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.3333,
+        "f1": 0.5
+      },
+      "SP-AE@p95": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 4,
+        "TN": 0,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 1.0,
+        "far_ci95": [
+          0.5101,
+          1.0
+        ],
+        "precision": 0.2,
+        "f1": 0.3333
+      },
+      "META@0.5": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.3333,
+        "f1": 0.5
+      },
+      "CNNv2@tuned": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 1,
+        "TN": 3,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.25,
+        "far_ci95": [
+          0.0456,
+          0.6994
+        ],
+        "precision": 0.5,
+        "f1": 0.6667
+      },
+      "CNNv2@0.5": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 1,
+        "TN": 3,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.25,
+        "far_ci95": [
+          0.0456,
+          0.6994
+        ],
+        "precision": 0.5,
+        "f1": 0.6667
+      },
+      "FUSE@0.5": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 0,
+        "TN": 4,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.0,
+        "far_ci95": [
+          0.0,
+          0.4899
+        ],
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "FUSE-C@0.5": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 0,
+        "TN": 4,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.0,
+        "far_ci95": [
+          0.0,
+          0.4899
+        ],
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "FUSE-INV@0.5": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.3333,
+        "f1": 0.5
+      },
+      "ML@tuned+FC": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 0,
+        "TN": 4,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.0,
+        "far_ci95": [
+          0.0,
+          0.4899
+        ],
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "ML@0.5+FC": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.3333,
+        "f1": 0.5
+      },
+      "CNN@tuned+FC": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 1,
+        "TN": 3,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.25,
+        "far_ci95": [
+          0.0456,
+          0.6994
+        ],
+        "precision": 0.5,
+        "f1": 0.6667
+      },
+      "CNN@0.5+FC": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 1,
+        "TN": 3,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.25,
+        "far_ci95": [
+          0.0456,
+          0.6994
+        ],
+        "precision": 0.5,
+        "f1": 0.6667
+      },
+      "SP-style@tuned+FC": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.3333,
+        "f1": 0.5
+      },
+      "SP-RF@0.5+FC": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 0,
+        "TN": 4,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.0,
+        "far_ci95": [
+          0.0,
+          0.4899
+        ],
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "SP-CB@0.5+FC": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.3333,
+        "f1": 0.5
+      },
+      "SP-AE@p95+FC": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 4,
+        "TN": 0,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 1.0,
+        "far_ci95": [
+          0.5101,
+          1.0
+        ],
+        "precision": 0.2,
+        "f1": 0.3333
+      },
+      "META@0.5+FC": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.3333,
+        "f1": 0.5
+      },
+      "CNNv2@tuned+FC": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 1,
+        "TN": 3,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.25,
+        "far_ci95": [
+          0.0456,
+          0.6994
+        ],
+        "precision": 0.5,
+        "f1": 0.6667
+      },
+      "CNNv2@0.5+FC": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 1,
+        "TN": 3,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.25,
+        "far_ci95": [
+          0.0456,
+          0.6994
+        ],
+        "precision": 0.5,
+        "f1": 0.6667
+      },
+      "FUSE@0.5+FC": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 0,
+        "TN": 4,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.0,
+        "far_ci95": [
+          0.0,
+          0.4899
+        ],
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "FUSE-C@0.5+FC": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 0,
+        "TN": 4,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.0,
+        "far_ci95": [
+          0.0,
+          0.4899
+        ],
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "FUSE-INV@0.5+FC": {
+        "TP": 1,
+        "FN": 0,
+        "FP": 2,
+        "TN": 2,
+        "recall": 1.0,
+        "recall_ci95": [
+          0.2065,
+          1.0
+        ],
+        "far": 0.5,
+        "far_ci95": [
+          0.15,
+          0.85
+        ],
+        "precision": 0.3333,
+        "f1": 0.5
+      }
+    }
+  },
+  "dedup_drops_unique_files": {
+    "benign": {
+      "within_class_duplicate_members": 0
+    },
+    "malicious": {
+      "sha_overlap_corpus": 17,
+      "group_overlap_corpus": 9,
+      "within_class_duplicate_members": 4
+    }
+  },
+  "cap_reason": {
+    "benign": {
+      "ok": 4
+    },
+    "malicious": {
+      "ok": 2
+    }
+  },
+  "primary_metrics_note": "Primary: recall and false-alarm rate (FAR) with Wilson 95 % CIs. F1 is secondary because it depends on the external class ratio. File-level rows treat files as independent; files of one repo are correlated, so read the unit-level rows next to them.",
+  "safepickle_published_pickleball_f1": 0.8122,
+  "safepickle_published_note": "SafePickle's published PickleBall F1 (0.8122) is NOT like-for-like with these rows: SafePickle was trained on different data, at a different class ratio, and on a PickleBall subset whose selection is not reproduced here (no explore/sealed split, no de-duplication against our corpus, different member filter). Quote it as context only; the comparable SafePickle numbers are the SP-* rows below.",
+  "checkpoints": {
+    "dir": "<drive>/colab_ckpts/v2_final/ckpt/pickleball_sealed",
+    "reused": [
+      "pickleball_sealed_malicious.json"
+    ],
+    "written": [
+      "pickleball_sealed_benign-abridged.json"
+    ],
+    "ignored": []
+  },
+  "n_dev_train": 747,
+  "detectors": {
+    "ML@tuned": {
+      "model": "ML",
+      "threshold": 0.75,
+      "rule": "score >= threshold"
+    },
+    "ML@0.5": {
+      "model": "ML",
+      "threshold": 0.5,
+      "rule": "score >= threshold"
+    },
+    "CNN@tuned": {
+      "model": "CNN",
+      "threshold": 0.55,
+      "rule": "score >= threshold"
+    },
+    "CNN@0.5": {
+      "model": "CNN",
+      "threshold": 0.5,
+      "rule": "score >= threshold"
+    },
+    "SP-style@tuned": {
+      "model": "SP-style",
+      "threshold": 0.425,
+      "rule": "score >= threshold"
+    },
+    "SP-RF@0.5": {
+      "model": "SP-RF",
+      "threshold": 0.5,
+      "rule": "score >= threshold"
+    },
+    "SP-CB@0.5": {
+      "model": "SP-CB",
+      "threshold": 0.5,
+      "rule": "score >= threshold"
+    },
+    "SP-AE@p95": {
+      "model": "SP-AE",
+      "threshold": 0.000105,
+      "rule": "score > threshold"
+    },
+    "META@0.5": {
+      "model": "META",
+      "threshold": 0.5,
+      "rule": "score >= threshold"
+    },
+    "CNNv2@tuned": {
+      "model": "CNNv2",
+      "threshold": 0.475,
+      "rule": "score >= threshold"
+    },
+    "CNNv2@0.5": {
+      "model": "CNNv2",
+      "threshold": 0.5,
+      "rule": "score >= threshold"
+    },
+    "FUSE@0.5": {
+      "model": "FUSE",
+      "threshold": 0.5,
+      "rule": "score >= threshold"
+    },
+    "FUSE-C@0.5": {
+      "model": "FUSE-C",
+      "threshold": 0.5,
+      "rule": "score >= threshold"
+    },
+    "FUSE-INV@0.5": {
+      "model": "FUSE-INV",
+      "threshold": 0.5,
+      "rule": "score >= threshold"
+    }
+  },
+  "skipped_detectors": {},
+  "with_cnnv2": true,
+  "with_fuse": true,
+  "minutes": 19.4
+}

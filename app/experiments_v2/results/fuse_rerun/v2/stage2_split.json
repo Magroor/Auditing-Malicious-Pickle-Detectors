@@ -1,0 +1,23 @@
+{
+  "n_files_featurised": 1008,
+  "exact_duplicates_removed": 109,
+  "conflicting_label_files_dropped": 13,
+  "n_unique": 886,
+  "n_unique_benign": 557,
+  "n_unique_malicious": 329,
+  "n_groups": 553,
+  "groups_size_gt1": 104,
+  "largest_group": 98,
+  "files_in_shared_groups": 437,
+  "dev": {
+    "n": 747,
+    "benign": 493,
+    "malicious": 254
+  },
+  "locked": {
+    "n": 139,
+    "benign": 64,
+    "malicious": 75,
+    "manifest_sha256": "1aaa27a48abab0a0ca30b26a1ba829b43c0376d67580e865c19227b3c394c142"
+  }
+}

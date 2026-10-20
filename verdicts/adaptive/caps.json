@@ -1,0 +1,6 @@
+{
+  "_comment": "The detectors' actual read caps, taken from the code: semantic_ref.MAX_STREAM_BYTES = 16 MiB (inner stream), semantic_ref.MAX_OPS = 1e6, colab_v2_eval.MAX_FILE = 80 MiB (whole file, stage-1 filter only). PREREGISTRATION 10.1 defines the fail-closed budget as 10^6 opcodes / 16 MiB on the inner stream, so byte_cap below is the inner-stream cap, NOT the whole-file size. The 64 MiB treatment is a separate experiment (section 16) and is not used here.",
+  "opcode_cap": 1000000,
+  "byte_cap": 16777216,
+  "whole_file_cap": 83886080
+}

@@ -1,0 +1,305 @@
+{
+  "n_unique": 888,
+  "n_benign": 560,
+  "n_malicious": 328,
+  "thresholds": {
+    "CNNv2": [
+      0.45,
+      0.65,
+      0.45,
+      0.45,
+      0.45
+    ],
+    "SafePickle-RF": [
+      0.475,
+      0.65,
+      0.625,
+      0.475,
+      0.65
+    ],
+    "SafePickle-CB": [
+      0.675,
+      0.7,
+      0.675,
+      0.55,
+      0.575
+    ]
+  },
+  "table": {
+    "CNNv2@tuned": {
+      "TP": 305,
+      "FP": 10,
+      "TN": 550,
+      "FN": 23,
+      "precision": 0.9683,
+      "recall": 0.9299,
+      "f1": 0.9487,
+      "accuracy": 0.9628,
+      "specificity": 0.9821
+    },
+    "CNNv2@0.5": {
+      "TP": 305,
+      "FP": 10,
+      "TN": 550,
+      "FN": 23,
+      "precision": 0.9683,
+      "recall": 0.9299,
+      "f1": 0.9487,
+      "accuracy": 0.9628,
+      "specificity": 0.9821
+    },
+    "SafePickle-RF@tuned": {
+      "TP": 299,
+      "FP": 6,
+      "TN": 554,
+      "FN": 29,
+      "precision": 0.9803,
+      "recall": 0.9116,
+      "f1": 0.9447,
+      "accuracy": 0.9606,
+      "specificity": 0.9893
+    },
+    "SafePickle-RF@0.5": {
+      "TP": 301,
+      "FP": 7,
+      "TN": 553,
+      "FN": 27,
+      "precision": 0.9773,
+      "recall": 0.9177,
+      "f1": 0.9465,
+      "accuracy": 0.9617,
+      "specificity": 0.9875
+    },
+    "SafePickle-CB@tuned": {
+      "TP": 297,
+      "FP": 7,
+      "TN": 553,
+      "FN": 31,
+      "precision": 0.977,
+      "recall": 0.9055,
+      "f1": 0.9399,
+      "accuracy": 0.9572,
+      "specificity": 0.9875
+    },
+    "SafePickle-CB@0.5": {
+      "TP": 301,
+      "FP": 7,
+      "TN": 553,
+      "FN": 27,
+      "precision": 0.9773,
+      "recall": 0.9177,
+      "f1": 0.9465,
+      "accuracy": 0.9617,
+      "specificity": 0.9875
+    },
+    "picklescan": {
+      "TP": 204,
+      "FP": 473,
+      "TN": 87,
+      "FN": 124,
+      "precision": 0.3013,
+      "recall": 0.622,
+      "f1": 0.406,
+      "accuracy": 0.3277,
+      "specificity": 0.1554
+    },
+    "ModelScan": {
+      "TP": 0,
+      "FP": 0,
+      "TN": 560,
+      "FN": 328,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.6306,
+      "specificity": 1.0
+    },
+    "fickling": {
+      "TP": 306,
+      "FP": 469,
+      "TN": 91,
+      "FN": 22,
+      "precision": 0.3948,
+      "recall": 0.9329,
+      "f1": 0.5549,
+      "accuracy": 0.4471,
+      "specificity": 0.1625
+    },
+    "CNNv2+SafePickle-CB@0.5": {
+      "TP": 309,
+      "FP": 10,
+      "TN": 550,
+      "FN": 19,
+      "precision": 0.9687,
+      "recall": 0.9421,
+      "f1": 0.9552,
+      "accuracy": 0.9673,
+      "specificity": 0.9821
+    }
+  },
+  "ranked_by_f1": [
+    "CNNv2+SafePickle-CB@0.5",
+    "CNNv2@tuned",
+    "CNNv2@0.5",
+    "SafePickle-RF@0.5",
+    "SafePickle-CB@0.5",
+    "SafePickle-RF@tuned",
+    "SafePickle-CB@tuned",
+    "fickling",
+    "picklescan",
+    "ModelScan"
+  ],
+  "verdict": {
+    "best_f1": "CNNv2+SafePickle-CB@0.5",
+    "best_standalone_f1": "CNNv2@tuned",
+    "cnnv2_tuned_f1": 0.9487,
+    "cnnv2_beats_on_f1": {
+      "CNNv2@0.5": true,
+      "SafePickle-RF@tuned": true,
+      "SafePickle-RF@0.5": true,
+      "SafePickle-CB@tuned": true,
+      "SafePickle-CB@0.5": true,
+      "picklescan": true,
+      "ModelScan": true,
+      "fickling": true
+    },
+    "cnnv2_lowest_fp": false
+  },
+  "diagnostics": {
+    "auc": {
+      "CNNv2": 0.9733,
+      "SafePickle-RF": 0.9767,
+      "SafePickle-CB": 0.9818
+    },
+    "ablation_at_0.5": {
+      "full": {
+        "TP": 305,
+        "FP": 10,
+        "TN": 550,
+        "FN": 23,
+        "precision": 0.9683,
+        "recall": 0.9299,
+        "f1": 0.9487,
+        "accuracy": 0.9628,
+        "specificity": 0.9821
+      },
+      "disc_only": {
+        "TP": 284,
+        "FP": 8,
+        "TN": 552,
+        "FN": 44,
+        "precision": 0.9726,
+        "recall": 0.8659,
+        "f1": 0.9161,
+        "accuracy": 0.9414,
+        "specificity": 0.9857
+      },
+      "no_token_gate": {
+        "TP": 290,
+        "FP": 10,
+        "TN": 550,
+        "FN": 38,
+        "precision": 0.9667,
+        "recall": 0.8841,
+        "f1": 0.9236,
+        "accuracy": 0.9459,
+        "specificity": 0.9821
+      },
+      "no_import_gate": {
+        "TP": 300,
+        "FP": 9,
+        "TN": 551,
+        "FN": 28,
+        "precision": 0.9709,
+        "recall": 0.9146,
+        "f1": 0.9419,
+        "accuracy": 0.9583,
+        "specificity": 0.9839
+      }
+    },
+    "fp_component_mean": {
+      "disc": 1.629,
+      "tok": 2.9092,
+      "mod": 1.2259,
+      "dead": 0.3856
+    },
+    "benign_all_component_mean": {
+      "disc": -4.5127,
+      "tok": 0.0739,
+      "mod": 0.0555,
+      "dead": 0.0259
+    },
+    "malicious_all_component_mean": {
+      "disc": 2.5622,
+      "tok": 3.2272,
+      "mod": 2.4553,
+      "dead": 0.0202
+    },
+    "fp_top_tokens": {
+      "eval": 3,
+      "commands": 3,
+      "socket": 3,
+      "partial": 3,
+      "marshal": 3,
+      "system": 3,
+      "exec": 2,
+      "pty": 2,
+      "operator": 2,
+      "__import__": 1
+    },
+    "benign_top_tokens": {
+      "partial": 20,
+      "system": 8,
+      "eval": 3,
+      "commands": 3,
+      "socket": 3,
+      "marshal": 3,
+      "exec": 2,
+      "pty": 2,
+      "operator": 2,
+      "__import__": 1
+    },
+    "fp_nonallow_modules_mean": 2.8,
+    "benign_nonallow_modules_mean": 1.08,
+    "match_safepickle_fp": {
+      "target_fp": 7,
+      "threshold": 0.94,
+      "cnnv2_fp": 7,
+      "cnnv2_recall": 0.8598
+    },
+    "match_safepickle_recall": {
+      "target_recall": 0.9055,
+      "threshold": 0.88,
+      "cnnv2_fp": 8,
+      "cnnv2_recall": 0.9055
+    },
+    "ensemble_cnnv2_plus_SafePickle-CB@0.5": {
+      "threshold": 0.5,
+      "TP": 309,
+      "FP": 10,
+      "TN": 550,
+      "FN": 19,
+      "precision": 0.9687,
+      "recall": 0.9421,
+      "f1": 0.9552,
+      "accuracy": 0.9673,
+      "specificity": 0.9821
+    },
+    "ensemble_cnnv2_plus_SafePickle-CB@tuned_oof": {
+      "threshold": 0.375,
+      "note": "threshold fit on pooled OOF; optimistic",
+      "TP": 309,
+      "FP": 10,
+      "TN": 550,
+      "FN": 19,
+      "precision": 0.9687,
+      "recall": 0.9421,
+      "f1": 0.9552,
+      "accuracy": 0.9673,
+      "specificity": 0.9821
+    },
+    "fp_overlap_with_SafePickle-CB": 6
+  },
+  "modelscan_ran": true,
+  "fickling_ran": true
+}

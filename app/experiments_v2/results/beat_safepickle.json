@@ -1,0 +1,74 @@
+{
+  "detector": {
+    "v2": {
+      "heldout_f1": 1.0,
+      "heldout_fp": 0,
+      "nullifai": [
+        16,
+        16
+      ]
+    },
+    "SafePickle_freq": {
+      "heldout_f1": 0.9926,
+      "heldout_fp": 0,
+      "nullifai": [
+        11,
+        16
+      ]
+    }
+  },
+  "padding_detection": {
+    "cancellable": {
+      "0": {
+        "v2": 1.0,
+        "SafePickle_freq": 1.0
+      },
+      "1": {
+        "v2": 1.0,
+        "SafePickle_freq": 1.0
+      },
+      "4": {
+        "v2": 1.0,
+        "SafePickle_freq": 0.8
+      },
+      "16": {
+        "v2": 1.0,
+        "SafePickle_freq": 0.0
+      },
+      "64": {
+        "v2": 1.0,
+        "SafePickle_freq": 0.0
+      },
+      "256": {
+        "v2": 1.0,
+        "SafePickle_freq": 0.0
+      }
+    },
+    "non_cancellable": {
+      "0": {
+        "v2": 1.0,
+        "SafePickle_freq": 1.0
+      },
+      "1": {
+        "v2": 1.0,
+        "SafePickle_freq": 1.0
+      },
+      "4": {
+        "v2": 1.0,
+        "SafePickle_freq": 0.0
+      },
+      "16": {
+        "v2": 1.0,
+        "SafePickle_freq": 0.0
+      },
+      "64": {
+        "v2": 1.0,
+        "SafePickle_freq": 0.0
+      },
+      "256": {
+        "v2": 1.0,
+        "SafePickle_freq": 0.0
+      }
+    }
+  }
+}

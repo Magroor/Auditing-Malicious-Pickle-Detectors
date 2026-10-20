@@ -1,0 +1,91 @@
+{
+  "folds": "repetition 0 (stage 3)",
+  "seed": 0,
+  "epochs": 40,
+  "threshold": 0.5,
+  "metrics": {
+    "CNN": {
+      "TP": 229,
+      "FP": 7,
+      "TN": 486,
+      "FN": 25,
+      "precision": 0.9703,
+      "recall": 0.9016,
+      "f1": 0.9347,
+      "specificity": 0.9858,
+      "auc": 0.9724
+    },
+    "BiLSTM": {
+      "TP": 228,
+      "FP": 7,
+      "TN": 486,
+      "FN": 26,
+      "precision": 0.9702,
+      "recall": 0.8976,
+      "f1": 0.9325,
+      "specificity": 0.9858,
+      "auc": 0.9662
+    },
+    "Transformer": {
+      "TP": 222,
+      "FP": 9,
+      "TN": 484,
+      "FN": 32,
+      "precision": 0.961,
+      "recall": 0.874,
+      "f1": 0.9155,
+      "specificity": 0.9817,
+      "auc": 0.9573
+    }
+  },
+  "cost": {
+    "CNN": {
+      "params": 23137,
+      "train_seconds_total": 521.4,
+      "cpu_ms_per_file": 0.3
+    },
+    "BiLSTM": {
+      "params": 56801,
+      "train_seconds_total": 1887.6,
+      "cpu_ms_per_file": 1.998
+    },
+    "Transformer": {
+      "params": 90017,
+      "train_seconds_total": 11134.0,
+      "cpu_ms_per_file": 9.222
+    }
+  },
+  "vs_cnn": {
+    "BiLSTM vs CNN": {
+      "delta_f1": -0.0022,
+      "ci95": [
+        -0.013,
+        0.0085
+      ],
+      "p_two_sided": 0.7294
+    },
+    "Transformer vs CNN": {
+      "delta_f1": -0.0192,
+      "ci95": [
+        -0.0349,
+        -0.0048
+      ],
+      "p_two_sided": 0.006
+    }
+  },
+  "vs_cnn_holm": {
+    "Transformer vs CNN": {
+      "p": 0.006,
+      "holm_adjusted": 0.012,
+      "reject_h0": true
+    },
+    "BiLSTM vs CNN": {
+      "p": 0.7294,
+      "holm_adjusted": 0.7294,
+      "reject_h0": false
+    }
+  },
+  "harness_cnn_agreement_with_saved_cnn05": 0.9946,
+  "saved_cnn05_f1": 0.9342,
+  "minutes": 226.1
+}

@@ -1,0 +1,2035 @@
+{
+  "adaptive": {
+    "FUSE": {
+      "A-inject": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      },
+      "A-live": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      },
+      "A-meta": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 7,
+          "detection_rate": 0.9611,
+          "dr_wilson95": [
+            0.9219,
+            0.981
+          ],
+          "evaded_wilson95_upper": 0.0781,
+          "within_cap_evaded_files": 7,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 7,
+            "min": 64,
+            "median": 64,
+            "max": 64
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 7,
+          "detection_rate": 0.9611,
+          "dr_wilson95": [
+            0.9219,
+            0.981
+          ],
+          "evaded_wilson95_upper": 0.0781,
+          "within_cap_evaded_files": 7,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 7,
+            "min": 64,
+            "median": 64,
+            "max": 64
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 7,
+          "detection_rate": 0.9611,
+          "dr_wilson95": [
+            0.9219,
+            0.981
+          ],
+          "evaded_wilson95_upper": 0.0781,
+          "within_cap_evaded_files": 7,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 7,
+            "min": 64,
+            "median": 64,
+            "max": 64
+          }
+        }
+      },
+      "A-name": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      },
+      "A-pad": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "FUSE-INV": {
+      "A-inject": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 3,
+          "detection_rate": 0.9833,
+          "dr_wilson95": [
+            0.9522,
+            0.9943
+          ],
+          "evaded_wilson95_upper": 0.0478,
+          "within_cap_evaded_files": 3,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 3,
+            "min": 2,
+            "median": 3,
+            "max": 4
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 3,
+          "detection_rate": 0.9833,
+          "dr_wilson95": [
+            0.9522,
+            0.9943
+          ],
+          "evaded_wilson95_upper": 0.0478,
+          "within_cap_evaded_files": 3,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 3,
+            "min": 2,
+            "median": 3,
+            "max": 4
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 3,
+          "detection_rate": 0.9833,
+          "dr_wilson95": [
+            0.9522,
+            0.9943
+          ],
+          "evaded_wilson95_upper": 0.0478,
+          "within_cap_evaded_files": 3,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 3,
+            "min": 2,
+            "median": 3,
+            "max": 4
+          }
+        }
+      },
+      "A-live": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      },
+      "A-meta": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 5,
+          "detection_rate": 0.9722,
+          "dr_wilson95": [
+            0.9366,
+            0.9881
+          ],
+          "evaded_wilson95_upper": 0.0634,
+          "within_cap_evaded_files": 5,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 5,
+            "min": 64,
+            "median": 64,
+            "max": 64
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 5,
+          "detection_rate": 0.9722,
+          "dr_wilson95": [
+            0.9366,
+            0.9881
+          ],
+          "evaded_wilson95_upper": 0.0634,
+          "within_cap_evaded_files": 5,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 5,
+            "min": 64,
+            "median": 64,
+            "max": 64
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 5,
+          "detection_rate": 0.9722,
+          "dr_wilson95": [
+            0.9366,
+            0.9881
+          ],
+          "evaded_wilson95_upper": 0.0634,
+          "within_cap_evaded_files": 5,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 5,
+            "min": 64,
+            "median": 64,
+            "max": 64
+          }
+        }
+      },
+      "A-name": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 3,
+          "detection_rate": 0.9833,
+          "dr_wilson95": [
+            0.9522,
+            0.9943
+          ],
+          "evaded_wilson95_upper": 0.0478,
+          "within_cap_evaded_files": 3,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 3,
+            "min": 1,
+            "median": 1,
+            "max": 1
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 3,
+          "detection_rate": 0.9833,
+          "dr_wilson95": [
+            0.9522,
+            0.9943
+          ],
+          "evaded_wilson95_upper": 0.0478,
+          "within_cap_evaded_files": 3,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 3,
+            "min": 1,
+            "median": 1,
+            "max": 1
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 3,
+          "detection_rate": 0.9833,
+          "dr_wilson95": [
+            0.9522,
+            0.9943
+          ],
+          "evaded_wilson95_upper": 0.0478,
+          "within_cap_evaded_files": 3,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 3,
+            "min": 1,
+            "median": 1,
+            "max": 1
+          }
+        }
+      },
+      "A-pad": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 5,
+          "detection_rate": 0.9722,
+          "dr_wilson95": [
+            0.9366,
+            0.9881
+          ],
+          "evaded_wilson95_upper": 0.0634,
+          "within_cap_evaded_files": 5,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 5,
+            "min": 1,
+            "median": 1,
+            "max": 1
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 5,
+          "detection_rate": 0.9722,
+          "dr_wilson95": [
+            0.9366,
+            0.9881
+          ],
+          "evaded_wilson95_upper": 0.0634,
+          "within_cap_evaded_files": 5,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 5,
+            "min": 1,
+            "median": 1,
+            "max": 1
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 5,
+          "detection_rate": 0.9722,
+          "dr_wilson95": [
+            0.9366,
+            0.9881
+          ],
+          "evaded_wilson95_upper": 0.0634,
+          "within_cap_evaded_files": 5,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 5,
+            "min": 1,
+            "median": 1,
+            "max": 1
+          }
+        }
+      }
+    },
+    "FUSE-INV+": {
+      "A-inject": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": null,
+          "detection_rate": null,
+          "dr_wilson95": null,
+          "evaded_wilson95_upper": null,
+          "within_cap_evaded_files": null,
+          "cap_evaded_files": null,
+          "unverified_records": 720,
+          "unverified_units": 180,
+          "first_evasion_budget": {
+            "n": null,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": null,
+          "detection_rate": null,
+          "dr_wilson95": null,
+          "evaded_wilson95_upper": null,
+          "within_cap_evaded_files": null,
+          "cap_evaded_files": null,
+          "unverified_records": 720,
+          "unverified_units": 180,
+          "first_evasion_budget": {
+            "n": null,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": null,
+          "detection_rate": null,
+          "dr_wilson95": null,
+          "evaded_wilson95_upper": null,
+          "within_cap_evaded_files": null,
+          "cap_evaded_files": null,
+          "unverified_records": 720,
+          "unverified_units": 180,
+          "first_evasion_budget": {
+            "n": null,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      },
+      "A-live": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": null,
+          "detection_rate": null,
+          "dr_wilson95": null,
+          "evaded_wilson95_upper": null,
+          "within_cap_evaded_files": null,
+          "cap_evaded_files": null,
+          "unverified_records": 720,
+          "unverified_units": 180,
+          "first_evasion_budget": {
+            "n": null,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": null,
+          "detection_rate": null,
+          "dr_wilson95": null,
+          "evaded_wilson95_upper": null,
+          "within_cap_evaded_files": null,
+          "cap_evaded_files": null,
+          "unverified_records": 720,
+          "unverified_units": 180,
+          "first_evasion_budget": {
+            "n": null,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": null,
+          "detection_rate": null,
+          "dr_wilson95": null,
+          "evaded_wilson95_upper": null,
+          "within_cap_evaded_files": null,
+          "cap_evaded_files": null,
+          "unverified_records": 720,
+          "unverified_units": 180,
+          "first_evasion_budget": {
+            "n": null,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      },
+      "A-meta": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": null,
+          "detection_rate": null,
+          "dr_wilson95": null,
+          "evaded_wilson95_upper": null,
+          "within_cap_evaded_files": null,
+          "cap_evaded_files": null,
+          "unverified_records": 360,
+          "unverified_units": 180,
+          "first_evasion_budget": {
+            "n": null,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": null,
+          "detection_rate": null,
+          "dr_wilson95": null,
+          "evaded_wilson95_upper": null,
+          "within_cap_evaded_files": null,
+          "cap_evaded_files": null,
+          "unverified_records": 360,
+          "unverified_units": 180,
+          "first_evasion_budget": {
+            "n": null,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": null,
+          "detection_rate": null,
+          "dr_wilson95": null,
+          "evaded_wilson95_upper": null,
+          "within_cap_evaded_files": null,
+          "cap_evaded_files": null,
+          "unverified_records": 360,
+          "unverified_units": 180,
+          "first_evasion_budget": {
+            "n": null,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      },
+      "A-name": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": null,
+          "detection_rate": null,
+          "dr_wilson95": null,
+          "evaded_wilson95_upper": null,
+          "within_cap_evaded_files": null,
+          "cap_evaded_files": null,
+          "unverified_records": 455,
+          "unverified_units": 180,
+          "first_evasion_budget": {
+            "n": null,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": null,
+          "detection_rate": null,
+          "dr_wilson95": null,
+          "evaded_wilson95_upper": null,
+          "within_cap_evaded_files": null,
+          "cap_evaded_files": null,
+          "unverified_records": 455,
+          "unverified_units": 180,
+          "first_evasion_budget": {
+            "n": null,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": null,
+          "detection_rate": null,
+          "dr_wilson95": null,
+          "evaded_wilson95_upper": null,
+          "within_cap_evaded_files": null,
+          "cap_evaded_files": null,
+          "unverified_records": 455,
+          "unverified_units": 180,
+          "first_evasion_budget": {
+            "n": null,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      },
+      "A-pad": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": null,
+          "detection_rate": null,
+          "dr_wilson95": null,
+          "evaded_wilson95_upper": null,
+          "within_cap_evaded_files": null,
+          "cap_evaded_files": null,
+          "unverified_records": 900,
+          "unverified_units": 180,
+          "first_evasion_budget": {
+            "n": null,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": null,
+          "detection_rate": null,
+          "dr_wilson95": null,
+          "evaded_wilson95_upper": null,
+          "within_cap_evaded_files": null,
+          "cap_evaded_files": null,
+          "unverified_records": 900,
+          "unverified_units": 180,
+          "first_evasion_budget": {
+            "n": null,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": null,
+          "detection_rate": null,
+          "dr_wilson95": null,
+          "evaded_wilson95_upper": null,
+          "within_cap_evaded_files": null,
+          "cap_evaded_files": null,
+          "unverified_records": 900,
+          "unverified_units": 180,
+          "first_evasion_budget": {
+            "n": null,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "META": {
+      "A-inject": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 10,
+          "detection_rate": 0.9444,
+          "dr_wilson95": [
+            0.9008,
+            0.9695
+          ],
+          "evaded_wilson95_upper": 0.0992,
+          "within_cap_evaded_files": 10,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 10,
+            "min": 1,
+            "median": 1,
+            "max": 1
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 10,
+          "detection_rate": 0.9444,
+          "dr_wilson95": [
+            0.9008,
+            0.9695
+          ],
+          "evaded_wilson95_upper": 0.0992,
+          "within_cap_evaded_files": 10,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 10,
+            "min": 1,
+            "median": 1,
+            "max": 1
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 10,
+          "detection_rate": 0.9444,
+          "dr_wilson95": [
+            0.9008,
+            0.9695
+          ],
+          "evaded_wilson95_upper": 0.0992,
+          "within_cap_evaded_files": 10,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 10,
+            "min": 1,
+            "median": 1,
+            "max": 1
+          }
+        }
+      },
+      "A-live": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 10,
+          "detection_rate": 0.9444,
+          "dr_wilson95": [
+            0.9008,
+            0.9695
+          ],
+          "evaded_wilson95_upper": 0.0992,
+          "within_cap_evaded_files": 10,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 10,
+            "min": 1,
+            "median": 1,
+            "max": 1
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 10,
+          "detection_rate": 0.9444,
+          "dr_wilson95": [
+            0.9008,
+            0.9695
+          ],
+          "evaded_wilson95_upper": 0.0992,
+          "within_cap_evaded_files": 10,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 10,
+            "min": 1,
+            "median": 1,
+            "max": 1
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 10,
+          "detection_rate": 0.9444,
+          "dr_wilson95": [
+            0.9008,
+            0.9695
+          ],
+          "evaded_wilson95_upper": 0.0992,
+          "within_cap_evaded_files": 10,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 10,
+            "min": 1,
+            "median": 1,
+            "max": 1
+          }
+        }
+      },
+      "A-meta": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 155,
+          "detection_rate": 0.1389,
+          "dr_wilson95": [
+            0.0959,
+            0.197
+          ],
+          "evaded_wilson95_upper": 0.9041,
+          "within_cap_evaded_files": 155,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 155,
+            "min": 0,
+            "median": 64,
+            "max": 64
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 155,
+          "detection_rate": 0.1389,
+          "dr_wilson95": [
+            0.0959,
+            0.197
+          ],
+          "evaded_wilson95_upper": 0.9041,
+          "within_cap_evaded_files": 155,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 155,
+            "min": 0,
+            "median": 64,
+            "max": 64
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 155,
+          "detection_rate": 0.1389,
+          "dr_wilson95": [
+            0.0959,
+            0.197
+          ],
+          "evaded_wilson95_upper": 0.9041,
+          "within_cap_evaded_files": 155,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 155,
+            "min": 0,
+            "median": 64,
+            "max": 64
+          }
+        }
+      },
+      "A-name": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 10,
+          "detection_rate": 0.9444,
+          "dr_wilson95": [
+            0.9008,
+            0.9695
+          ],
+          "evaded_wilson95_upper": 0.0992,
+          "within_cap_evaded_files": 10,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 10,
+            "min": 1,
+            "median": 1,
+            "max": 2
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 10,
+          "detection_rate": 0.9444,
+          "dr_wilson95": [
+            0.9008,
+            0.9695
+          ],
+          "evaded_wilson95_upper": 0.0992,
+          "within_cap_evaded_files": 10,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 10,
+            "min": 1,
+            "median": 1,
+            "max": 2
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 10,
+          "detection_rate": 0.9444,
+          "dr_wilson95": [
+            0.9008,
+            0.9695
+          ],
+          "evaded_wilson95_upper": 0.0992,
+          "within_cap_evaded_files": 10,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 10,
+            "min": 1,
+            "median": 1,
+            "max": 2
+          }
+        }
+      },
+      "A-pad": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 10,
+          "detection_rate": 0.9444,
+          "dr_wilson95": [
+            0.9008,
+            0.9695
+          ],
+          "evaded_wilson95_upper": 0.0992,
+          "within_cap_evaded_files": 10,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 10,
+            "min": 1,
+            "median": 1,
+            "max": 1
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 10,
+          "detection_rate": 0.9444,
+          "dr_wilson95": [
+            0.9008,
+            0.9695
+          ],
+          "evaded_wilson95_upper": 0.0992,
+          "within_cap_evaded_files": 10,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 10,
+            "min": 1,
+            "median": 1,
+            "max": 1
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 10,
+          "detection_rate": 0.9444,
+          "dr_wilson95": [
+            0.9008,
+            0.9695
+          ],
+          "evaded_wilson95_upper": 0.0992,
+          "within_cap_evaded_files": 10,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 10,
+            "min": 1,
+            "median": 1,
+            "max": 1
+          }
+        }
+      }
+    },
+    "SP-CB": {
+      "A-inject": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      },
+      "A-live": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      },
+      "A-meta": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 2,
+          "detection_rate": 0.9889,
+          "dr_wilson95": [
+            0.9604,
+            0.9969
+          ],
+          "evaded_wilson95_upper": 0.0396,
+          "within_cap_evaded_files": 2,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 2,
+            "min": 64,
+            "median": 64,
+            "max": 64
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 2,
+          "detection_rate": 0.9889,
+          "dr_wilson95": [
+            0.9604,
+            0.9969
+          ],
+          "evaded_wilson95_upper": 0.0396,
+          "within_cap_evaded_files": 2,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 2,
+            "min": 64,
+            "median": 64,
+            "max": 64
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 2,
+          "detection_rate": 0.9889,
+          "dr_wilson95": [
+            0.9604,
+            0.9969
+          ],
+          "evaded_wilson95_upper": 0.0396,
+          "within_cap_evaded_files": 2,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 2,
+            "min": 64,
+            "median": 64,
+            "max": 64
+          }
+        }
+      },
+      "A-name": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      },
+      "A-pad": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "SP-RF": {
+      "A-inject": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      },
+      "A-live": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      },
+      "A-meta": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 2,
+          "detection_rate": 0.9889,
+          "dr_wilson95": [
+            0.9604,
+            0.9969
+          ],
+          "evaded_wilson95_upper": 0.0396,
+          "within_cap_evaded_files": 2,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 2,
+            "min": 64,
+            "median": 64,
+            "max": 64
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 2,
+          "detection_rate": 0.9889,
+          "dr_wilson95": [
+            0.9604,
+            0.9969
+          ],
+          "evaded_wilson95_upper": 0.0396,
+          "within_cap_evaded_files": 2,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 2,
+            "min": 64,
+            "median": 64,
+            "max": 64
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 2,
+          "detection_rate": 0.9889,
+          "dr_wilson95": [
+            0.9604,
+            0.9969
+          ],
+          "evaded_wilson95_upper": 0.0396,
+          "within_cap_evaded_files": 2,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 2,
+            "min": 64,
+            "median": 64,
+            "max": 64
+          }
+        }
+      },
+      "A-name": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      },
+      "A-pad": {
+        "fail-open": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "fail-closed": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "three-way": {
+          "base_files": 180,
+          "evaded_files": 0,
+          "detection_rate": 1.0,
+          "dr_wilson95": [
+            0.9791,
+            1.0
+          ],
+          "evaded_wilson95_upper": 0.0209,
+          "within_cap_evaded_files": 0,
+          "cap_evaded_files": 0,
+          "unverified_records": 0,
+          "unverified_units": 0,
+          "first_evasion_budget": {
+            "n": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        }
+      }
+    }
+  },
+  "benign_fpr": {
+    "FUSE": {
+      "fail-open": {
+        "n_benign": 20,
+        "false_alarms": 20,
+        "fpr": 1.0,
+        "fpr_wilson95": [
+          0.83887,
+          1.0
+        ],
+        "unverified_records": 0,
+        "unverified_files": 0
+      },
+      "fail-closed": {
+        "n_benign": 20,
+        "false_alarms": 20,
+        "fpr": 1.0,
+        "fpr_wilson95": [
+          0.83887,
+          1.0
+        ],
+        "unverified_records": 0,
+        "unverified_files": 0
+      },
+      "three-way": {
+        "n_benign": 20,
+        "false_alarms": 20,
+        "fpr": 1.0,
+        "fpr_wilson95": [
+          0.83887,
+          1.0
+        ],
+        "unverified_records": 0,
+        "unverified_files": 0
+      }
+    },
+    "FUSE-INV": {
+      "fail-open": {
+        "n_benign": 20,
+        "false_alarms": 17,
+        "fpr": 0.85,
+        "fpr_wilson95": [
+          0.639577,
+          0.947632
+        ],
+        "unverified_records": 0,
+        "unverified_files": 0
+      },
+      "fail-closed": {
+        "n_benign": 20,
+        "false_alarms": 17,
+        "fpr": 0.85,
+        "fpr_wilson95": [
+          0.639577,
+          0.947632
+        ],
+        "unverified_records": 0,
+        "unverified_files": 0
+      },
+      "three-way": {
+        "n_benign": 20,
+        "false_alarms": 17,
+        "fpr": 0.85,
+        "fpr_wilson95": [
+          0.639577,
+          0.947632
+        ],
+        "unverified_records": 0,
+        "unverified_files": 0
+      }
+    },
+    "FUSE-INV+": {
+      "fail-open": {
+        "n_benign": 20,
+        "false_alarms": null,
+        "fpr": null,
+        "fpr_wilson95": null,
+        "unverified_records": 20
+      },
+      "fail-closed": {
+        "n_benign": 20,
+        "false_alarms": null,
+        "fpr": null,
+        "fpr_wilson95": null,
+        "unverified_records": 20
+      },
+      "three-way": {
+        "n_benign": 20,
+        "false_alarms": null,
+        "fpr": null,
+        "fpr_wilson95": null,
+        "unverified_records": 20
+      }
+    },
+    "META": {
+      "fail-open": {
+        "n_benign": 20,
+        "false_alarms": 10,
+        "fpr": 0.5,
+        "fpr_wilson95": [
+          0.299295,
+          0.700705
+        ],
+        "unverified_records": 0,
+        "unverified_files": 0
+      },
+      "fail-closed": {
+        "n_benign": 20,
+        "false_alarms": 10,
+        "fpr": 0.5,
+        "fpr_wilson95": [
+          0.299295,
+          0.700705
+        ],
+        "unverified_records": 0,
+        "unverified_files": 0
+      },
+      "three-way": {
+        "n_benign": 20,
+        "false_alarms": 10,
+        "fpr": 0.5,
+        "fpr_wilson95": [
+          0.299295,
+          0.700705
+        ],
+        "unverified_records": 0,
+        "unverified_files": 0
+      }
+    },
+    "SP-CB": {
+      "fail-open": {
+        "n_benign": 20,
+        "false_alarms": 20,
+        "fpr": 1.0,
+        "fpr_wilson95": [
+          0.83887,
+          1.0
+        ],
+        "unverified_records": 0,
+        "unverified_files": 0
+      },
+      "fail-closed": {
+        "n_benign": 20,
+        "false_alarms": 20,
+        "fpr": 1.0,
+        "fpr_wilson95": [
+          0.83887,
+          1.0
+        ],
+        "unverified_records": 0,
+        "unverified_files": 0
+      },
+      "three-way": {
+        "n_benign": 20,
+        "false_alarms": 20,
+        "fpr": 1.0,
+        "fpr_wilson95": [
+          0.83887,
+          1.0
+        ],
+        "unverified_records": 0,
+        "unverified_files": 0
+      }
+    },
+    "SP-RF": {
+      "fail-open": {
+        "n_benign": 20,
+        "false_alarms": 20,
+        "fpr": 1.0,
+        "fpr_wilson95": [
+          0.83887,
+          1.0
+        ],
+        "unverified_records": 0,
+        "unverified_files": 0
+      },
+      "fail-closed": {
+        "n_benign": 20,
+        "false_alarms": 20,
+        "fpr": 1.0,
+        "fpr_wilson95": [
+          0.83887,
+          1.0
+        ],
+        "unverified_records": 0,
+        "unverified_files": 0
+      },
+      "three-way": {
+        "n_benign": 20,
+        "false_alarms": 20,
+        "fpr": 1.0,
+        "fpr_wilson95": [
+          0.83887,
+          1.0
+        ],
+        "unverified_records": 0,
+        "unverified_files": 0
+      }
+    }
+  },
+  "notes": [
+    "detectors not wired, reported as null: ['FUSE-INV+']"
+  ],
+  "unit": "(base_file_sha, seed)"
+}

@@ -1,0 +1,273 @@
+01:22:57 restored features_cache.npz from Drive
+01:22:58 restored file_meta.json from Drive
+01:22:59 restored stage1_skipped.json from Drive
+01:22:59 restored cv_rep0.json from Drive
+01:23:00 restored cv_rep1.json from Drive
+01:23:01 restored cv_rep3.json from Drive
+01:23:02 restored cv_rep2.json from Drive
+01:23:03 restored cv_rep4.json from Drive
+01:23:04 restored v2_dev_results.json from Drive
+01:23:05 restored dev_error_analysis.csv from Drive
+01:23:06 restored dev_error_profile.json from Drive
+01:23:07 restored run_info.json from Drive
+01:23:08 restored cap_rescan.json from Drive
+01:23:09 restored pickleball_eval_explore_smoke.json from Drive
+01:23:10 restored pickleball_predictions_explore_smoke.json from Drive
+01:23:10 restored pickleball_sealed_manifest_smoke.json from Drive
+01:23:11 restored stage2_split.json from Drive
+01:23:12 restored locked_test_manifest.json from Drive
+01:23:13 restored pickleball_eval_explore.json from Drive
+01:23:14 restored pickleball_predictions_explore.json from Drive
+01:23:14 restored pickleball_sealed_manifest.json from Drive
+01:23:14 stage 1: using cached features
+01:23:15 stage 2: {"n_files_featurised": 1008, "exact_duplicates_removed": 109, "conflicting_label_files_dropped": 13, "n_unique": 886, "n_unique_benign": 557, "n_unique_malicious": 329, "n_groups": 553, "groups_size_gt1": 104, "largest_group": 98, "files_in_shared_groups": 437, "dev": {"n": 747, "benign": 493, "malicious": 254}, "locked": {"n": 139, "benign": 64, "malicious": 75, "manifest_sha256": "1aaa27a48abab0a0ca30b26a1ba829b43c0376d67580e865c19227b3c394c142"}}
+01:23:29 [fuse] rep 0 fold 1/5 13.6s FUSE=0.963 FUSE-C=0.923 FUSE-INV=0.923 SP-RF=0.923 SP-CB=0.923 META=0.963
+01:23:39 [fuse] rep 0 fold 2/5 10.3s FUSE=0.983 FUSE-C=0.966 FUSE-INV=0.957 SP-RF=0.966 SP-CB=0.966 META=0.974
+01:23:50 [fuse] rep 0 fold 3/5 10.7s FUSE=0.960 FUSE-C=0.950 FUSE-INV=0.939 SP-RF=0.960 SP-CB=0.960 META=0.902
+01:24:01 [fuse] rep 0 fold 4/5 11.6s FUSE=0.908 FUSE-C=0.864 FUSE-INV=0.948 SP-RF=0.940 SP-CB=0.940 META=0.978
+01:24:13 [fuse] rep 0 fold 5/5 11.8s FUSE=0.977 FUSE-C=0.921 FUSE-INV=0.907 SP-RF=0.943 SP-CB=0.930 META=0.932
+01:24:26 [fuse] rep 1 fold 1/5 12.7s FUSE=0.933 FUSE-C=0.909 FUSE-INV=0.909 SP-RF=0.909 SP-CB=0.909 META=0.844
+01:24:38 [fuse] rep 1 fold 2/5 11.5s FUSE=0.977 FUSE-C=0.962 FUSE-INV=0.962 SP-RF=0.962 SP-CB=0.962 META=0.947
+01:24:48 [fuse] rep 1 fold 3/5 10.6s FUSE=0.979 FUSE-C=0.957 FUSE-INV=0.933 SP-RF=0.964 SP-CB=0.964 META=0.971
+01:24:59 [fuse] rep 1 fold 4/5 10.9s FUSE=0.938 FUSE-C=0.903 FUSE-INV=0.891 SP-RF=0.903 SP-CB=0.903 META=0.917
+01:25:11 [fuse] rep 1 fold 5/5 11.5s FUSE=0.989 FUSE-C=0.952 FUSE-INV=0.952 SP-RF=0.940 SP-CB=0.940 META=0.965
+01:25:24 [fuse] rep 2 fold 1/5 12.7s FUSE=0.976 FUSE-C=0.976 FUSE-INV=0.976 SP-RF=0.976 SP-CB=1.000 META=0.974
+01:25:35 [fuse] rep 2 fold 2/5 11.4s FUSE=0.969 FUSE-C=0.953 FUSE-INV=0.945 SP-RF=0.953 SP-CB=0.953 META=0.947
+01:25:45 [fuse] rep 2 fold 3/5 10.4s FUSE=0.952 FUSE-C=0.914 FUSE-INV=0.911 SP-RF=0.914 SP-CB=0.914 META=0.952
+01:25:57 [fuse] rep 2 fold 4/5 11.2s FUSE=0.968 FUSE-C=0.951 FUSE-INV=0.951 SP-RF=0.951 SP-CB=0.951 META=0.944
+01:26:08 [fuse] rep 2 fold 5/5 11.5s FUSE=0.967 FUSE-C=0.923 FUSE-INV=0.895 SP-RF=0.914 SP-CB=0.932 META=0.959
+01:26:21 [fuse] rep 3 fold 1/5 12.5s FUSE=1.000 FUSE-C=0.947 FUSE-INV=0.947 SP-RF=0.947 SP-CB=0.947 META=0.976
+01:26:32 [fuse] rep 3 fold 2/5 11.5s FUSE=0.898 FUSE-C=0.981 FUSE-INV=0.962 SP-RF=0.981 SP-CB=0.981 META=0.962
+01:26:43 [fuse] rep 3 fold 3/5 10.3s FUSE=0.958 FUSE-C=0.929 FUSE-INV=0.913 SP-RF=0.921 SP-CB=0.929 META=0.943
+01:26:54 [fuse] rep 3 fold 4/5 11.6s FUSE=0.973 FUSE-C=0.935 FUSE-INV=0.933 SP-RF=0.943 SP-CB=0.952 META=0.963
+01:27:05 [fuse] rep 3 fold 5/5 11.0s FUSE=0.941 FUSE-C=0.920 FUSE-INV=0.909 SP-RF=0.911 SP-CB=0.920 META=0.923
+01:27:18 [fuse] rep 4 fold 1/5 12.4s FUSE=0.986 FUSE-C=0.986 FUSE-INV=0.986 SP-RF=0.986 SP-CB=0.986 META=0.971
+01:27:29 [fuse] rep 4 fold 2/5 11.4s FUSE=0.983 FUSE-C=0.948 FUSE-INV=0.920 SP-RF=0.957 SP-CB=0.957 META=0.983
+01:27:40 [fuse] rep 4 fold 3/5 10.2s FUSE=0.917 FUSE-C=0.905 FUSE-INV=0.926 SP-RF=0.917 SP-CB=0.917 META=0.939
+01:27:51 [fuse] rep 4 fold 4/5 11.2s FUSE=1.000 FUSE-C=0.959 FUSE-INV=0.949 SP-RF=0.970 SP-CB=0.970 META=0.980
+01:28:02 [fuse] rep 4 fold 5/5 11.1s FUSE=0.947 FUSE-C=0.909 FUSE-INV=0.901 SP-RF=0.901 SP-CB=0.909 META=0.919
+{
+ "rep0_f1": {
+  "FUSE": 0.9551,
+  "FUSE-C": 0.9231,
+  "FUSE-INV": 0.9383,
+  "SP-RF": 0.9489,
+  "SP-CB": 0.9467,
+  "META": 0.952,
+  "ML": 0.9405,
+  "CNN": 0.9342,
+  "CNN@0.5": 0.9342
+ },
+ "mean_fold_f1": {
+  "FUSE": 0.9617,
+  "FUSE-C": 0.9377,
+  "FUSE-INV": 0.9338,
+  "SP-RF": 0.9419,
+  "SP-CB": 0.9445,
+  "META": 0.9491,
+  "ML": 0.9358,
+  "CNN": 0.9344,
+  "CNN@0.5": 0.9301
+ },
+ "noninferiority": {
+  "FUSE": {
+   "SP-RF": true,
+   "SP-CB": true
+  },
+  "FUSE-C": {
+   "SP-RF": false,
+   "SP-CB": false
+  },
+  "FUSE-INV": {
+   "SP-RF": false,
+   "SP-CB": true
+  }
+ },
+ "superiority_vs_sp_rf_holm": {
+  "FUSE-C vs SP-RF": {
+   "p": 0.0004,
+   "holm_adjusted": 0.0012,
+   "reject_h0": true
+  },
+  "FUSE-INV vs SP-RF": {
+   "p": 0.0658,
+   "holm_adjusted": 0.1316,
+   "reject_h0": false
+  },
+  "FUSE vs SP-RF": {
+   "p": 0.6084,
+   "holm_adjusted": 0.6084,
+   "reject_h0": false
+  }
+ }
+}
+01:29:42 [fuse] done in 6.8 min
+01:33:35 stage 1: using cached features
+01:33:35 stage 2: {"n_files_featurised": 1008, "exact_duplicates_removed": 109, "conflicting_label_files_dropped": 13, "n_unique": 886, "n_unique_benign": 557, "n_unique_malicious": 329, "n_groups": 553, "groups_size_gt1": 104, "largest_group": 98, "files_in_shared_groups": 437, "dev": {"n": 747, "benign": 493, "malicious": 254}, "locked": {"n": 139, "benign": 64, "malicious": 75, "manifest_sha256": "1aaa27a48abab0a0ca30b26a1ba829b43c0376d67580e865c19227b3c394c142"}}
+[attack-study] CNN skipped: torch is not installed here (CNN and CNN@0.5 rows omitted).
+[attack-study] fold 1/5: trained on 691 real files in 25.4s, attacking 1 held-out malicious files
+[attack-study]   fold 1: 1/1 files encoded (22 encodings)
+[attack-study] fold 2/5: trained on 610 real files in 22.7s, attacking 8 held-out malicious files
+[attack-study]   fold 2: 8/8 files encoded (180 encodings)
+[attack-study] fold 3/5: trained on 524 real files in 21.2s, attacking 9 held-out malicious files
+[attack-study]   fold 3: 9/9 files encoded (157 encodings)
+[attack-study] fold 4/5: trained on 585 real files in 21.2s, attacking 16 held-out malicious files
+[attack-study]   fold 4: 10/16 files encoded (179 encodings)
+[attack-study]   fold 4: 16/16 files encoded (292 encodings)
+[attack-study] fold 5/5: trained on 578 real files in 21.8s, attacking 6 held-out malicious files
+[attack-study]   fold 5: 6/6 files encoded (132 encodings)
+[attack-study] checkpoints in <drive>/colab_ckpts/v2_fuse/ckpt/fuse_attack_s0: reused folds none, computed folds [1, 2, 3, 4, 5]
+
+overall (clean = files, attacked/evasion = (file, variant) pairs, worst = per file)
+detector       files pairs  clean attack  evade worstD worstE
+ML                35   743  1.000  1.000  0.000  1.000  0.000
+SP-RF             35   743  1.000  1.000  0.000  1.000  0.000
+SP-CB             35   743  1.000  1.000  0.000  1.000  0.000
+META              35   743  1.000  1.000  0.000  1.000  0.000
+FUSE              35   743  0.943  0.944  0.000  0.943  0.000
+FUSE-C            35   743  0.943  0.944  0.000  0.943  0.000
+FUSE-INV          35   743  1.000  1.000  0.000  1.000  0.000
+ML+FC             35   743  1.000  1.000  0.000  1.000  0.000
+SP-RF+FC          35   743  1.000  1.000  0.000  1.000  0.000
+SP-CB+FC          35   743  1.000  1.000  0.000  1.000  0.000
+META+FC           35   743  1.000  1.000  0.000  1.000  0.000
+FUSE+FC           35   743  0.943  0.944  0.000  0.943  0.000
+FUSE-C+FC         35   743  0.943  0.944  0.000  0.943  0.000
+FUSE-INV+FC       35   743  1.000  1.000  0.000  1.000  0.000
+
+evasion rate by_family (pairs: A1=420, A1b=280, A3=35, A9=8)
+detector                 A1          A1b           A3           A9
+ML                    0.000        0.000        0.000        0.000
+SP-RF                 0.000        0.000        0.000        0.000
+SP-CB                 0.000        0.000        0.000        0.000
+META                  0.000        0.000        0.000        0.000
+FUSE                  0.000        0.000        0.000        0.000
+FUSE-C                0.000        0.000        0.000        0.000
+FUSE-INV              0.000        0.000        0.000        0.000
+ML+FC                 0.000        0.000        0.000        0.000
+SP-RF+FC              0.000        0.000        0.000        0.000
+SP-CB+FC              0.000        0.000        0.000        0.000
+META+FC               0.000        0.000        0.000        0.000
+FUSE+FC               0.000        0.000        0.000        0.000
+FUSE-C+FC             0.000        0.000        0.000        0.000
+FUSE-INV+FC           0.000        0.000        0.000        0.000
+
+evasion rate by_family_position (pairs: A1:front=210, A1:mid=210, A1b:front=140, A1b:mid=140, A3:front=35, A9:front=8)
+detector           A1:front       A1:mid    A1b:front      A1b:mid     A3:front     A9:front
+ML                    0.000        0.000        0.000        0.000        0.000        0.000
+SP-RF                 0.000        0.000        0.000        0.000        0.000        0.000
+SP-CB                 0.000        0.000        0.000        0.000        0.000        0.000
+META                  0.000        0.000        0.000        0.000        0.000        0.000
+FUSE                  0.000        0.000        0.000        0.000        0.000        0.000
+FUSE-C                0.000        0.000        0.000        0.000        0.000        0.000
+FUSE-INV              0.000        0.000        0.000        0.000        0.000        0.000
+ML+FC                 0.000        0.000        0.000        0.000        0.000        0.000
+SP-RF+FC              0.000        0.000        0.000        0.000        0.000        0.000
+SP-CB+FC              0.000        0.000        0.000        0.000        0.000        0.000
+META+FC               0.000        0.000        0.000        0.000        0.000        0.000
+FUSE+FC               0.000        0.000        0.000        0.000        0.000        0.000
+FUSE-C+FC             0.000        0.000        0.000        0.000        0.000        0.000
+FUSE-INV+FC           0.000        0.000        0.000        0.000        0.000        0.000
+
+evasion rate by_container (pairs: pickle=700, zip=43)
+detector             pickle          zip
+ML                    0.000        0.000
+SP-RF                 0.000        0.000
+SP-CB                 0.000        0.000
+META                  0.000        0.000
+FUSE                  0.000        0.000
+FUSE-C                0.000        0.000
+FUSE-INV              0.000        0.000
+ML+FC                 0.000        0.000
+SP-RF+FC              0.000        0.000
+SP-CB+FC              0.000        0.000
+META+FC               0.000        0.000
+FUSE+FC               0.000        0.000
+FUSE-C+FC             0.000        0.000
+FUSE-INV+FC           0.000        0.000
+01:35:42 [fuse] done in 2.1 min
+01:35:43 stage 1: using cached features
+01:35:44 stage 2: {"n_files_featurised": 1008, "exact_duplicates_removed": 109, "conflicting_label_files_dropped": 13, "n_unique": 886, "n_unique_benign": 557, "n_unique_malicious": 329, "n_groups": 553, "groups_size_gt1": 104, "largest_group": 98, "files_in_shared_groups": 437, "dev": {"n": 747, "benign": 493, "malicious": 254}, "locked": {"n": 139, "benign": 64, "malicious": 75, "manifest_sha256": "1aaa27a48abab0a0ca30b26a1ba829b43c0376d67580e865c19227b3c394c142"}}
+[attack-study] CNN skipped: torch is not installed here (CNN and CNN@0.5 rows omitted).
+[attack-study] fold 1/5: trained on 699 real files in 24.7s, attacking 4 held-out malicious files
+[attack-study]   fold 1: 4/4 files encoded (68 encodings)
+[attack-study] fold 2/5: trained on 606 real files in 22.7s, attacking 7 held-out malicious files
+[attack-study]   fold 2: 7/7 files encoded (133 encodings)
+[attack-study] fold 3/5: trained on 605 real files in 22.9s, attacking 11 held-out malicious files
+[attack-study]   fold 3: 10/11 files encoded (201 encodings)
+[attack-study]   fold 3: 11/11 files encoded (223 encodings)
+[attack-study] fold 4/5: trained on 501 real files in 21.4s, attacking 6 held-out malicious files
+[attack-study]   fold 4: 6/6 files encoded (111 encodings)
+[attack-study] fold 5/5: trained on 577 real files in 22.1s, attacking 12 held-out malicious files
+[attack-study]   fold 5: 10/12 files encoded (220 encodings)
+[attack-study]   fold 5: 12/12 files encoded (222 encodings)
+[attack-study] checkpoints in <drive>/colab_ckpts/v2_fuse/ckpt/fuse_attack_s1: reused folds none, computed folds [1, 2, 3, 4, 5]
+
+overall (clean = files, attacked/evasion = (file, variant) pairs, worst = per file)
+detector       files pairs  clean attack  evade worstD worstE
+ML                34   717  0.912  0.913  0.000  0.912  0.000
+SP-RF             34   717  0.941  0.941  0.000  0.941  0.000
+SP-CB             34   717  0.941  0.941  0.000  0.941  0.000
+META              34   717  0.941  0.941  0.000  0.941  0.000
+FUSE              34   717  0.941  0.941  0.000  0.941  0.000
+FUSE-C            34   717  0.941  0.941  0.000  0.941  0.000
+FUSE-INV          34   717  0.941  0.941  0.002  0.912  0.031
+ML+FC             34   717  0.912  0.913  0.000  0.912  0.000
+SP-RF+FC          34   717  0.941  0.941  0.000  0.941  0.000
+SP-CB+FC          34   717  0.941  0.941  0.000  0.941  0.000
+META+FC           34   717  0.941  0.941  0.000  0.941  0.000
+FUSE+FC           34   717  0.941  0.941  0.000  0.941  0.000
+FUSE-C+FC         34   717  0.941  0.941  0.000  0.941  0.000
+FUSE-INV+FC       34   717  0.941  0.941  0.002  0.912  0.031
+
+evasion rate by_family (pairs: A1=408, A1b=272, A3=34, A9=3)
+detector                 A1          A1b           A3           A9
+ML                    0.000        0.000        0.000        0.000
+SP-RF                 0.000        0.000        0.000        0.000
+SP-CB                 0.000        0.000        0.000        0.000
+META                  0.000        0.000        0.000        0.000
+FUSE                  0.000        0.000        0.000        0.000
+FUSE-C                0.000        0.000        0.000        0.000
+FUSE-INV              0.000        0.000        0.031        0.000
+ML+FC                 0.000        0.000        0.000        0.000
+SP-RF+FC              0.000        0.000        0.000        0.000
+SP-CB+FC              0.000        0.000        0.000        0.000
+META+FC               0.000        0.000        0.000        0.000
+FUSE+FC               0.000        0.000        0.000        0.000
+FUSE-C+FC             0.000        0.000        0.000        0.000
+FUSE-INV+FC           0.000        0.000        0.031        0.000
+
+evasion rate by_family_position (pairs: A1:front=204, A1:mid=204, A1b:front=136, A1b:mid=136, A3:front=34, A9:front=3)
+detector           A1:front       A1:mid    A1b:front      A1b:mid     A3:front     A9:front
+ML                    0.000        0.000        0.000        0.000        0.000        0.000
+SP-RF                 0.000        0.000        0.000        0.000        0.000        0.000
+SP-CB                 0.000        0.000        0.000        0.000        0.000        0.000
+META                  0.000        0.000        0.000        0.000        0.000        0.000
+FUSE                  0.000        0.000        0.000        0.000        0.000        0.000
+FUSE-C                0.000        0.000        0.000        0.000        0.000        0.000
+FUSE-INV              0.000        0.000        0.000        0.000        0.031        0.000
+ML+FC                 0.000        0.000        0.000        0.000        0.000        0.000
+SP-RF+FC              0.000        0.000        0.000        0.000        0.000        0.000
+SP-CB+FC              0.000        0.000        0.000        0.000        0.000        0.000
+META+FC               0.000        0.000        0.000        0.000        0.000        0.000
+FUSE+FC               0.000        0.000        0.000        0.000        0.000        0.000
+FUSE-C+FC             0.000        0.000        0.000        0.000        0.000        0.000
+FUSE-INV+FC           0.000        0.000        0.000        0.000        0.031        0.000
+
+evasion rate by_container (pairs: pickle=675, zip=42)
+detector             pickle          zip
+ML                    0.000        0.000
+SP-RF                 0.000        0.000
+SP-CB                 0.000        0.000
+META                  0.000        0.000
+FUSE                  0.000        0.000
+FUSE-C                0.000        0.000
+FUSE-INV              0.002        0.000
+ML+FC                 0.000        0.000
+SP-RF+FC              0.000        0.000
+SP-CB+FC              0.000        0.000
+META+FC               0.000        0.000
+FUSE+FC               0.000        0.000
+FUSE-C+FC             0.000        0.000
+FUSE-INV+FC           0.002        0.000
+01:38:02 [fuse] done in 2.3 min

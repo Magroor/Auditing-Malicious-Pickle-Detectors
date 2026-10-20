@@ -1,0 +1,2892 @@
+{
+  "results": "v2_results (4)/v2",
+  "manifest_sha256": "1aaa27a48abab0a0ca30b26a1ba829b43c0376d67580e865c19227b3c394c142",
+  "n_dev": 747,
+  "n_boot": 10000,
+  "seed": 0,
+  "meta_source": {
+    "0": "recomputed (meta_baseline.fit_meta, identical folds)",
+    "1": "recomputed (meta_baseline.fit_meta, identical folds)",
+    "2": "recomputed (meta_baseline.fit_meta, identical folds)",
+    "3": "recomputed (meta_baseline.fit_meta, identical folds)",
+    "4": "recomputed (meta_baseline.fit_meta, identical folds)"
+  },
+  "scheme": "(B = 10,000, seed 0, percentile intervals, paired: both detectors are evaluated\non the same resample):\n  file    : the pre-registered scheme. Malicious files and benign files are resampled with\n            replacement separately, class sizes fixed. Same RNG calls in the same order as\n            colab_v2_eval.boot_delta_f1 / boot_noninferiority, so the numbers equal stage 4.\n  cluster : the unit is the pre-registered group (file_meta \"group\": hash of the canonical opcode\n            sequence + imported globals; unparseable files are their own group). Groups are split\n            into strata by the labels of their dev members (all malicious / all benign / mixed),\n            and each stratum is resampled with replacement with its number of groups fixed. Every\n            dev member of a drawn group enters the resample, so class sizes vary between resamples.\n            With singleton groups this is exactly the file scheme (same draws).\n  Per resample: F1 = 2TP / (2TP + FP + FN); specificity = 1 - FP / (benign files in the resample).\n  Two-sided p = 2 min(share delta <= 0, share delta >= 0) (PREREG s.4). Non-inferiority: one-sided\n  95 % lower bound (5th percentile) > margin; p_one_sided = share delta <= margin; Holm over the\n  family {vs SP-RF, vs SP-CB} of each candidate (PREREG s.9.1), monotone adjusted p.",
+  "analysis": {
+    "schemes": {
+      "file": {
+        "n_files": 747,
+        "n_clusters": 747,
+        "clusters_per_stratum": {
+          "malicious": 254,
+          "benign": 493
+        },
+        "largest_cluster": 1,
+        "n_boot": 10000,
+        "seed": 0
+      },
+      "cluster": {
+        "n_files": 747,
+        "n_clusters": 448,
+        "clusters_per_stratum": {
+          "malicious": 189,
+          "benign": 255,
+          "mixed": 4
+        },
+        "largest_cluster": 98,
+        "n_boot": 10000,
+        "seed": 0
+      }
+    },
+    "per_rep": {
+      "0": {
+        "metrics": {
+          "ML": {
+            "TP": 229,
+            "FP": 4,
+            "FN": 25,
+            "TN": 489,
+            "f1": 0.9405,
+            "specificity": 0.9919
+          },
+          "CNN": {
+            "TP": 225,
+            "FP": 5,
+            "FN": 29,
+            "TN": 488,
+            "f1": 0.9298,
+            "specificity": 0.9899
+          },
+          "CNN@0.5": {
+            "TP": 229,
+            "FP": 8,
+            "FN": 25,
+            "TN": 485,
+            "f1": 0.9328,
+            "specificity": 0.9838
+          },
+          "META": {
+            "TP": 238,
+            "FP": 8,
+            "FN": 16,
+            "TN": 485,
+            "f1": 0.952,
+            "specificity": 0.9838
+          },
+          "SP-RF": {
+            "TP": 231,
+            "FP": 3,
+            "FN": 23,
+            "TN": 490,
+            "f1": 0.9467,
+            "specificity": 0.9939
+          },
+          "SP-CB": {
+            "TP": 231,
+            "FP": 3,
+            "FN": 23,
+            "TN": 490,
+            "f1": 0.9467,
+            "specificity": 0.9939
+          }
+        },
+        "comparisons": {
+          "ML vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": -0.0063,
+                "ci95": [
+                  -0.0216,
+                  0.0088
+                ],
+                "p_two_sided": 0.475,
+                "ni_lower_bound_95": -0.0192,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0392,
+                "non_inferior": true,
+                "ni_holm_p": 0.0784,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.002,
+                "ci95": [
+                  -0.0061,
+                  0.0
+                ],
+                "p_two_sided": 0.732,
+                "ni_lower_bound_95": -0.0061,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.0798,
+                "non_inferior": false,
+                "ni_holm_p": 0.1596,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0063,
+                "ci95": [
+                  -0.0236,
+                  0.0094
+                ],
+                "p_two_sided": 0.5308,
+                "ni_lower_bound_95": -0.0204,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.056,
+                "non_inferior": false,
+                "ni_holm_p": 0.112,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.002,
+                "ci95": [
+                  -0.0076,
+                  0.0
+                ],
+                "p_two_sided": 0.7446,
+                "ni_lower_bound_95": -0.0062,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.1134,
+                "non_inferior": false,
+                "ni_holm_p": 0.2268,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "ML vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": -0.0063,
+                "ci95": [
+                  -0.0216,
+                  0.0088
+                ],
+                "p_two_sided": 0.475,
+                "ni_lower_bound_95": -0.0192,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0392,
+                "non_inferior": true,
+                "ni_holm_p": 0.0784,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.002,
+                "ci95": [
+                  -0.0061,
+                  0.0
+                ],
+                "p_two_sided": 0.732,
+                "ni_lower_bound_95": -0.0061,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.0798,
+                "non_inferior": false,
+                "ni_holm_p": 0.1596,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0063,
+                "ci95": [
+                  -0.0236,
+                  0.0094
+                ],
+                "p_two_sided": 0.5308,
+                "ni_lower_bound_95": -0.0204,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.056,
+                "non_inferior": false,
+                "ni_holm_p": 0.112,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.002,
+                "ci95": [
+                  -0.0076,
+                  0.0
+                ],
+                "p_two_sided": 0.7446,
+                "ni_lower_bound_95": -0.0062,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.1134,
+                "non_inferior": false,
+                "ni_holm_p": 0.2268,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": -0.017,
+                "ci95": [
+                  -0.0357,
+                  0.0017
+                ],
+                "p_two_sided": 0.082,
+                "ni_lower_bound_95": -0.0325,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.3644,
+                "non_inferior": false,
+                "ni_holm_p": 0.7288,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0041,
+                "ci95": [
+                  -0.0122,
+                  0.0041
+                ],
+                "p_two_sided": 0.4504,
+                "ni_lower_bound_95": -0.0101,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.3774,
+                "non_inferior": false,
+                "ni_holm_p": 0.7548,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.017,
+                "ci95": [
+                  -0.0399,
+                  0.0029
+                ],
+                "p_two_sided": 0.1162,
+                "ni_lower_bound_95": -0.0358,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.3854,
+                "non_inferior": false,
+                "ni_holm_p": 0.7708,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0041,
+                "ci95": [
+                  -0.0137,
+                  0.0037
+                ],
+                "p_two_sided": 0.4428,
+                "ni_lower_bound_95": -0.0118,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.4101,
+                "non_inferior": false,
+                "ni_holm_p": 0.8202,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": -0.017,
+                "ci95": [
+                  -0.0357,
+                  0.0017
+                ],
+                "p_two_sided": 0.082,
+                "ni_lower_bound_95": -0.0325,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.3644,
+                "non_inferior": false,
+                "ni_holm_p": 0.7288,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0041,
+                "ci95": [
+                  -0.0122,
+                  0.0041
+                ],
+                "p_two_sided": 0.4504,
+                "ni_lower_bound_95": -0.0101,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.3774,
+                "non_inferior": false,
+                "ni_holm_p": 0.7548,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.017,
+                "ci95": [
+                  -0.0399,
+                  0.0029
+                ],
+                "p_two_sided": 0.1162,
+                "ni_lower_bound_95": -0.0358,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.3854,
+                "non_inferior": false,
+                "ni_holm_p": 0.7708,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0041,
+                "ci95": [
+                  -0.0137,
+                  0.0037
+                ],
+                "p_two_sided": 0.4428,
+                "ni_lower_bound_95": -0.0118,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.4101,
+                "non_inferior": false,
+                "ni_holm_p": 0.8202,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN@0.5 vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": -0.0139,
+                "ci95": [
+                  -0.0317,
+                  0.0031
+                ],
+                "p_two_sided": 0.1238,
+                "ni_lower_bound_95": -0.0287,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.2443,
+                "non_inferior": false,
+                "ni_holm_p": 0.4886,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0101,
+                "ci95": [
+                  -0.0223,
+                  0.0
+                ],
+                "p_two_sided": 0.066,
+                "ni_lower_bound_95": -0.0183,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.8371,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0139,
+                "ci95": [
+                  -0.0336,
+                  0.0042
+                ],
+                "p_two_sided": 0.1396,
+                "ni_lower_bound_95": -0.0303,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.2664,
+                "non_inferior": false,
+                "ni_holm_p": 0.5328,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0101,
+                "ci95": [
+                  -0.0242,
+                  0.0
+                ],
+                "p_two_sided": 0.0702,
+                "ni_lower_bound_95": -0.0215,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.8312,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN@0.5 vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": -0.0139,
+                "ci95": [
+                  -0.0317,
+                  0.0031
+                ],
+                "p_two_sided": 0.1238,
+                "ni_lower_bound_95": -0.0287,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.2443,
+                "non_inferior": false,
+                "ni_holm_p": 0.4886,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0101,
+                "ci95": [
+                  -0.0223,
+                  0.0
+                ],
+                "p_two_sided": 0.066,
+                "ni_lower_bound_95": -0.0183,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.8371,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0139,
+                "ci95": [
+                  -0.0336,
+                  0.0042
+                ],
+                "p_two_sided": 0.1396,
+                "ni_lower_bound_95": -0.0303,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.2664,
+                "non_inferior": false,
+                "ni_holm_p": 0.5328,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0101,
+                "ci95": [
+                  -0.0242,
+                  0.0
+                ],
+                "p_two_sided": 0.0702,
+                "ni_lower_bound_95": -0.0215,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.8312,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "META vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": 0.0053,
+                "ci95": [
+                  -0.0154,
+                  0.0265
+                ],
+                "p_two_sided": 0.6062,
+                "ni_lower_bound_95": -0.0117,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.009,
+                "non_inferior": true,
+                "ni_holm_p": 0.018,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": -0.0101,
+                "ci95": [
+                  -0.0203,
+                  0.0
+                ],
+                "p_two_sided": 0.0684,
+                "ni_lower_bound_95": -0.0183,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.8268,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": 0.0053,
+                "ci95": [
+                  -0.016,
+                  0.0274
+                ],
+                "p_two_sided": 0.625,
+                "ni_lower_bound_95": -0.0124,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0101,
+                "non_inferior": true,
+                "ni_holm_p": 0.0202,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": -0.0101,
+                "ci95": [
+                  -0.024,
+                  0.0
+                ],
+                "p_two_sided": 0.0678,
+                "ni_lower_bound_95": -0.0213,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.8274,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "META vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": 0.0053,
+                "ci95": [
+                  -0.0154,
+                  0.0265
+                ],
+                "p_two_sided": 0.6062,
+                "ni_lower_bound_95": -0.0117,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.009,
+                "non_inferior": true,
+                "ni_holm_p": 0.018,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": -0.0101,
+                "ci95": [
+                  -0.0203,
+                  0.0
+                ],
+                "p_two_sided": 0.0684,
+                "ni_lower_bound_95": -0.0183,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.8268,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": 0.0053,
+                "ci95": [
+                  -0.016,
+                  0.0274
+                ],
+                "p_two_sided": 0.625,
+                "ni_lower_bound_95": -0.0124,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0101,
+                "non_inferior": true,
+                "ni_holm_p": 0.0202,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": -0.0101,
+                "ci95": [
+                  -0.024,
+                  0.0
+                ],
+                "p_two_sided": 0.0678,
+                "ni_lower_bound_95": -0.0213,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.8274,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            }
+          }
+        }
+      },
+      "1": {
+        "metrics": {
+          "ML": {
+            "TP": 226,
+            "FP": 4,
+            "FN": 28,
+            "TN": 489,
+            "f1": 0.9339,
+            "specificity": 0.9919
+          },
+          "CNN": {
+            "TP": 226,
+            "FP": 6,
+            "FN": 28,
+            "TN": 487,
+            "f1": 0.93,
+            "specificity": 0.9878
+          },
+          "CNN@0.5": {
+            "TP": 229,
+            "FP": 9,
+            "FN": 25,
+            "TN": 484,
+            "f1": 0.9309,
+            "specificity": 0.9817
+          },
+          "META": {
+            "TP": 233,
+            "FP": 9,
+            "FN": 21,
+            "TN": 484,
+            "f1": 0.9395,
+            "specificity": 0.9817
+          },
+          "SP-RF": {
+            "TP": 230,
+            "FP": 5,
+            "FN": 24,
+            "TN": 488,
+            "f1": 0.9407,
+            "specificity": 0.9899
+          },
+          "SP-CB": {
+            "TP": 230,
+            "FP": 4,
+            "FN": 24,
+            "TN": 489,
+            "f1": 0.9426,
+            "specificity": 0.9919
+          }
+        },
+        "comparisons": {
+          "ML vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": -0.0068,
+                "ci95": [
+                  -0.0239,
+                  0.0087
+                ],
+                "p_two_sided": 0.4086,
+                "ni_lower_bound_95": -0.0207,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0611,
+                "non_inferior": false,
+                "ni_holm_p": 0.1222,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": 0.002,
+                "ci95": [
+                  0.0,
+                  0.0061
+                ],
+                "p_two_sided": 0.7426,
+                "ni_lower_bound_95": 0.0,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.0,
+                "non_inferior": true,
+                "ni_holm_p": 0.0,
+                "ni_holm_reject": true
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0068,
+                "ci95": [
+                  -0.0268,
+                  0.0109
+                ],
+                "p_two_sided": 0.4728,
+                "ni_lower_bound_95": -0.0232,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0856,
+                "non_inferior": false,
+                "ni_holm_p": 0.1712,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": 0.002,
+                "ci95": [
+                  0.0,
+                  0.0076
+                ],
+                "p_two_sided": 0.7304,
+                "ni_lower_bound_95": 0.0,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.0,
+                "non_inferior": true,
+                "ni_holm_p": 0.0,
+                "ni_holm_reject": true
+              }
+            }
+          },
+          "ML vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": -0.0087,
+                "ci95": [
+                  -0.0247,
+                  0.0066
+                ],
+                "p_two_sided": 0.345,
+                "ni_lower_bound_95": -0.0222,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0805,
+                "non_inferior": false,
+                "ni_holm_p": 0.1222,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "p_two_sided": 1.0,
+                "ni_lower_bound_95": 0.0,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.0,
+                "non_inferior": true,
+                "ni_holm_p": 0.0,
+                "ni_holm_reject": true
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0087,
+                "ci95": [
+                  -0.0284,
+                  0.0084
+                ],
+                "p_two_sided": 0.4146,
+                "ni_lower_bound_95": -0.0247,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.1177,
+                "non_inferior": false,
+                "ni_holm_p": 0.1712,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "p_two_sided": 1.0,
+                "ni_lower_bound_95": 0.0,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.0,
+                "non_inferior": true,
+                "ni_holm_p": 0.0,
+                "ni_holm_reject": true
+              }
+            }
+          },
+          "CNN vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": -0.0107,
+                "ci95": [
+                  -0.0301,
+                  0.0079
+                ],
+                "p_two_sided": 0.2702,
+                "ni_lower_bound_95": -0.027,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.1629,
+                "non_inferior": false,
+                "ni_holm_p": 0.3258,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.002,
+                "ci95": [
+                  -0.0122,
+                  0.0061
+                ],
+                "p_two_sided": 0.825,
+                "ni_lower_bound_95": -0.0101,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.246,
+                "non_inferior": false,
+                "ni_holm_p": 0.492,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0107,
+                "ci95": [
+                  -0.0329,
+                  0.0093
+                ],
+                "p_two_sided": 0.3276,
+                "ni_lower_bound_95": -0.029,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.1904,
+                "non_inferior": false,
+                "ni_holm_p": 0.3808,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.002,
+                "ci95": [
+                  -0.012,
+                  0.0071
+                ],
+                "p_two_sided": 0.8234,
+                "ni_lower_bound_95": -0.0105,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.2561,
+                "non_inferior": false,
+                "ni_holm_p": 0.5122,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": -0.0126,
+                "ci95": [
+                  -0.0318,
+                  0.0054
+                ],
+                "p_two_sided": 0.1892,
+                "ni_lower_bound_95": -0.0286,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.2096,
+                "non_inferior": false,
+                "ni_holm_p": 0.3258,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0041,
+                "ci95": [
+                  -0.0122,
+                  0.0041
+                ],
+                "p_two_sided": 0.4486,
+                "ni_lower_bound_95": -0.0101,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.3832,
+                "non_inferior": false,
+                "ni_holm_p": 0.492,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0126,
+                "ci95": [
+                  -0.0348,
+                  0.007
+                ],
+                "p_two_sided": 0.2386,
+                "ni_lower_bound_95": -0.0306,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.2372,
+                "non_inferior": false,
+                "ni_holm_p": 0.3808,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0041,
+                "ci95": [
+                  -0.0139,
+                  0.0037
+                ],
+                "p_two_sided": 0.446,
+                "ni_lower_bound_95": -0.0119,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.4044,
+                "non_inferior": false,
+                "ni_holm_p": 0.5122,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN@0.5 vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": -0.0098,
+                "ci95": [
+                  -0.0289,
+                  0.0085
+                ],
+                "p_two_sided": 0.313,
+                "ni_lower_bound_95": -0.0256,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.1462,
+                "non_inferior": false,
+                "ni_holm_p": 0.2924,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0081,
+                "ci95": [
+                  -0.0183,
+                  0.0
+                ],
+                "p_two_sided": 0.1294,
+                "ni_lower_bound_95": -0.0162,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.7245,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0098,
+                "ci95": [
+                  -0.0303,
+                  0.0095
+                ],
+                "p_two_sided": 0.338,
+                "ni_lower_bound_95": -0.027,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.1608,
+                "non_inferior": false,
+                "ni_holm_p": 0.3216,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0081,
+                "ci95": [
+                  -0.0208,
+                  0.0
+                ],
+                "p_two_sided": 0.1268,
+                "ni_lower_bound_95": -0.0182,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.7343,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN@0.5 vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": -0.0117,
+                "ci95": [
+                  -0.0313,
+                  0.0068
+                ],
+                "p_two_sided": 0.239,
+                "ni_lower_bound_95": -0.028,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.1983,
+                "non_inferior": false,
+                "ni_holm_p": 0.2924,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0101,
+                "ci95": [
+                  -0.0203,
+                  0.0
+                ],
+                "p_two_sided": 0.0674,
+                "ni_lower_bound_95": -0.0203,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.8304,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0117,
+                "ci95": [
+                  -0.0328,
+                  0.0077
+                ],
+                "p_two_sided": 0.2518,
+                "ni_lower_bound_95": -0.0291,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.2111,
+                "non_inferior": false,
+                "ni_holm_p": 0.3216,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0101,
+                "ci95": [
+                  -0.0247,
+                  0.0
+                ],
+                "p_two_sided": 0.0658,
+                "ni_lower_bound_95": -0.0214,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.8345,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "META vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": -0.0012,
+                "ci95": [
+                  -0.0233,
+                  0.0211
+                ],
+                "p_two_sided": 0.9268,
+                "ni_lower_bound_95": -0.0197,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0475,
+                "non_inferior": true,
+                "ni_holm_p": 0.095,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0081,
+                "ci95": [
+                  -0.0203,
+                  0.002
+                ],
+                "p_two_sided": 0.2044,
+                "ni_lower_bound_95": -0.0183,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.6991,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0012,
+                "ci95": [
+                  -0.0239,
+                  0.0221
+                ],
+                "p_two_sided": 0.9226,
+                "ni_lower_bound_95": -0.0204,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0535,
+                "non_inferior": false,
+                "ni_holm_p": 0.107,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0081,
+                "ci95": [
+                  -0.0224,
+                  0.0025
+                ],
+                "p_two_sided": 0.2082,
+                "ni_lower_bound_95": -0.0197,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.6951,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "META vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": -0.0031,
+                "ci95": [
+                  -0.0247,
+                  0.0191
+                ],
+                "p_two_sided": 0.7826,
+                "ni_lower_bound_95": -0.0213,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0609,
+                "non_inferior": false,
+                "ni_holm_p": 0.095,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0101,
+                "ci95": [
+                  -0.0203,
+                  0.0
+                ],
+                "p_two_sided": 0.0688,
+                "ni_lower_bound_95": -0.0183,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.8306,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0031,
+                "ci95": [
+                  -0.0257,
+                  0.0198
+                ],
+                "p_two_sided": 0.7892,
+                "ni_lower_bound_95": -0.022,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.072,
+                "non_inferior": false,
+                "ni_holm_p": 0.107,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0101,
+                "ci95": [
+                  -0.0244,
+                  0.0
+                ],
+                "p_two_sided": 0.062,
+                "ni_lower_bound_95": -0.0215,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.8269,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "metrics": {
+          "ML": {
+            "TP": 226,
+            "FP": 3,
+            "FN": 28,
+            "TN": 490,
+            "f1": 0.9358,
+            "specificity": 0.9939
+          },
+          "CNN": {
+            "TP": 228,
+            "FP": 6,
+            "FN": 26,
+            "TN": 487,
+            "f1": 0.9344,
+            "specificity": 0.9878
+          },
+          "CNN@0.5": {
+            "TP": 231,
+            "FP": 12,
+            "FN": 23,
+            "TN": 481,
+            "f1": 0.9296,
+            "specificity": 0.9757
+          },
+          "META": {
+            "TP": 238,
+            "FP": 8,
+            "FN": 16,
+            "TN": 485,
+            "f1": 0.952,
+            "specificity": 0.9838
+          },
+          "SP-RF": {
+            "TP": 231,
+            "FP": 5,
+            "FN": 23,
+            "TN": 488,
+            "f1": 0.9429,
+            "specificity": 0.9899
+          },
+          "SP-CB": {
+            "TP": 231,
+            "FP": 4,
+            "FN": 23,
+            "TN": 489,
+            "f1": 0.9448,
+            "specificity": 0.9919
+          }
+        },
+        "comparisons": {
+          "ML vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": -0.007,
+                "ci95": [
+                  -0.0262,
+                  0.0118
+                ],
+                "p_two_sided": 0.455,
+                "ni_lower_bound_95": -0.0235,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0917,
+                "non_inferior": false,
+                "ni_holm_p": 0.1834,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": 0.0041,
+                "ci95": [
+                  -0.0061,
+                  0.0142
+                ],
+                "p_two_sided": 0.532,
+                "ni_lower_bound_95": -0.0041,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.026,
+                "non_inferior": true,
+                "ni_holm_p": 0.052,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.007,
+                "ci95": [
+                  -0.0279,
+                  0.0125
+                ],
+                "p_two_sided": 0.4838,
+                "ni_lower_bound_95": -0.0245,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.1071,
+                "non_inferior": false,
+                "ni_holm_p": 0.2142,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": 0.0041,
+                "ci95": [
+                  -0.0057,
+                  0.0157
+                ],
+                "p_two_sided": 0.5242,
+                "ni_lower_bound_95": -0.0041,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.0344,
+                "non_inferior": true,
+                "ni_holm_p": 0.0688,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "ML vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": -0.009,
+                "ci95": [
+                  -0.0278,
+                  0.0095
+                ],
+                "p_two_sided": 0.3362,
+                "ni_lower_bound_95": -0.0248,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.1204,
+                "non_inferior": false,
+                "ni_holm_p": 0.1834,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": 0.002,
+                "ci95": [
+                  -0.0061,
+                  0.0101
+                ],
+                "p_two_sided": 0.824,
+                "ni_lower_bound_95": -0.0041,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.0493,
+                "non_inferior": true,
+                "ni_holm_p": 0.052,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.009,
+                "ci95": [
+                  -0.0298,
+                  0.0099
+                ],
+                "p_two_sided": 0.3626,
+                "ni_lower_bound_95": -0.0263,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.14,
+                "non_inferior": false,
+                "ni_holm_p": 0.2142,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": 0.002,
+                "ci95": [
+                  -0.0073,
+                  0.012
+                ],
+                "p_two_sided": 0.8166,
+                "ni_lower_bound_95": -0.0055,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.0635,
+                "non_inferior": false,
+                "ni_holm_p": 0.0688,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": -0.0084,
+                "ci95": [
+                  -0.0251,
+                  0.0078
+                ],
+                "p_two_sided": 0.3478,
+                "ni_lower_bound_95": -0.0226,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0852,
+                "non_inferior": false,
+                "ni_holm_p": 0.1704,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.002,
+                "ci95": [
+                  -0.0101,
+                  0.0041
+                ],
+                "p_two_sided": 0.7856,
+                "ni_lower_bound_95": -0.0081,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.1867,
+                "non_inferior": false,
+                "ni_holm_p": 0.3734,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0084,
+                "ci95": [
+                  -0.027,
+                  0.0085
+                ],
+                "p_two_sided": 0.3688,
+                "ni_lower_bound_95": -0.0241,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.1089,
+                "non_inferior": false,
+                "ni_holm_p": 0.2178,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.002,
+                "ci95": [
+                  -0.0106,
+                  0.0049
+                ],
+                "p_two_sided": 0.773,
+                "ni_lower_bound_95": -0.0087,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.2117,
+                "non_inferior": false,
+                "ni_holm_p": 0.4234,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": -0.0104,
+                "ci95": [
+                  -0.0275,
+                  0.0065
+                ],
+                "p_two_sided": 0.263,
+                "ni_lower_bound_95": -0.0248,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.1353,
+                "non_inferior": false,
+                "ni_holm_p": 0.1704,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0041,
+                "ci95": [
+                  -0.0122,
+                  0.0041
+                ],
+                "p_two_sided": 0.4536,
+                "ni_lower_bound_95": -0.0101,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.3784,
+                "non_inferior": false,
+                "ni_holm_p": 0.3784,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0104,
+                "ci95": [
+                  -0.0296,
+                  0.007
+                ],
+                "p_two_sided": 0.2798,
+                "ni_lower_bound_95": -0.0263,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.1571,
+                "non_inferior": false,
+                "ni_holm_p": 0.2178,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0041,
+                "ci95": [
+                  -0.0142,
+                  0.0037
+                ],
+                "p_two_sided": 0.4432,
+                "ni_lower_bound_95": -0.0121,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.4113,
+                "non_inferior": false,
+                "ni_holm_p": 0.4234,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN@0.5 vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": -0.0133,
+                "ci95": [
+                  -0.0319,
+                  0.0049
+                ],
+                "p_two_sided": 0.1482,
+                "ni_lower_bound_95": -0.0289,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.2261,
+                "non_inferior": false,
+                "ni_holm_p": 0.4522,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0142,
+                "ci95": [
+                  -0.0264,
+                  -0.0041
+                ],
+                "p_two_sided": 0.016,
+                "ni_lower_bound_95": -0.0243,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.9425,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0133,
+                "ci95": [
+                  -0.0323,
+                  0.0048
+                ],
+                "p_two_sided": 0.1458,
+                "ni_lower_bound_95": -0.029,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.2349,
+                "non_inferior": false,
+                "ni_holm_p": 0.4698,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0142,
+                "ci95": [
+                  -0.0311,
+                  -0.0031
+                ],
+                "p_two_sided": 0.015,
+                "ni_lower_bound_95": -0.0276,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.9435,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN@0.5 vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": -0.0152,
+                "ci95": [
+                  -0.0342,
+                  0.0031
+                ],
+                "p_two_sided": 0.1002,
+                "ni_lower_bound_95": -0.031,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.2953,
+                "non_inferior": false,
+                "ni_holm_p": 0.4522,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0162,
+                "ci95": [
+                  -0.0304,
+                  -0.0041
+                ],
+                "p_two_sided": 0.0084,
+                "ni_lower_bound_95": -0.0264,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.9684,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0152,
+                "ci95": [
+                  -0.0347,
+                  0.0029
+                ],
+                "p_two_sided": 0.102,
+                "ni_lower_bound_95": -0.0313,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.3068,
+                "non_inferior": false,
+                "ni_holm_p": 0.4698,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0162,
+                "ci95": [
+                  -0.034,
+                  -0.0045
+                ],
+                "p_two_sided": 0.0076,
+                "ni_lower_bound_95": -0.0306,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.969,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "META vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": 0.0091,
+                "ci95": [
+                  -0.0114,
+                  0.0302
+                ],
+                "p_two_sided": 0.3802,
+                "ni_lower_bound_95": -0.0079,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0029,
+                "non_inferior": true,
+                "ni_holm_p": 0.0058,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": -0.0061,
+                "ci95": [
+                  -0.0162,
+                  0.0041
+                ],
+                "p_two_sided": 0.3392,
+                "ni_lower_bound_95": -0.0142,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.5654,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": 0.0091,
+                "ci95": [
+                  -0.0119,
+                  0.0312
+                ],
+                "p_two_sided": 0.3866,
+                "ni_lower_bound_95": -0.0089,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0037,
+                "non_inferior": true,
+                "ni_holm_p": 0.0074,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": -0.0061,
+                "ci95": [
+                  -0.0191,
+                  0.0041
+                ],
+                "p_two_sided": 0.3444,
+                "ni_lower_bound_95": -0.0166,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.5693,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "META vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": 0.0072,
+                "ci95": [
+                  -0.0132,
+                  0.028
+                ],
+                "p_two_sided": 0.4858,
+                "ni_lower_bound_95": -0.0096,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0038,
+                "non_inferior": true,
+                "ni_holm_p": 0.0058,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": -0.0081,
+                "ci95": [
+                  -0.0183,
+                  0.0
+                ],
+                "p_two_sided": 0.1346,
+                "ni_lower_bound_95": -0.0162,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.7239,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": 0.0072,
+                "ci95": [
+                  -0.0138,
+                  0.0289
+                ],
+                "p_two_sided": 0.4866,
+                "ni_lower_bound_95": -0.0103,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0056,
+                "non_inferior": true,
+                "ni_holm_p": 0.0074,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": -0.0081,
+                "ci95": [
+                  -0.0208,
+                  0.0
+                ],
+                "p_two_sided": 0.1302,
+                "ni_lower_bound_95": -0.0185,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.7226,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            }
+          }
+        }
+      },
+      "3": {
+        "metrics": {
+          "ML": {
+            "TP": 228,
+            "FP": 9,
+            "FN": 26,
+            "TN": 484,
+            "f1": 0.9287,
+            "specificity": 0.9817
+          },
+          "CNN": {
+            "TP": 229,
+            "FP": 6,
+            "FN": 25,
+            "TN": 487,
+            "f1": 0.9366,
+            "specificity": 0.9878
+          },
+          "CNN@0.5": {
+            "TP": 230,
+            "FP": 6,
+            "FN": 24,
+            "TN": 487,
+            "f1": 0.9388,
+            "specificity": 0.9878
+          },
+          "META": {
+            "TP": 237,
+            "FP": 8,
+            "FN": 17,
+            "TN": 485,
+            "f1": 0.9499,
+            "specificity": 0.9838
+          },
+          "SP-RF": {
+            "TP": 230,
+            "FP": 9,
+            "FN": 24,
+            "TN": 484,
+            "f1": 0.9331,
+            "specificity": 0.9817
+          },
+          "SP-CB": {
+            "TP": 231,
+            "FP": 4,
+            "FN": 23,
+            "TN": 489,
+            "f1": 0.9448,
+            "specificity": 0.9919
+          }
+        },
+        "comparisons": {
+          "ML vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": -0.0043,
+                "ci95": [
+                  -0.0209,
+                  0.0121
+                ],
+                "p_two_sided": 0.6214,
+                "ni_lower_bound_95": -0.0182,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0301,
+                "non_inferior": true,
+                "ni_holm_p": 0.0602,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": 0.0,
+                "ci95": [
+                  -0.0081,
+                  0.0081
+                ],
+                "p_two_sided": 1.0,
+                "ni_lower_bound_95": -0.0061,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.0979,
+                "non_inferior": false,
+                "ni_holm_p": 0.1958,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0043,
+                "ci95": [
+                  -0.0226,
+                  0.0125
+                ],
+                "p_two_sided": 0.6506,
+                "ni_lower_bound_95": -0.0195,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0452,
+                "non_inferior": true,
+                "ni_holm_p": 0.0904,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": 0.0,
+                "ci95": [
+                  -0.0086,
+                  0.0086
+                ],
+                "p_two_sided": 1.0,
+                "ni_lower_bound_95": -0.0071,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.116,
+                "non_inferior": false,
+                "ni_holm_p": 0.232,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "ML vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": -0.0161,
+                "ci95": [
+                  -0.0337,
+                  0.0008
+                ],
+                "p_two_sided": 0.0654,
+                "ni_lower_bound_95": -0.0308,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.3351,
+                "non_inferior": false,
+                "ni_holm_p": 0.3351,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0101,
+                "ci95": [
+                  -0.0203,
+                  -0.002
+                ],
+                "p_two_sided": 0.0136,
+                "ni_lower_bound_95": -0.0183,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.8796,
+                "non_inferior": false,
+                "ni_holm_p": 0.8796,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0161,
+                "ci95": [
+                  -0.0368,
+                  0.0023
+                ],
+                "p_two_sided": 0.0924,
+                "ni_lower_bound_95": -0.0334,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.3354,
+                "non_inferior": false,
+                "ni_holm_p": 0.3354,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0101,
+                "ci95": [
+                  -0.0253,
+                  -0.0016
+                ],
+                "p_two_sided": 0.0362,
+                "ni_lower_bound_95": -0.0222,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.8285,
+                "non_inferior": false,
+                "ni_holm_p": 0.8285,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": 0.0035,
+                "ci95": [
+                  -0.0146,
+                  0.0215
+                ],
+                "p_two_sided": 0.7092,
+                "ni_lower_bound_95": -0.0112,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0063,
+                "non_inferior": true,
+                "ni_holm_p": 0.0126,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": 0.0061,
+                "ci95": [
+                  -0.0061,
+                  0.0183
+                ],
+                "p_two_sided": 0.4,
+                "ni_lower_bound_95": -0.0041,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.0315,
+                "non_inferior": true,
+                "ni_holm_p": 0.063,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": 0.0035,
+                "ci95": [
+                  -0.0164,
+                  0.0236
+                ],
+                "p_two_sided": 0.7386,
+                "ni_lower_bound_95": -0.0133,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0116,
+                "non_inferior": true,
+                "ni_holm_p": 0.0232,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": 0.0061,
+                "ci95": [
+                  -0.0064,
+                  0.0227
+                ],
+                "p_two_sided": 0.4656,
+                "ni_lower_bound_95": -0.0047,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.0446,
+                "non_inferior": true,
+                "ni_holm_p": 0.0892,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": -0.0082,
+                "ci95": [
+                  -0.0251,
+                  0.0084
+                ],
+                "p_two_sided": 0.349,
+                "ni_lower_bound_95": -0.0225,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0836,
+                "non_inferior": false,
+                "ni_holm_p": 0.0836,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0041,
+                "ci95": [
+                  -0.0122,
+                  0.0041
+                ],
+                "p_two_sided": 0.4486,
+                "ni_lower_bound_95": -0.0101,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.3832,
+                "non_inferior": false,
+                "ni_holm_p": 0.3832,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0082,
+                "ci95": [
+                  -0.0269,
+                  0.0088
+                ],
+                "p_two_sided": 0.3886,
+                "ni_lower_bound_95": -0.0236,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0995,
+                "non_inferior": false,
+                "ni_holm_p": 0.0995,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0041,
+                "ci95": [
+                  -0.0139,
+                  0.0037
+                ],
+                "p_two_sided": 0.446,
+                "ni_lower_bound_95": -0.0119,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.4044,
+                "non_inferior": false,
+                "ni_holm_p": 0.4044,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN@0.5 vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": 0.0057,
+                "ci95": [
+                  -0.0127,
+                  0.0242
+                ],
+                "p_two_sided": 0.5618,
+                "ni_lower_bound_95": -0.0095,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0041,
+                "non_inferior": true,
+                "ni_holm_p": 0.0082,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": 0.0061,
+                "ci95": [
+                  -0.0061,
+                  0.0183
+                ],
+                "p_two_sided": 0.4,
+                "ni_lower_bound_95": -0.0041,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.0315,
+                "non_inferior": true,
+                "ni_holm_p": 0.063,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": 0.0057,
+                "ci95": [
+                  -0.0147,
+                  0.0262
+                ],
+                "p_two_sided": 0.5994,
+                "ni_lower_bound_95": -0.0115,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.007,
+                "non_inferior": true,
+                "ni_holm_p": 0.014,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": 0.0061,
+                "ci95": [
+                  -0.0064,
+                  0.0227
+                ],
+                "p_two_sided": 0.4656,
+                "ni_lower_bound_95": -0.0047,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.0446,
+                "non_inferior": true,
+                "ni_holm_p": 0.0892,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN@0.5 vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": -0.006,
+                "ci95": [
+                  -0.0232,
+                  0.0107
+                ],
+                "p_two_sided": 0.5194,
+                "ni_lower_bound_95": -0.0206,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0582,
+                "non_inferior": false,
+                "ni_holm_p": 0.0582,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0041,
+                "ci95": [
+                  -0.0122,
+                  0.0041
+                ],
+                "p_two_sided": 0.4486,
+                "ni_lower_bound_95": -0.0101,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.3832,
+                "non_inferior": false,
+                "ni_holm_p": 0.3832,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.006,
+                "ci95": [
+                  -0.0249,
+                  0.0116
+                ],
+                "p_two_sided": 0.5416,
+                "ni_lower_bound_95": -0.022,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0692,
+                "non_inferior": false,
+                "ni_holm_p": 0.0692,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0041,
+                "ci95": [
+                  -0.0139,
+                  0.0037
+                ],
+                "p_two_sided": 0.446,
+                "ni_lower_bound_95": -0.0119,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.4044,
+                "non_inferior": false,
+                "ni_holm_p": 0.4044,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "META vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": 0.0168,
+                "ci95": [
+                  -0.0035,
+                  0.038
+                ],
+                "p_two_sided": 0.1016,
+                "ni_lower_bound_95": 0.0,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0003,
+                "non_inferior": true,
+                "ni_holm_p": 0.0006,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": 0.002,
+                "ci95": [
+                  -0.0101,
+                  0.0142
+                ],
+                "p_two_sided": 0.8562,
+                "ni_lower_bound_95": -0.0081,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.1141,
+                "non_inferior": false,
+                "ni_holm_p": 0.2282,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": 0.0168,
+                "ci95": [
+                  -0.0051,
+                  0.0402
+                ],
+                "p_two_sided": 0.1302,
+                "ni_lower_bound_95": -0.0016,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0004,
+                "non_inferior": true,
+                "ni_holm_p": 0.0008,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": 0.002,
+                "ci95": [
+                  -0.0118,
+                  0.0174
+                ],
+                "p_two_sided": 0.9004,
+                "ni_lower_bound_95": -0.0093,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.1545,
+                "non_inferior": false,
+                "ni_holm_p": 0.309,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "META vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": 0.0051,
+                "ci95": [
+                  -0.0137,
+                  0.0244
+                ],
+                "p_two_sided": 0.5874,
+                "ni_lower_bound_95": -0.0111,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.004,
+                "non_inferior": true,
+                "ni_holm_p": 0.004,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": -0.0081,
+                "ci95": [
+                  -0.0183,
+                  0.0
+                ],
+                "p_two_sided": 0.1346,
+                "ni_lower_bound_95": -0.0162,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.7239,
+                "non_inferior": false,
+                "ni_holm_p": 0.7239,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": 0.0051,
+                "ci95": [
+                  -0.0146,
+                  0.0254
+                ],
+                "p_two_sided": 0.6116,
+                "ni_lower_bound_95": -0.0114,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0079,
+                "non_inferior": true,
+                "ni_holm_p": 0.0079,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": -0.0081,
+                "ci95": [
+                  -0.0208,
+                  0.0
+                ],
+                "p_two_sided": 0.1302,
+                "ni_lower_bound_95": -0.0185,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.7226,
+                "non_inferior": false,
+                "ni_holm_p": 0.7226,
+                "ni_holm_reject": false
+              }
+            }
+          }
+        }
+      },
+      "4": {
+        "metrics": {
+          "ML": {
+            "TP": 229,
+            "FP": 7,
+            "FN": 25,
+            "TN": 486,
+            "f1": 0.9347,
+            "specificity": 0.9858
+          },
+          "CNN": {
+            "TP": 227,
+            "FP": 6,
+            "FN": 27,
+            "TN": 487,
+            "f1": 0.9322,
+            "specificity": 0.9878
+          },
+          "CNN@0.5": {
+            "TP": 227,
+            "FP": 8,
+            "FN": 27,
+            "TN": 485,
+            "f1": 0.9284,
+            "specificity": 0.9838
+          },
+          "META": {
+            "TP": 238,
+            "FP": 5,
+            "FN": 16,
+            "TN": 488,
+            "f1": 0.9577,
+            "specificity": 0.9899
+          },
+          "SP-RF": {
+            "TP": 231,
+            "FP": 5,
+            "FN": 23,
+            "TN": 488,
+            "f1": 0.9429,
+            "specificity": 0.9899
+          },
+          "SP-CB": {
+            "TP": 231,
+            "FP": 4,
+            "FN": 23,
+            "TN": 489,
+            "f1": 0.9448,
+            "specificity": 0.9919
+          }
+        },
+        "comparisons": {
+          "ML vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": -0.0082,
+                "ci95": [
+                  -0.0239,
+                  0.0069
+                ],
+                "p_two_sided": 0.3432,
+                "ni_lower_bound_95": -0.0212,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.071,
+                "non_inferior": false,
+                "ni_holm_p": 0.142,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0041,
+                "ci95": [
+                  -0.0101,
+                  0.0
+                ],
+                "p_two_sided": 0.269,
+                "ni_lower_bound_95": -0.0081,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.3227,
+                "non_inferior": false,
+                "ni_holm_p": 0.6454,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0082,
+                "ci95": [
+                  -0.0259,
+                  0.0078
+                ],
+                "p_two_sided": 0.3928,
+                "ni_lower_bound_95": -0.0227,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0884,
+                "non_inferior": false,
+                "ni_holm_p": 0.1768,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0041,
+                "ci95": [
+                  -0.0117,
+                  0.0
+                ],
+                "p_two_sided": 0.2798,
+                "ni_lower_bound_95": -0.0102,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.3499,
+                "non_inferior": false,
+                "ni_holm_p": 0.6998,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "ML vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": -0.0101,
+                "ci95": [
+                  -0.0265,
+                  0.0052
+                ],
+                "p_two_sided": 0.2378,
+                "ni_lower_bound_95": -0.0234,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.1153,
+                "non_inferior": false,
+                "ni_holm_p": 0.142,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0061,
+                "ci95": [
+                  -0.0142,
+                  0.0
+                ],
+                "p_two_sided": 0.1004,
+                "ni_lower_bound_95": -0.0122,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.5767,
+                "non_inferior": false,
+                "ni_holm_p": 0.6454,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0101,
+                "ci95": [
+                  -0.0284,
+                  0.0066
+                ],
+                "p_two_sided": 0.2656,
+                "ni_lower_bound_95": -0.0252,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.1348,
+                "non_inferior": false,
+                "ni_holm_p": 0.1768,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0061,
+                "ci95": [
+                  -0.0153,
+                  0.0
+                ],
+                "p_two_sided": 0.097,
+                "ni_lower_bound_95": -0.0137,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.588,
+                "non_inferior": false,
+                "ni_holm_p": 0.6998,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": -0.0106,
+                "ci95": [
+                  -0.0294,
+                  0.0071
+                ],
+                "p_two_sided": 0.2656,
+                "ni_lower_bound_95": -0.026,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.1468,
+                "non_inferior": false,
+                "ni_holm_p": 0.2936,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.002,
+                "ci95": [
+                  -0.0101,
+                  0.0041
+                ],
+                "p_two_sided": 0.7892,
+                "ni_lower_bound_95": -0.0081,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.1842,
+                "non_inferior": false,
+                "ni_holm_p": 0.3684,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0106,
+                "ci95": [
+                  -0.032,
+                  0.0089
+                ],
+                "p_two_sided": 0.3048,
+                "ni_lower_bound_95": -0.0285,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.1814,
+                "non_inferior": false,
+                "ni_holm_p": 0.3628,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.002,
+                "ci95": [
+                  -0.0102,
+                  0.0048
+                ],
+                "p_two_sided": 0.784,
+                "ni_lower_bound_95": -0.0085,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.2008,
+                "non_inferior": false,
+                "ni_holm_p": 0.4016,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": -0.0125,
+                "ci95": [
+                  -0.0317,
+                  0.0054
+                ],
+                "p_two_sided": 0.1996,
+                "ni_lower_bound_95": -0.0283,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.2096,
+                "non_inferior": false,
+                "ni_holm_p": 0.2936,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0041,
+                "ci95": [
+                  -0.0122,
+                  0.0041
+                ],
+                "p_two_sided": 0.4508,
+                "ni_lower_bound_95": -0.0101,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.3833,
+                "non_inferior": false,
+                "ni_holm_p": 0.3833,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0125,
+                "ci95": [
+                  -0.0344,
+                  0.0074
+                ],
+                "p_two_sided": 0.2324,
+                "ni_lower_bound_95": -0.0307,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.2392,
+                "non_inferior": false,
+                "ni_holm_p": 0.3628,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0041,
+                "ci95": [
+                  -0.0141,
+                  0.0037
+                ],
+                "p_two_sided": 0.4436,
+                "ni_lower_bound_95": -0.0119,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.397,
+                "non_inferior": false,
+                "ni_holm_p": 0.4016,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN@0.5 vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": -0.0144,
+                "ci95": [
+                  -0.0341,
+                  0.0045
+                ],
+                "p_two_sided": 0.1392,
+                "ni_lower_bound_95": -0.0308,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.279,
+                "non_inferior": false,
+                "ni_holm_p": 0.558,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0061,
+                "ci95": [
+                  -0.0162,
+                  0.002
+                ],
+                "p_two_sided": 0.2474,
+                "ni_lower_bound_95": -0.0142,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.5732,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0144,
+                "ci95": [
+                  -0.0368,
+                  0.0057
+                ],
+                "p_two_sided": 0.1692,
+                "ni_lower_bound_95": -0.0331,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.2981,
+                "non_inferior": false,
+                "ni_holm_p": 0.5962,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0061,
+                "ci95": [
+                  -0.0174,
+                  0.0022
+                ],
+                "p_two_sided": 0.2362,
+                "ni_lower_bound_95": -0.0151,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.5862,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "CNN@0.5 vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": -0.0164,
+                "ci95": [
+                  -0.0363,
+                  0.0026
+                ],
+                "p_two_sided": 0.0952,
+                "ni_lower_bound_95": -0.0327,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.3521,
+                "non_inferior": false,
+                "ni_holm_p": 0.558,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0081,
+                "ci95": [
+                  -0.0183,
+                  0.0
+                ],
+                "p_two_sided": 0.1264,
+                "ni_lower_bound_95": -0.0162,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.7234,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": -0.0164,
+                "ci95": [
+                  -0.039,
+                  0.0041
+                ],
+                "p_two_sided": 0.1208,
+                "ni_lower_bound_95": -0.0352,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.3667,
+                "non_inferior": false,
+                "ni_holm_p": 0.5962,
+                "ni_holm_reject": false
+              },
+              "specificity": {
+                "delta": -0.0081,
+                "ci95": [
+                  -0.0211,
+                  0.0
+                ],
+                "p_two_sided": 0.1328,
+                "ni_lower_bound_95": -0.0185,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.7315,
+                "non_inferior": false,
+                "ni_holm_p": 1.0,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "META vs SP-RF": {
+            "file": {
+              "f1": {
+                "delta": 0.0149,
+                "ci95": [
+                  -0.006,
+                  0.0366
+                ],
+                "p_two_sided": 0.1618,
+                "ni_lower_bound_95": -0.0026,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0007,
+                "non_inferior": true,
+                "ni_holm_p": 0.001,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": 0.0,
+                "ci95": [
+                  -0.0122,
+                  0.0122
+                ],
+                "p_two_sided": 1.0,
+                "ni_lower_bound_95": -0.0101,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.1842,
+                "non_inferior": false,
+                "ni_holm_p": 0.3684,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": 0.0149,
+                "ci95": [
+                  -0.0069,
+                  0.0377
+                ],
+                "p_two_sided": 0.1724,
+                "ni_lower_bound_95": -0.0034,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0008,
+                "non_inferior": true,
+                "ni_holm_p": 0.0016,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": 0.0,
+                "ci95": [
+                  -0.0118,
+                  0.012
+                ],
+                "p_two_sided": 1.0,
+                "ni_lower_bound_95": -0.0099,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.1929,
+                "non_inferior": false,
+                "ni_holm_p": 0.3858,
+                "ni_holm_reject": false
+              }
+            }
+          },
+          "META vs SP-CB": {
+            "file": {
+              "f1": {
+                "delta": 0.013,
+                "ci95": [
+                  -0.0074,
+                  0.0338
+                ],
+                "p_two_sided": 0.1896,
+                "ni_lower_bound_95": -0.0038,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0005,
+                "non_inferior": true,
+                "ni_holm_p": 0.001,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": -0.002,
+                "ci95": [
+                  -0.0101,
+                  0.0061
+                ],
+                "p_two_sided": 0.8204,
+                "ni_lower_bound_95": -0.0101,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.24,
+                "non_inferior": false,
+                "ni_holm_p": 0.3684,
+                "ni_holm_reject": false
+              }
+            },
+            "cluster": {
+              "f1": {
+                "delta": 0.013,
+                "ci95": [
+                  -0.0081,
+                  0.0345
+                ],
+                "p_two_sided": 0.2174,
+                "ni_lower_bound_95": -0.0042,
+                "ni_margin": -0.02,
+                "ni_p_one_sided": 0.0009,
+                "non_inferior": true,
+                "ni_holm_p": 0.0016,
+                "ni_holm_reject": true
+              },
+              "specificity": {
+                "delta": -0.002,
+                "ci95": [
+                  -0.0121,
+                  0.0072
+                ],
+                "p_two_sided": 0.8466,
+                "ni_lower_bound_95": -0.0102,
+                "ni_margin": -0.005,
+                "ni_p_one_sided": 0.261,
+                "non_inferior": false,
+                "ni_holm_p": 0.3858,
+                "ni_holm_reject": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "summary": {
+      "ML vs SP-RF": {
+        "file_f1_non_inferior_reps": 2,
+        "file_f1_ci95_width_mean": 0.033,
+        "file_specificity_non_inferior_reps": 2,
+        "file_specificity_ci95_width_mean": 0.0118,
+        "cluster_f1_non_inferior_reps": 1,
+        "cluster_f1_ci95_width_mean": 0.036,
+        "cluster_specificity_non_inferior_reps": 2,
+        "cluster_specificity_ci95_width_mean": 0.0131,
+        "n_reps": 5,
+        "ci_width_ratio_cluster_over_file_f1": 1.091
+      },
+      "ML vs SP-CB": {
+        "file_f1_non_inferior_reps": 1,
+        "file_f1_ci95_width_mean": 0.033,
+        "file_specificity_non_inferior_reps": 2,
+        "file_specificity_ci95_width_mean": 0.011,
+        "cluster_f1_non_inferior_reps": 0,
+        "cluster_f1_ci95_width_mean": 0.0367,
+        "cluster_specificity_non_inferior_reps": 1,
+        "cluster_specificity_ci95_width_mean": 0.0132,
+        "n_reps": 5,
+        "ci_width_ratio_cluster_over_file_f1": 1.112
+      },
+      "CNN vs SP-RF": {
+        "file_f1_non_inferior_reps": 1,
+        "file_f1_ci95_width_mean": 0.0362,
+        "file_specificity_non_inferior_reps": 1,
+        "file_specificity_ci95_width_mean": 0.0175,
+        "cluster_f1_non_inferior_reps": 1,
+        "cluster_f1_ci95_width_mean": 0.0403,
+        "cluster_specificity_non_inferior_reps": 1,
+        "cluster_specificity_ci95_width_mean": 0.0192,
+        "n_reps": 5,
+        "ci_width_ratio_cluster_over_file_f1": 1.113
+      },
+      "CNN vs SP-CB": {
+        "file_f1_non_inferior_reps": 0,
+        "file_f1_ci95_width_mean": 0.0358,
+        "file_specificity_non_inferior_reps": 0,
+        "file_specificity_ci95_width_mean": 0.0163,
+        "cluster_f1_non_inferior_reps": 0,
+        "cluster_f1_ci95_width_mean": 0.0397,
+        "cluster_specificity_non_inferior_reps": 0,
+        "cluster_specificity_ci95_width_mean": 0.0177,
+        "n_reps": 5,
+        "ci_width_ratio_cluster_over_file_f1": 1.109
+      },
+      "CNN@0.5 vs SP-RF": {
+        "file_f1_non_inferior_reps": 1,
+        "file_f1_ci95_width_mean": 0.0369,
+        "file_specificity_non_inferior_reps": 1,
+        "file_specificity_ci95_width_mean": 0.0211,
+        "cluster_f1_non_inferior_reps": 1,
+        "cluster_f1_ci95_width_mean": 0.0396,
+        "cluster_specificity_non_inferior_reps": 1,
+        "cluster_specificity_ci95_width_mean": 0.0243,
+        "n_reps": 5,
+        "ci_width_ratio_cluster_over_file_f1": 1.073
+      },
+      "CNN@0.5 vs SP-CB": {
+        "file_f1_non_inferior_reps": 0,
+        "file_f1_ci95_width_mean": 0.0366,
+        "file_specificity_non_inferior_reps": 0,
+        "file_specificity_ci95_width_mean": 0.0207,
+        "cluster_f1_non_inferior_reps": 0,
+        "cluster_f1_ci95_width_mean": 0.0391,
+        "cluster_specificity_non_inferior_reps": 0,
+        "cluster_specificity_ci95_width_mean": 0.0234,
+        "n_reps": 5,
+        "ci_width_ratio_cluster_over_file_f1": 1.068
+      },
+      "META vs SP-RF": {
+        "file_f1_non_inferior_reps": 5,
+        "file_f1_ci95_width_mean": 0.0424,
+        "file_specificity_non_inferior_reps": 0,
+        "file_specificity_ci95_width_mean": 0.0223,
+        "cluster_f1_non_inferior_reps": 4,
+        "cluster_f1_ci95_width_mean": 0.0445,
+        "cluster_specificity_non_inferior_reps": 0,
+        "cluster_specificity_ci95_width_mean": 0.025,
+        "n_reps": 5,
+        "ci_width_ratio_cluster_over_file_f1": 1.05
+      },
+      "META vs SP-CB": {
+        "file_f1_non_inferior_reps": 4,
+        "file_f1_ci95_width_mean": 0.0412,
+        "file_specificity_non_inferior_reps": 0,
+        "file_specificity_ci95_width_mean": 0.0187,
+        "cluster_f1_non_inferior_reps": 4,
+        "cluster_f1_ci95_width_mean": 0.0428,
+        "cluster_specificity_non_inferior_reps": 0,
+        "cluster_specificity_ci95_width_mean": 0.0219,
+        "n_reps": 5,
+        "ci_width_ratio_cluster_over_file_f1": 1.039
+      }
+    }
+  }
+}

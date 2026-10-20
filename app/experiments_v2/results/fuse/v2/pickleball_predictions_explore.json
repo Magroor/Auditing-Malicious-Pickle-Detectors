@@ -1,0 +1,69 @@
+{
+  "half": "explore",
+  "files": [
+    {
+      "sha256": "f63aa1cdb63a26c0025a4a984588248241a5838aff4edfeea93d9c155efe0b5e",
+      "label": 0,
+      "members": [
+        "yolov11/Anzhc-Anzhcs_YOLOs/Anzhc HeadHair seg y8m.pt"
+      ],
+      "cap_reason": null,
+      "score": {
+        "ML": 0.131593,
+        "CNN": 0.108282,
+        "SP-style": 0.140586,
+        "SP-RF": 0.29,
+        "SP-CB": 0.349761,
+        "SP-AE": 0.000315,
+        "META": 0.170418
+      },
+      "pred": {
+        "ML@tuned": 0,
+        "ML@0.5": 0,
+        "CNN@tuned": 0,
+        "CNN@0.5": 0,
+        "SP-style@tuned": 0,
+        "SP-RF@0.5": 0,
+        "SP-CB@0.5": 0,
+        "SP-AE@p95": 1,
+        "META@0.5": 0,
+        "ML@tuned+FC": 0,
+        "ML@0.5+FC": 0,
+        "CNN@tuned+FC": 0,
+        "CNN@0.5+FC": 0,
+        "SP-style@tuned+FC": 0,
+        "SP-RF@0.5+FC": 0,
+        "SP-CB@0.5+FC": 0,
+        "SP-AE@p95+FC": 1,
+        "META@0.5+FC": 0
+      }
+    }
+  ],
+  "units": [
+    {
+      "unit": "yolov11/Anzhc-Anzhcs_YOLOs",
+      "label": 0,
+      "n_kept_members": 1,
+      "pred": {
+        "ML@tuned": 0,
+        "ML@0.5": 0,
+        "CNN@tuned": 0,
+        "CNN@0.5": 0,
+        "SP-style@tuned": 0,
+        "SP-RF@0.5": 0,
+        "SP-CB@0.5": 0,
+        "SP-AE@p95": 1,
+        "META@0.5": 0,
+        "ML@tuned+FC": 0,
+        "ML@0.5+FC": 0,
+        "CNN@tuned+FC": 0,
+        "CNN@0.5+FC": 0,
+        "SP-style@tuned+FC": 0,
+        "SP-RF@0.5+FC": 0,
+        "SP-CB@0.5+FC": 0,
+        "SP-AE@p95+FC": 1,
+        "META@0.5+FC": 0
+      }
+    }
+  ]
+}
