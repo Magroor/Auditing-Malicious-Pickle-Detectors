@@ -49,6 +49,8 @@ live in the user site directory, run without `-I`.
   `python -I harness/adaptive_stats.py --records verdicts/adaptive/records.jsonl --out results.json`
   recomputes the adaptive detection-rate and benign-FPR tables exactly (it matches
   `verdicts/adaptive/results.json`). The records hold hashes, axes, budgets and scores only, no file bytes.
+  `python -I harness/matched_operating_point.py` recomputes the exploratory matched-operating-point table
+  (supplement Table S12) from the same records.
   Generating new variants needs the attack tooling, which is withheld (see Ethics) and available in
   confidence to the editor, reviewers and verified researchers on request.
 - **The insertion-invariance pairs on real files** are reported in the paper. Their generator is withheld
