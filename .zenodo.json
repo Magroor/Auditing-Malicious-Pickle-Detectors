@@ -14,6 +14,6 @@
   "access_right": "open",
   "keywords": ["pickle", "malicious model detection", "benchmark contamination", "machine-learning supply chain", "static analysis"],
   "related_identifiers": [
-    {"relation": "isSupplementTo", "identifier": "https://github.com/REPLACE-ME/pickle-detector-audit", "scheme": "url"}
+    {"relation": "isSupplementTo", "identifier": "https://github.com/Magroor/Auditing-Malicious-Pickle-Detectors", "scheme": "url"}
   ]
 }

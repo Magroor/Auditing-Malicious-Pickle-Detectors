@@ -4,8 +4,8 @@ title: "Code, manifests and per-file verdicts for 'Auditing Malicious-Pickle Det
 version: 1.0.0
 date-released: "2026-10-20"
 license: MIT
-doi: "10.5281/zenodo.XXXXXXX"
-repository-code: "https://github.com/REPLACE-ME/pickle-detector-audit"
+doi: "10.5281/zenodo.23509582"
+repository-code: "https://github.com/Magroor/Auditing-Malicious-Pickle-Detectors"
 authors:
   - family-names: Aun
     given-names: Muhammad
