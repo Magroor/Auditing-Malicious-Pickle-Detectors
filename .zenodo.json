@@ -2,7 +2,7 @@
   "title": "Code, manifests and per-file verdicts for 'Auditing Malicious-Pickle Detectors'",
   "upload_type": "software",
   "version": "1.0.0",
-  "description": "<p>Detector and feature code, SHA-256 manifests and per-file verdicts for the paper <em>Auditing Malicious-Pickle Detectors: Benchmark Contamination, a Provably Invariant Canonical Form and External-Checkpoint Validation</em>. Tables on the development set, the locked test and the 166 official torchvision checkpoints are recomputed from the released verdicts without retraining. The archive contains no malware bytes, no pickle files and no model checkpoints, and the attack and adaptive-evasion tooling is withheld.</p>",
+  "description": "<p>Detector and feature code, SHA-256 manifests and per-file verdicts for the paper <em>Auditing Malicious-Pickle Detectors: Benchmark Contamination, External False Positives and a Provably Invariant Canonical Form</em>. Tables on the development set, the locked test and the 166 official torchvision checkpoints are recomputed from the released verdicts without retraining. The archive contains no malware bytes, no pickle files and no model checkpoints, and the attack and adaptive-evasion tooling is withheld.</p>",
   "creators": [
     {"name": "Aun, Muhammad"},
     {"name": "Majeed, Sajid"},

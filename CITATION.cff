@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code or data, please cite the paper and this archive."
-title: "Code, manifests and per-file verdicts for 'Auditing Malicious-Pickle Detectors: Benchmark Contamination, a Provably Invariant Canonical Form and External-Checkpoint Validation'"
+title: "Code, manifests and per-file verdicts for 'Auditing Malicious-Pickle Detectors: Benchmark Contamination, External False Positives and a Provably Invariant Canonical Form'"
 version: 1.0.0
 date-released: "2026-10-20"
 license: MIT
@@ -24,7 +24,7 @@ keywords:
   - benchmark-contamination
 preferred-citation:
   type: article
-  title: "Auditing Malicious-Pickle Detectors: Benchmark Contamination, a Provably Invariant Canonical Form and External-Checkpoint Validation"
+  title: "Auditing Malicious-Pickle Detectors: Benchmark Contamination, External False Positives and a Provably Invariant Canonical Form"
   journal: "Journal of Information Security and Applications"
   year: 2026
   authors:

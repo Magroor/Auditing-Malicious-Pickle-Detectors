@@ -3,8 +3,8 @@
 Code, manifests and per-file verdicts for
 
 > Muhammad Aun, Sajid Majeed, Muhammad Majid Adeel, Nibras Ahmad and M Arslan Saleem Sandila.
-> *Auditing Malicious-Pickle Detectors: Benchmark Contamination, a Provably Invariant Canonical Form and
-> External-Checkpoint Validation.* Journal of Information Security and Applications, under review.
+> *Auditing Malicious-Pickle Detectors: Benchmark Contamination, External False Positives and a Provably
+> Invariant Canonical Form.* Journal of Information Security and Applications, under review.
 > Archive DOI: [10.5281/zenodo.23509582](https://doi.org/10.5281/zenodo.23509582) (version 1.0.0).
 > All versions: [10.5281/zenodo.23509581](https://doi.org/10.5281/zenodo.23509581). See `CITATION.cff`.
 
@@ -56,8 +56,12 @@ live in the user site directory, run without `-I`.
 - **The insertion-invariance pairs on real files** are reported in the paper. Their generator is withheld
   for the same reason.
 - **Leave-one-source-out, the architecture comparison and the MalHug cross-source check** are shipped as
-  result files (`verdicts/shift/`, `verdicts/arch/`, `verdicts/external/external_malicious.*`) but are not
-  recomputed by `reproduce.py`.
+  result files but are not recomputed by `reproduce.py`. The leave-one-source-out numbers in the paper
+  (recall 0.467 to 0.582 with the curated source held out) span two stored runs of the same analysis:
+  `app/experiments_v2/results/final_colab/loso_shift.json` (SP-RF 0.467, the lower end) and
+  `verdicts/shift/loso_shift.json` (SP-RF 0.508). The two runs agree for every other main detector.
+  The architecture comparison is in `verdicts/arch/` and the MalHug check in
+  `verdicts/external/external_malicious.*`.
 - **Raw corpora are not shipped**, so re-scoring from bytes needs the downloads below.
 - No AUC or threshold sweep exists for the external checkpoints, because raw scores were not saved.
 - **Read-cap experiment (16 MiB against 64 MiB)** and the **739-file feature-block ablation** are shipped
