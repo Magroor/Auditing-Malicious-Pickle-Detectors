@@ -21,7 +21,9 @@ python -I reproduce.py --experiment all
 python -I reproduce.py --help
 ```
 
-`reproduce.py` recomputes tables from saved verdicts. Nothing is retrained and nothing is scored. The
+`reproduce.py` recomputes tables from saved verdicts. Its full output on the released files is in
+`expected_output.txt` (SHA-256 of the LF-normalised file: `24e621088568a6ce705302fc2444dc2762a03cd90f1f1a8b33f1168a16821aa5`). Compare with
+`python reproduce.py --experiment all > out.txt` and `diff --strip-trailing-cr out.txt expected_output.txt`. Nothing is retrained and nothing is scored. The
 `dev`, `locked_test` and `section14` experiments need numpy, scipy, scikit-learn and xgboost to import
 (pinned versions are in `requirements.txt`); `external` needs only the standard library. If your packages
 live in the user site directory, run without `-I`.
@@ -57,9 +59,10 @@ live in the user site directory, run without `-I`.
   for the same reason.
 - **Leave-one-source-out, the architecture comparison and the MalHug cross-source check** are shipped as
   result files but are not recomputed by `reproduce.py`. The leave-one-source-out numbers in the paper
-  (recall 0.467 to 0.582 with the curated source held out) span two stored runs of the same analysis:
-  `app/experiments_v2/results/final_colab/loso_shift.json` (SP-RF 0.467, the lower end) and
-  `verdicts/shift/loso_shift.json` (SP-RF 0.508). The two runs agree for every other main detector.
+  (recall 0.467 to 0.582 with the curated source held out) are the fold-0 range of the final run,
+  `app/experiments_v2/results/final_colab/loso_shift.json` (lowest SP-RF, 0.467). The other stored run,
+  `verdicts/shift/loso_shift.json`, gives 0.475 to 0.582 (lowest FUSE-C). FUSE, FUSE-INV, SP-CB and META
+  have the same fold-0 recall in both runs.
   The architecture comparison is in `verdicts/arch/` and the MalHug check in
   `verdicts/external/external_malicious.*`.
 - **Raw corpora are not shipped**, so re-scoring from bytes needs the downloads below.
