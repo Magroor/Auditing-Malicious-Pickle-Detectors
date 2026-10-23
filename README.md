@@ -66,7 +66,13 @@ live in the user site directory, run without `-I`.
   The architecture comparison is in `verdicts/arch/` and the MalHug check in
   `verdicts/external/external_malicious.*`.
 - **Raw corpora are not shipped**, so re-scoring from bytes needs the downloads below.
-- No AUC or threshold sweep exists for the external checkpoints, because raw scores were not saved.
+- **External raw scores (exploratory re-scoring, 2026-10-23).** `verdicts/external/external_official_scores.json`
+  holds every detector's raw score on the 166 official checkpoints. The re-scoring reproduces the stored
+  pre-registered verdicts on 166 of 166 files for all twelve rows. `python harness/official_threshold_sweep.py
+  --scores verdicts/external/external_official_scores.json --dev-dir app/experiments_v2/results/fuse_rerun/v2`
+  recomputes the threshold sweep and the cross-source AUC (FUSE 0.8844).
+- **Feature-cache comparison.** `verdicts/dev/cache_difference.csv` lists, per unique file, the five semantic
+  counts in both development runs and the FUSE out-of-fold prediction in each run.
 - **Read-cap experiment (16 MiB against 64 MiB)** and the **739-file feature-block ablation** are shipped
   as result files in `app/experiments_v2/results/cap_eval_64/` and `app/experiments_v2/results/ablation_739/`.
 
