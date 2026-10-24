@@ -68,9 +68,18 @@ live in the user site directory, run without `-I`.
 - **Raw corpora are not shipped**, so re-scoring from bytes needs the downloads below.
 - **External raw scores (exploratory re-scoring, 2026-10-23).** `verdicts/external/external_official_scores.json`
   holds every detector's raw score on the 166 official checkpoints. The re-scoring reproduces the stored
-  pre-registered verdicts on 166 of 166 files for all twelve rows. `python harness/official_threshold_sweep.py
+  pre-specified verdicts on 166 of 166 files for all twelve rows. `python harness/official_threshold_sweep.py
   --scores verdicts/external/external_official_scores.json --dev-dir app/experiments_v2/results/fuse_rerun/v2`
   recomputes the threshold sweep and the cross-source AUC (FUSE 0.8844).
+- **Benign scale-up (pre-specified plan section 18.2, scored once on 2026-10-24).**
+  `verdicts/external/external_benign_scaleup_scores.json` holds every detector's raw score and verdict on the
+  228 checkpoints scored from the hash-pinned 2,823-file catalogue `app/experiments_v2/data/official_benign.json`
+  under an 80 GB budget: the 166 torchvision weights and the first 62 timm checkpoints by URL, all from
+  `dl.fbaipublicfiles.com` (the catalogue lists sizes only for torchvision). Every model was trained once on all
+  886 unique files. `python harness/benign_scaleup_analysis.py --scores verdicts/external/external_benign_scaleup_scores.json`
+  recomputes the per-library false alarms and the torchvision-calibrated thresholds tested on timm
+  (`verdicts/external/benign_scaleup_analysis.*`). Marker `manifests/external_benign_scaleup_done.json`, run log
+  `verdicts/external/benign_scaleup_run.log`.
 - **Feature-cache comparison.** `verdicts/dev/cache_difference.csv` lists, per unique file, the five semantic
   counts in both development runs and the FUSE out-of-fold prediction in each run.
 - **Read-cap experiment (16 MiB against 64 MiB)** and the **739-file feature-block ablation** are shipped
@@ -87,7 +96,7 @@ app/experiments_v2/           FUSE, SafePickle and META evaluation, three-way ve
 app/experiments_v2/data/      SHA-256 manifests and URL lists (dev reference, PickleBall sealed half, official checkpoints)
 app/experiments_v2/results/   saved per-file predictions and run summaries
 harness/                      statistics for the adaptive study, recomputed from released records
-verdicts/  manifests/  file_meta.json  logs/  protocol/    released result files, seals and the pre-registration
+verdicts/  manifests/  file_meta.json  logs/  protocol/    released result files, seals and the analysis plan
 ```
 
 ## Data sources
@@ -98,7 +107,9 @@ verdicts/  manifests/  file_meta.json  logs/  protocol/    released result files
   `app/experiments_v2/data/dev_reference.json` and `app/experiments_v2/data/pickleball_sealed_shas.json`.
 - External benign checkpoints: the 166 official torchvision weights (14 quantized) listed in
   `app/experiments_v2/data/official_benign_torchvision.json`, all from `download.pytorch.org`. The list
-  hash is in `manifests/external_official_166_done.json`.
+  hash is in `manifests/external_official_166_done.json`. The scale-up adds 62 timm checkpoints from the
+  2,823-file catalogue `app/experiments_v2/data/official_benign.json` (SHA-256 `6a7a45712ceaa3af...` of the
+  file with LF line endings, as committed; a Windows checkout with `core.autocrlf` hashes differently).
 - External malicious files: the MalHug collection (Zenodo record 13850049); the seal is
   `manifests/external_malicious_seal.json`.
 

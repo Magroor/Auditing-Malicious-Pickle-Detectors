@@ -1,0 +1,113 @@
+catalogue 2823 files; already checkpointed 166 files, 41.7 GB; budget 80 GB in total, 38.3 GB left to download this session
+20:37:06 restored features_cache.npz from Drive
+20:37:07 restored file_meta.json from Drive
+20:37:08 restored stage1_skipped.json from Drive
+20:37:09 restored cv_rep0.json from Drive
+20:37:10 restored cv_rep1.json from Drive
+20:37:11 restored cv_rep2.json from Drive
+20:37:12 restored cv_rep3.json from Drive
+20:37:13 restored cv_rep4.json from Drive
+20:37:13 restored v2_dev_results.json from Drive
+20:37:14 restored dev_error_analysis.csv from Drive
+20:37:15 restored dev_error_profile.json from Drive
+20:37:16 restored run_info.json from Drive
+20:37:17 restored EXTERNAL_OFFICIAL_DONE.json from Drive
+20:37:18 restored arch_compare.json from Drive
+20:37:18 restored arch_compare.md from Drive
+20:37:19 restored loso_shift.json from Drive
+20:37:20 restored loso_shift.md from Drive
+20:37:21 restored fuse_dev_results.json from Drive
+20:37:21 restored fuse_cv_rep0.json from Drive
+20:37:22 restored fuse_cv_rep1.json from Drive
+20:37:23 restored fuse_cv_rep2.json from Drive
+20:37:23 restored fuse_cv_rep3.json from Drive
+20:37:24 restored fuse_cv_rep4.json from Drive
+20:37:25 restored attack_study_fuse_seed0.json from Drive
+20:37:26 restored attack_study_fuse_seed1.json from Drive
+20:37:26 restored EXTERNAL_MALICIOUS_SEAL.json from Drive
+20:37:27 restored EXTERNAL_MALICIOUS_DONE.json from Drive
+20:37:28 restored external_malicious.md from Drive
+20:37:29 restored external_malicious.json from Drive
+20:37:30 restored EXTERNAL_OFFICIAL_166_DONE.json from Drive
+20:37:30 restored external_official_benign.json from Drive
+20:37:31 restored external_official_benign.md from Drive
+20:37:32 restored locked_test_manifest.json from Drive
+20:37:32 restored stage2_split.json from Drive
+20:37:33 restored external_official_scores.json from Drive
+20:37:33 stage 1: using cached features
+20:37:33 stage 2: {"n_files_featurised": 1008, "exact_duplicates_removed": 109, "conflicting_label_files_dropped": 13, "n_unique": 886, "n_unique_benign": 557, "n_unique_malicious": 329, "n_groups": 553, "groups_size_gt1": 104, "largest_group": 98, "files_in_shared_groups": 437, "dev": {"n": 747, "benign": 493, "malicious": 254}, "locked": {"n": 139, "benign": 64, "malicious": 75, "manifest_sha256": "1aaa27a48abab0a0ca30b26a1ba829b43c0376d67580e865c19227b3c394c142"}}
+[external 20:37:56] 1/2823 convnext_base_1k_224_ema.pth: encoded
+[external 20:38:16] 2/2823 convnext_base_22k_1k_224.pth: encoded
+[external 20:38:21] 3/2823 convnext_base_22k_1k_384.pth: encoded
+[external 20:38:26] 4/2823 convnext_base_22k_224.pth: encoded
+[external 20:38:36] 5/2823 convnext_large_1k_224_ema.pth: encoded
+[external 20:39:21] 6/2823 convnext_large_22k_1k_224.pth: encoded
+[external 20:39:31] 7/2823 convnext_large_22k_1k_384.pth: encoded
+[external 20:39:41] 8/2823 convnext_large_22k_224.pth: encoded
+[external 20:39:44] 9/2823 convnext_small_1k_224_ema.pth: encoded
+[external 20:39:57] 10/2823 convnext_small_22k_1k_224.pth: encoded
+[external 20:40:00] 11/2823 convnext_small_22k_1k_384.pth: encoded
+[external 20:40:03] 12/2823 convnext_small_22k_224.pth: encoded
+[external 20:40:04] 13/2823 convnext_tiny_1k_224_ema.pth: encoded
+[external 20:40:06] 14/2823 convnext_tiny_22k_1k_224.pth: encoded
+[external 20:40:07] 15/2823 convnext_tiny_22k_1k_384.pth: encoded
+[external 20:40:09] 16/2823 convnext_tiny_22k_224.pth: encoded
+[external 20:41:26] 17/2823 convnext_xlarge_22k_1k_224_ema.pth: encoded
+[external 20:42:45] 18/2823 convnext_xlarge_22k_1k_384_ema.pth: encoded
+[external 20:43:05] 19/2823 convnext_xlarge_22k_224.pth: encoded
+[external 20:43:05] 20/2823 convnextv2_atto_1k_224_ema.pt: encoded
+[external 20:43:09] 21/2823 convnextv2_base_1k_224_ema.pt: encoded
+[external 20:43:12] 22/2823 convnextv2_femto_1k_224_ema.pt: encoded
+[external 20:45:39] 23/2823 convnextv2_huge_1k_224_ema.pt: encoded
+[external 20:46:23] 24/2823 convnextv2_large_1k_224_ema.pt: encoded
+[external 20:46:28] 25/2823 convnextv2_nano_1k_224_ema.pt: encoded
+[external 20:46:29] 26/2823 convnextv2_pico_1k_224_ema.pt: encoded
+[external 20:46:30] 27/2823 convnextv2_tiny_1k_224_ema.pt: encoded
+[external 20:46:35] 28/2823 convnextv2_base_22k_224_ema.pt: encoded
+[external 20:46:56] 29/2823 convnextv2_base_22k_384_ema.pt: encoded
+[external 20:49:31] 30/2823 convnextv2_huge_22k_384_ema.pt: encoded
+[external 20:51:59] 31/2823 convnextv2_huge_22k_512_ema.pt: encoded
+[external 20:52:45] 32/2823 convnextv2_large_22k_224_ema.pt: encoded
+[external 20:52:54] 33/2823 convnextv2_large_22k_384_ema.pt: encoded
+[external 20:52:59] 34/2823 convnextv2_nano_22k_224_ema.pt: encoded
+[external 20:53:04] 35/2823 convnextv2_nano_22k_384_ema.pt: encoded
+[external 20:53:06] 36/2823 convnextv2_tiny_22k_224_ema.pt: encoded
+[external 20:53:08] 37/2823 convnextv2_tiny_22k_384_ema.pt: encoded
+[external 20:53:11] 38/2823 convnextv2_atto_1k_224_fcmae.pt: encoded
+[external 20:53:15] 39/2823 convnextv2_base_1k_224_fcmae.pt: encoded
+[external 20:53:18] 40/2823 convnextv2_femto_1k_224_fcmae.pt: encoded
+[external 20:55:37] 41/2823 convnextv2_huge_1k_224_fcmae.pt: encoded
+[external 20:56:22] 42/2823 convnextv2_large_1k_224_fcmae.pt: encoded
+[external 20:56:27] 43/2823 convnextv2_nano_1k_224_fcmae.pt: encoded
+[external 20:56:28] 44/2823 convnextv2_pico_1k_224_fcmae.pt: encoded
+[external 20:56:37] 45/2823 convnextv2_tiny_1k_224_fcmae.pt: encoded
+[external 20:57:35] 46/2823 M36_384.pth: encoded
+[external 20:58:53] 47/2823 M48_448.pth: encoded
+[external 20:59:23] 48/2823 S24_224.pth: encoded
+[external 20:59:35] 49/2823 S24_384.pth: encoded
+[external 20:59:52] 50/2823 S36_384.pth: encoded
+[external 20:59:59] 51/2823 XS24_384.pth: encoded
+[external 21:00:22] 52/2823 XXS24_224.pth: encoded
+[external 21:00:26] 53/2823 XXS24_384.pth: encoded
+[external 21:00:57] 54/2823 XXS36_224.pth: encoded
+[external 21:01:02] 55/2823 XXS36_384.pth: encoded
+[external 21:01:06] 56/2823 deit_3_base_224_1k.pth: encoded
+[external 21:01:27] 57/2823 deit_3_base_224_21k.pth: encoded
+[external 21:01:48] 58/2823 deit_3_base_384_1k.pth: encoded
+[external 21:01:52] 59/2823 deit_3_base_384_21k.pth: encoded
+[external 21:04:06] 60/2823 deit_3_huge_224_1k.pth: encoded
+[external 21:06:23] 61/2823 deit_3_huge_224_21k_v1.pth: encoded
+[external 21:07:29] 62/2823 deit_3_large_224_1k.pth: encoded
+[external 21:07:30] training every detector once on 886 unique corpus files
+  training ML ensemble ...
+  training CNN (40 epochs, ~2-4 min) ...
+  training SafePickle variants ...
+
+scored 228 of 2823 listed files in 33.5 min. Drops: {'budget_skipped': 2595}
+scored files by source: {'torchvision 0.26.0 model registry (torch': 166, 'timm': 62}
+  FUSE@0.5       flags 221/228  Wilson [0.938, 0.9851]
+  SP-RF@0.5      flags 198/228  Wilson [0.8184, 0.9063]
+  SP-CB@0.5      flags 172/228  Wilson [0.6946, 0.8057]
+  META@0.5       flags 184/228  Wilson [0.7509, 0.853]
+  FUSE-INV@0.5   flags 186/228  Wilson [0.7604, 0.8607]
+torchvision agreement with the stored verdicts: {'ML@tuned': '166/166', 'ML@0.5': '166/166', 'CNN@tuned': '166/166', 'CNN@0.5': '166/166', 'SP-style@tuned': '166/166', 'SP-RF@0.5': '166/166', 'SP-CB@0.5': '166/166', 'SP-AE@p95': '166/166', 'META@0.5': '166/166', 'FUSE@0.5': '166/166', 'FUSE-C@0.5': '166/166', 'FUSE-INV@0.5': '166/166'}

@@ -1,0 +1,904 @@
+{
+ "note": "section 18.2 benign scale-up; calibration analyses exploratory",
+ "libraries": {
+  "timm": {
+   "n": 62,
+   "readable": 62
+  },
+  "torchvision": {
+   "n": 166,
+   "readable": 136
+  }
+ },
+ "detectors": {
+  "FUSE": {
+   "at_0.5": {
+    "timm": {
+     "all": [
+      62,
+      62,
+      [
+       0.9417,
+       1.0
+      ]
+     ],
+     "readable": [
+      62,
+      62,
+      [
+       0.9417,
+       1.0
+      ]
+     ]
+    },
+    "torchvision": {
+     "all": [
+      159,
+      166,
+      [
+       0.9155,
+       0.9794
+      ]
+     ],
+     "readable": [
+      136,
+      136,
+      [
+       0.9725,
+       1.0
+      ]
+     ]
+    }
+   },
+   "calibrated_on_torchvision": {
+    "0%": {
+     "tau": 0.983669,
+     "calib_n": 136,
+     "test_flagged": [
+      0,
+      62,
+      [
+       0.0,
+       0.0583
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       0,
+       62,
+       [
+        0.0,
+        0.0583
+       ]
+      ]
+     },
+     "dev_recall": 0.7795,
+     "dev_recall_wilson95": [
+      0.7246,
+      0.8261
+     ]
+    },
+    "1%": {
+     "tau": 0.981799,
+     "calib_n": 136,
+     "test_flagged": [
+      0,
+      62,
+      [
+       0.0,
+       0.0583
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       0,
+       62,
+       [
+        0.0,
+        0.0583
+       ]
+      ]
+     },
+     "dev_recall": 0.7795,
+     "dev_recall_wilson95": [
+      0.7246,
+      0.8261
+     ]
+    },
+    "5%": {
+     "tau": 0.970557,
+     "calib_n": 136,
+     "test_flagged": [
+      8,
+      62,
+      [
+       0.0669,
+       0.2345
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       8,
+       62,
+       [
+        0.0669,
+        0.2345
+       ]
+      ]
+     },
+     "dev_recall": 0.815,
+     "dev_recall_wilson95": [
+      0.7626,
+      0.8579
+     ]
+    }
+   },
+   "auc": {
+    "timm": 0.8616,
+    "torchvision": 0.8844
+   }
+  },
+  "FUSE-INV": {
+   "at_0.5": {
+    "timm": {
+     "all": [
+      61,
+      62,
+      [
+       0.9141,
+       0.9971
+      ]
+     ],
+     "readable": [
+      61,
+      62,
+      [
+       0.9141,
+       0.9971
+      ]
+     ]
+    },
+    "torchvision": {
+     "all": [
+      125,
+      166,
+      [
+       0.6822,
+       0.8124
+      ]
+     ],
+     "readable": [
+      125,
+      136,
+      [
+       0.861,
+       0.9542
+      ]
+     ]
+    }
+   },
+   "calibrated_on_torchvision": {
+    "0%": {
+     "tau": 0.995031,
+     "calib_n": 136,
+     "test_flagged": [
+      0,
+      62,
+      [
+       0.0,
+       0.0583
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       0,
+       62,
+       [
+        0.0,
+        0.0583
+       ]
+      ]
+     },
+     "dev_recall": 0.6063,
+     "dev_recall_wilson95": [
+      0.5451,
+      0.6644
+     ]
+    },
+    "1%": {
+     "tau": 0.995031,
+     "calib_n": 136,
+     "test_flagged": [
+      0,
+      62,
+      [
+       0.0,
+       0.0583
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       0,
+       62,
+       [
+        0.0,
+        0.0583
+       ]
+      ]
+     },
+     "dev_recall": 0.6063,
+     "dev_recall_wilson95": [
+      0.5451,
+      0.6644
+     ]
+    },
+    "5%": {
+     "tau": 0.990787,
+     "calib_n": 136,
+     "test_flagged": [
+      13,
+      62,
+      [
+       0.1268,
+       0.3264
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       13,
+       62,
+       [
+        0.1268,
+        0.3264
+       ]
+      ]
+     },
+     "dev_recall": 0.6811,
+     "dev_recall_wilson95": [
+      0.6215,
+      0.7354
+     ]
+    }
+   },
+   "auc": {
+    "timm": 0.7843,
+    "torchvision": 0.8278
+   }
+  },
+  "SP-RF": {
+   "at_0.5": {
+    "timm": {
+     "all": [
+      62,
+      62,
+      [
+       0.9417,
+       1.0
+      ]
+     ],
+     "readable": [
+      62,
+      62,
+      [
+       0.9417,
+       1.0
+      ]
+     ]
+    },
+    "torchvision": {
+     "all": [
+      136,
+      166,
+      [
+       0.7537,
+       0.8704
+      ]
+     ],
+     "readable": [
+      136,
+      136,
+      [
+       0.9725,
+       1.0
+      ]
+     ]
+    }
+   },
+   "calibrated_on_torchvision": {
+    "0%": {
+     "tau": 1.0,
+     "calib_n": 136,
+     "test_flagged": [
+      0,
+      62,
+      [
+       0.0,
+       0.0583
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       0,
+       62,
+       [
+        0.0,
+        0.0583
+       ]
+      ]
+     },
+     "dev_recall": 0.0,
+     "dev_recall_wilson95": [
+      0.0,
+      0.0149
+     ]
+    },
+    "1%": {
+     "tau": 0.99,
+     "calib_n": 136,
+     "test_flagged": [
+      0,
+      62,
+      [
+       0.0,
+       0.0583
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       0,
+       62,
+       [
+        0.0,
+        0.0583
+       ]
+      ]
+     },
+     "dev_recall": 0.5945,
+     "dev_recall_wilson95": [
+      0.5331,
+      0.653
+     ]
+    },
+    "5%": {
+     "tau": 0.98,
+     "calib_n": 136,
+     "test_flagged": [
+      0,
+      62,
+      [
+       0.0,
+       0.0583
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       0,
+       62,
+       [
+        0.0,
+        0.0583
+       ]
+      ]
+     },
+     "dev_recall": 0.6614,
+     "dev_recall_wilson95": [
+      0.6012,
+      0.7168
+     ]
+    }
+   },
+   "auc": {
+    "timm": 0.8176,
+    "torchvision": 0.8318
+   }
+  },
+  "SP-CB": {
+   "at_0.5": {
+    "timm": {
+     "all": [
+      62,
+      62,
+      [
+       0.9417,
+       1.0
+      ]
+     ],
+     "readable": [
+      62,
+      62,
+      [
+       0.9417,
+       1.0
+      ]
+     ]
+    },
+    "torchvision": {
+     "all": [
+      110,
+      166,
+      [
+       0.5878,
+       0.7302
+      ]
+     ],
+     "readable": [
+      110,
+      136,
+      [
+       0.7346,
+       0.8661
+      ]
+     ]
+    }
+   },
+   "calibrated_on_torchvision": {
+    "0%": {
+     "tau": 0.979021,
+     "calib_n": 136,
+     "test_flagged": [
+      5,
+      62,
+      [
+       0.0349,
+       0.1753
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       5,
+       62,
+       [
+        0.0349,
+        0.1753
+       ]
+      ]
+     },
+     "dev_recall": 0.7165,
+     "dev_recall_wilson95": [
+      0.6582,
+      0.7684
+     ]
+    },
+    "1%": {
+     "tau": 0.979021,
+     "calib_n": 136,
+     "test_flagged": [
+      5,
+      62,
+      [
+       0.0349,
+       0.1753
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       5,
+       62,
+       [
+        0.0349,
+        0.1753
+       ]
+      ]
+     },
+     "dev_recall": 0.7165,
+     "dev_recall_wilson95": [
+      0.6582,
+      0.7684
+     ]
+    },
+    "5%": {
+     "tau": 0.979021,
+     "calib_n": 136,
+     "test_flagged": [
+      5,
+      62,
+      [
+       0.0349,
+       0.1753
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       5,
+       62,
+       [
+        0.0349,
+        0.1753
+       ]
+      ]
+     },
+     "dev_recall": 0.7165,
+     "dev_recall_wilson95": [
+      0.6582,
+      0.7684
+     ]
+    }
+   },
+   "auc": {
+    "timm": 0.792,
+    "torchvision": 0.8704
+   }
+  },
+  "META": {
+   "at_0.5": {
+    "timm": {
+     "all": [
+      61,
+      62,
+      [
+       0.9141,
+       0.9971
+      ]
+     ],
+     "readable": [
+      61,
+      62,
+      [
+       0.9141,
+       0.9971
+      ]
+     ]
+    },
+    "torchvision": {
+     "all": [
+      123,
+      166,
+      [
+       0.6694,
+       0.8016
+      ]
+     ],
+     "readable": [
+      123,
+      136,
+      [
+       0.8433,
+       0.9433
+      ]
+     ]
+    }
+   },
+   "calibrated_on_torchvision": {
+    "0%": {
+     "tau": 1.0,
+     "calib_n": 136,
+     "test_flagged": [
+      0,
+      62,
+      [
+       0.0,
+       0.0583
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       0,
+       62,
+       [
+        0.0,
+        0.0583
+       ]
+      ]
+     },
+     "dev_recall": 0.0,
+     "dev_recall_wilson95": [
+      0.0,
+      0.0149
+     ]
+    },
+    "1%": {
+     "tau": 1.0,
+     "calib_n": 136,
+     "test_flagged": [
+      0,
+      62,
+      [
+       0.0,
+       0.0583
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       0,
+       62,
+       [
+        0.0,
+        0.0583
+       ]
+      ]
+     },
+     "dev_recall": 0.0,
+     "dev_recall_wilson95": [
+      0.0,
+      0.0149
+     ]
+    },
+    "5%": {
+     "tau": 1.0,
+     "calib_n": 136,
+     "test_flagged": [
+      0,
+      62,
+      [
+       0.0,
+       0.0583
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       0,
+       62,
+       [
+        0.0,
+        0.0583
+       ]
+      ]
+     },
+     "dev_recall": 0.0,
+     "dev_recall_wilson95": [
+      0.0,
+      0.0149
+     ]
+    }
+   },
+   "auc": {
+    "timm": 0.7512,
+    "torchvision": 0.7631
+   }
+  },
+  "ML": {
+   "at_0.5": {
+    "timm": {
+     "all": [
+      57,
+      62,
+      [
+       0.8247,
+       0.9651
+      ]
+     ],
+     "readable": [
+      57,
+      62,
+      [
+       0.8247,
+       0.9651
+      ]
+     ]
+    },
+    "torchvision": {
+     "all": [
+      120,
+      166,
+      [
+       0.6504,
+       0.7854
+      ]
+     ],
+     "readable": [
+      118,
+      136,
+      [
+       0.8005,
+       0.9146
+      ]
+     ]
+    }
+   },
+   "calibrated_on_torchvision": {
+    "0%": {
+     "tau": 0.901041,
+     "calib_n": 136,
+     "test_flagged": [
+      0,
+      62,
+      [
+       0.0,
+       0.0583
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       0,
+       62,
+       [
+        0.0,
+        0.0583
+       ]
+      ]
+     },
+     "dev_recall": 0.752,
+     "dev_recall_wilson95": [
+      0.6954,
+      0.8011
+     ]
+    },
+    "1%": {
+     "tau": 0.901041,
+     "calib_n": 136,
+     "test_flagged": [
+      0,
+      62,
+      [
+       0.0,
+       0.0583
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       0,
+       62,
+       [
+        0.0,
+        0.0583
+       ]
+      ]
+     },
+     "dev_recall": 0.752,
+     "dev_recall_wilson95": [
+      0.6954,
+      0.8011
+     ]
+    },
+    "5%": {
+     "tau": 0.87121,
+     "calib_n": 136,
+     "test_flagged": [
+      0,
+      62,
+      [
+       0.0,
+       0.0583
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       0,
+       62,
+       [
+        0.0,
+        0.0583
+       ]
+      ]
+     },
+     "dev_recall": 0.7874,
+     "dev_recall_wilson95": [
+      0.733,
+      0.8332
+     ]
+    }
+   },
+   "auc": {
+    "timm": 0.846,
+    "torchvision": 0.8646
+   }
+  },
+  "CNN": {
+   "at_0.5": {
+    "timm": {
+     "all": [
+      62,
+      62,
+      [
+       0.9417,
+       1.0
+      ]
+     ],
+     "readable": [
+      62,
+      62,
+      [
+       0.9417,
+       1.0
+      ]
+     ]
+    },
+    "torchvision": {
+     "all": [
+      136,
+      166,
+      [
+       0.7537,
+       0.8704
+      ]
+     ],
+     "readable": [
+      136,
+      136,
+      [
+       0.9725,
+       1.0
+      ]
+     ]
+    }
+   },
+   "calibrated_on_torchvision": {
+    "0%": {
+     "tau": 0.999605,
+     "calib_n": 136,
+     "test_flagged": [
+      0,
+      62,
+      [
+       0.0,
+       0.0583
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       0,
+       62,
+       [
+        0.0,
+        0.0583
+       ]
+      ]
+     },
+     "dev_recall": 0.7283,
+     "dev_recall_wilson95": [
+      0.6705,
+      0.7793
+     ]
+    },
+    "1%": {
+     "tau": 0.999595,
+     "calib_n": 136,
+     "test_flagged": [
+      0,
+      62,
+      [
+       0.0,
+       0.0583
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       0,
+       62,
+       [
+        0.0,
+        0.0583
+       ]
+      ]
+     },
+     "dev_recall": 0.7283,
+     "dev_recall_wilson95": [
+      0.6705,
+      0.7793
+     ]
+    },
+    "5%": {
+     "tau": 0.987945,
+     "calib_n": 136,
+     "test_flagged": [
+      0,
+      62,
+      [
+       0.0,
+       0.0583
+      ]
+     ],
+     "test_by_library": {
+      "timm": [
+       0,
+       62,
+       [
+        0.0,
+        0.0583
+       ]
+      ]
+     },
+     "dev_recall": 0.8268,
+     "dev_recall_wilson95": [
+      0.7755,
+      0.8684
+     ]
+    }
+   },
+   "auc": {
+    "timm": 0.8818,
+    "torchvision": 0.8703
+   }
+  }
+ }
+}
