@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this code or data, please cite the paper and this archive."
 title: "Code, manifests and per-file verdicts for 'Auditing Malicious-Pickle Detectors: Benchmark Contamination, External False Positives and a Provably Invariant Canonical Form'"
-version: 1.0.0
-date-released: "2026-10-20"
+version: 1.0.1
+date-released: "2026-10-25"
 license: MIT
 doi: "10.5281/zenodo.23509581"
 repository-code: "https://github.com/Magroor/Auditing-Malicious-Pickle-Detectors"
