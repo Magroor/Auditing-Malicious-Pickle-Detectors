@@ -5,8 +5,8 @@ Code, manifests and per-file verdicts for
 > Muhammad Aun, Sajid Majeed, Muhammad Majid Adeel, Nibras Ahmad and M Arslan Saleem Sandila.
 > *Auditing Malicious-Pickle Detectors: Benchmark Contamination, External False Positives and a Provably
 > Invariant Canonical Form.* Journal of Information Security and Applications, under review.
-> Archive DOI: [10.5281/zenodo.23509582](https://doi.org/10.5281/zenodo.23509582) (version 1.0.0).
-> All versions: [10.5281/zenodo.23509581](https://doi.org/10.5281/zenodo.23509581). See `CITATION.cff`.
+> Archive DOI (all versions, resolves to the latest): [10.5281/zenodo.23509581](https://doi.org/10.5281/zenodo.23509581).
+> Version 1.0.0: [10.5281/zenodo.23509582](https://doi.org/10.5281/zenodo.23509582). See `CITATION.cff`.
 
 The paper audits static detectors for malicious Python pickles in model files. It measures benchmark
 contamination, defines a semantic canonical form of the opcode stream that is provably invariant to inert
