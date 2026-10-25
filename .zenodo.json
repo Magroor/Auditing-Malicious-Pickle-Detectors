@@ -1,8 +1,8 @@
 {
   "title": "Code, manifests and per-file verdicts for 'Auditing Malicious-Pickle Detectors'",
   "upload_type": "software",
-  "version": "1.0.1",
-  "description": "<p>Detector and feature code, SHA-256 manifests and per-file verdicts for the paper <em>Auditing Malicious-Pickle Detectors: Benchmark Contamination, External False Positives and a Provably Invariant Canonical Form</em>. Tables on the development set, the locked test and the 166 official torchvision checkpoints are recomputed from the released verdicts without retraining. Version 1.0.1 adds the raw scores of the pre-specified benign scale-up, which covers 62 official timm checkpoints, and the script that analyses them. The archive contains no malware bytes, no pickle files and no model checkpoints, and the attack and adaptive-evasion tooling is withheld.</p>",
+  "version": "1.0.2",
+  "description": "<p>Detector and feature code, SHA-256 manifests and per-file verdicts for the paper <em>Auditing Malicious-Pickle Detectors: Benchmark Contamination, External False Positives and a Provably Invariant Canonical Form</em>. Tables on the development set, the locked test and the 166 official torchvision checkpoints are recomputed from the released verdicts without retraining. Version 1.0.1 adds the raw scores of the pre-specified benign scale-up, which covers 62 official timm checkpoints, and the script that analyses them. Version 1.0.2 replaces an empty MalHug seal file with the real seal of 11 October 2026, whose manifest hash matches the scored run. The archive contains no malware bytes, no pickle files and no model checkpoints, and the attack and adaptive-evasion tooling is withheld.</p>",
   "creators": [
     {"name": "Aun, Muhammad"},
     {"name": "Majeed, Sajid"},
